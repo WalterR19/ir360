@@ -10189,3 +10189,23 @@ html, body {
   50% { transform: scale(1.05) translate(10px, 20px); }
   100% { transform: scale(1) translate(0, 0); }
 }
+
+
+/* === MEDIA QUERY PARA RESPONSIVIDAD EN MÓVILES === */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto; /* permitir scroll vertical en móviles */
+    overflow-x: hidden; /* evitar scroll horizontal */
+  }
+
+  html, body {
+    height: auto; /* evitar problemas de altura en móviles */
+    min-height: 100vh;
+  }
+
+  #page, .main, .site-content {
+    min-height: auto;
+    height: auto;
+    padding: 1rem; /* opcional: añade un poco de espacio si se ve muy pegado */
+  }
+}

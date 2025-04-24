@@ -10040,6 +10040,43 @@ form.form-dark .form-control:focus {
   color: #dee2e6;
 }
 
+
+/* === RESPONSIVO PARA CELULAR === */
+@media (max-width: 768px) {
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in-out both;
+  }
+
+  .lead {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  .sub-title span {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .bg-dark {
+    padding: 1rem;
+  }
+
+  /* Si hay contenedores específicos que necesitas que sean scrollables o adaptables */
+  .container, .main, .site-content, .content-wrapper {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
 /* movimiento de testimonio */
 
 
@@ -10208,4 +10245,50 @@ html, body {
     height: auto;
     padding: 1rem; /* opcional: añade un poco de espacio si se ve muy pegado */
   }
+}
+
+
+
+/* ==== CORRECCIÓN DE ESTILOS PARA FORMULARIO DE CONTACTO ==== */
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button,
+.contact-form a.btn {
+  pointer-events: all !important;
+  opacity: 1 !important;
+  z-index: 2 !important;
+  background-color: rgba(255, 255, 255, 0.05) !important; /* Fondo suave y transparente */
+  color: #fff !important;
+  border: 1px solid rgba(242, 75, 136, 0.25) !important; /* Borde carmesí suave */
+  border-radius: 8px;
+  padding: 12px 14px;
+  backdrop-filter: blur(6px); /* Consistencia con tarjetas */
+  box-shadow: 0 4px 12px rgba(242, 75, 136, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Hover para inputs y botón */
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form button:hover,
+.contact-form a.btn:hover {
+  box-shadow: 0 6px 16px rgba(242, 75, 136, 0.35);
+  transform: scale(1.01);
+}
+
+/* Si están deshabilitados */
+.contact-form input[disabled],
+.contact-form textarea[disabled] {
+  pointer-events: all !important;
+  opacity: 0.6 !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #aaa !important;
+  border: 1px dashed rgba(242, 75, 136, 0.15) !important;
+}
+
+/* Asegura clics y posición correcta */
+.form-wrapper * {
+  pointer-events: all !important;
+  z-index: 3 !important;
 }

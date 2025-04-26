@@ -9944,7 +9944,7 @@ form.form-dark .form-control:focus {
   color: #00cfff !important;
 }
 
-
+/*=======================================CERTIFICADO DE IMAGENES===================*/ 
 .cert-img {
   height: 130px;
   display: flex;
@@ -9982,7 +9982,7 @@ form.form-dark .form-control:focus {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-
+/*====================================FIN CERTIFICADO IMAGENES======================================*/
 
 
 
@@ -10016,7 +10016,6 @@ form.form-dark .form-control:focus {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 
 /*---------------------------------------------------------------------------------------*/
 .fade-in {
@@ -10275,19 +10274,21 @@ html, body {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .service-card {
+    padding: 20px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*========================================FIN BODY=================================================
 /* ==== CORRECCIÓN DE ESTILOS PARA FORMULARIO DE CONTACTO ==== */
 
 .contact-form input,

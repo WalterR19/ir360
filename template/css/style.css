@@ -10099,9 +10099,18 @@ form.form-dark .form-control:focus {
 
 /* Fondo degradado base (azul pantone + carmesí suave) */
 
+/* ...todo tu CSS original permanece igual hasta aquí... */
 
 
 
+/* Altura total + scroll vertical forzado */
+
+/* HEADER FIJO Y SIN INTERFERENCIAS */
+/* HEADER FIJO AL TOP Y CON ESTILO */
+/* Altura total y scroll habilitado */
+/* ========== RESET BÁSICO Y GLOBAL ========== */
+/* Altura total + scroll vertical forzado */
+/* Header fijo y elegante */
 body {
   background: radial-gradient(
       circle at center,
@@ -10114,8 +10123,10 @@ body {
   background-blend-mode: screen;
   color: #fff;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;   /* ✅ permitir scroll vertical */
+  overflow-x: hidden; /* ✅ evitar scroll horizontal */
 }
+
 
 /* Círculos concéntricos carmesí extendidos */
 body::before {
@@ -10246,6 +10257,34 @@ html, body {
     padding: 1rem; /* opcional: añade un poco de espacio si se ve muy pegado */
   }
 }
+
+.trust-logo-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.trust-logo-wrapper a {
+  display: inline-block;
+  color: #fff; /* Opcional, para que combine con el footer oscuro */
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#comodoTL img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

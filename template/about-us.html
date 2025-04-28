@@ -23,41 +23,41 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">const tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/"); document.write(unescape("<script src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript' %3E%3C/script%3E"));</script>
   </head>
+  
   <style>
-    /* 🔵 Ajuste general: quitar márgenes y overflow para que todo fluya bien */
+    /* 🔵 Ajuste general */
     html, body {
       margin: 0;
       padding: 0;
       width: 100%;
-      overflow-x: hidden;
     }
     
-    /* 🔵 Arreglar header: ancho completo */
+    /* 🔵 Ajuste de header */
     .header {
       width: 100%;
       max-width: 100%;
-      overflow-x: hidden;
     }
     
-    /* 🔵 Que el logo y el menú en el header no rompan */
+    /* 🔵 Logo y menú sin romper */
     .site-logo img,
     .site-menu {
       max-width: 100%;
       height: auto;
     }
     
-    /* 🔵 Ajuste fluido para "Nuestro Equipo" */
+    /* 🔵 Ajuste de "Nuestro Equipo" */
     .team-boxs {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fluido: mínimo 250px por tarjeta */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       align-items: stretch;
+      overflow-x: hidden; /* 🔥 Aquí controlamos el desbordamiento, NO en body */
     }
     
-    /* 🔵 Ajuste para las imágenes del equipo */
+    /* 🔵 Imágenes del equipo */
     .team-img {
       width: 100%;
-      height: 220px; /* altura controlada, no muy grande */
+      height: 220px;
       overflow: hidden;
       border-radius: 10px;
       position: relative;
@@ -75,16 +75,16 @@
       transform: scale(0.95);
     }
     
-    /* 🔵 Mejorar la separación entre los textos e imágenes */
+    /* 🔵 Info de equipo */
     .team-info {
       padding-top: 10px;
       text-align: center;
     }
     
-    /* 🔵 Ajuste de los bloques de Historia y Certificaciones */
+    /* 🔵 Historia y certificaciones */
     .history-wrapper, .history-content {
       padding: 20px;
-      background: transparent; /* 🔥 no cambia el color original */
+      background: transparent;
       border-radius: 10px;
       margin-bottom: 30px;
     }
@@ -93,42 +93,23 @@
       padding: 20px;
       font-size: 1rem;
       line-height: 1.6;
-      background: transparent; /* 🔥 mantiene fondo original */
+      background: transparent;
       border-left: 4px solid #00bcd4;
       margin-bottom: 20px;
       border-radius: 10px;
     }
     
-    /* 🔵 Responsive para móviles */
+    /* 🔵 Responsive solo móviles */
     @media (max-width: 768px) {
-      /* ✅ SOLO móviles: ajustar las tarjetas */
       .team-boxs {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 15px;
       }
     
       .team-img {
-        width: 100%;
-        height: 180px; /* 🔥 Controlamos altura SOLO en móviles */
-        overflow: hidden;
-        border-radius: 10px;
-        position: relative;
+        height: 180px;
       }
     
-      .team-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        transition: transform 0.4s ease;
-      }
-    
-      .team-img:hover img {
-        transform: scale(0.95);
-      }
-    
-      /* ✅ SOLO móviles: Ajuste de bloques de historia */
       .history-wrapper, .history-content {
         padding: 15px;
         margin-bottom: 20px;
@@ -138,19 +119,14 @@
         padding: 15px;
         font-size: 0.95rem;
         line-height: 1.6;
-        background: transparent;
-        border-left: 4px solid #00bcd4;
-        border-radius: 10px;
       }
     
-      /* ✅ SOLO móviles: Ajuste de textos */
       .section-title h2.title {
         font-size: 1.8rem;
         text-align: center;
       }
     }
     
-    /* 🔵 Ajuste solo para celulares extra pequeños */
     @media (max-width: 576px) {
       .team-img {
         height: 160px;
@@ -161,7 +137,6 @@
       }
     }
     </style>
-    
     
 
   <body>

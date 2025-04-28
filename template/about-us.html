@@ -23,6 +23,100 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">const tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/"); document.write(unescape("<script src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript' %3E%3C/script%3E"));</script>
   </head>
+  <style>
+    /* 🔵 Ajustes Generales */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    
+    /* 🔵 HEADER y FOOTER completos */
+    header, .site-footer {
+      width: 100vw;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    /* 🔵 Ajustes de Imagenes de Equipo */
+    .team-img {
+      width: 100%;
+      height: 220px; /* más bajo */
+      overflow: hidden;
+      border-radius: 10px;
+      background: #000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    
+    .team-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transition: transform 0.3s ease;
+    }
+    
+    .team-img:hover img {
+      transform: scale(0.95);
+    }
+    
+    /* 🔵 Ordenamiento de Tarjetas de Equipo */
+    .team-boxs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    
+    /* 🔵 Ajustes de Historia y Certificaciones */
+    .history-wrapper img,
+    .history-content img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+      margin: auto;
+    }
+    
+    /* 🔵 RESPONSIVE para móviles */
+    @media (max-width: 768px) {
+      .team-img {
+        height: 180px;
+      }
+    
+      .history-wrapper, .history-content {
+        text-align: center;
+      }
+    
+      .section-title h2.title {
+        font-size: 1.6rem;
+      }
+    
+      .history-content p,
+      .history-content ul,
+      blockquote {
+        font-size: 1rem;
+        padding: 10px;
+      }
+    
+      .team-boxs {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .team-img {
+        height: 160px;
+      }
+      .section-title h2.title {
+        font-size: 1.4rem;
+      }
+    }
+    </style>
+    
+
   <body>
 
     <!--=================================

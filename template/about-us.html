@@ -101,21 +101,56 @@
     
     /* 🔵 Responsive para móviles */
     @media (max-width: 768px) {
-      /* Grid de equipo en pantallas chicas */
+      /* ✅ SOLO móviles: ajustar las tarjetas */
       .team-boxs {
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 15px;
       }
     
       .team-img {
-        height: 180px;
+        width: 100%;
+        height: 180px; /* 🔥 Controlamos altura SOLO en móviles */
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
       }
     
+      .team-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        transition: transform 0.4s ease;
+      }
+    
+      .team-img:hover img {
+        transform: scale(0.95);
+      }
+    
+      /* ✅ SOLO móviles: Ajuste de bloques de historia */
+      .history-wrapper, .history-content {
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+    
+      .blockquote-custom {
+        padding: 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        background: transparent;
+        border-left: 4px solid #00bcd4;
+        border-radius: 10px;
+      }
+    
+      /* ✅ SOLO móviles: Ajuste de textos */
       .section-title h2.title {
         font-size: 1.8rem;
+        text-align: center;
       }
     }
     
+    /* 🔵 Ajuste solo para celulares extra pequeños */
     @media (max-width: 576px) {
       .team-img {
         height: 160px;

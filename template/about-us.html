@@ -23,120 +23,64 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">const tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/"); document.write(unescape("<script src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript' %3E%3C/script%3E"));</script>
   </head>
-  
+
   <style>
-    /* 🔵 Ajuste general */
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
-    
-    /* 🔵 Ajuste de header */
-    .header {
-      width: 100%;
-      max-width: 100%;
-    }
-    
-    /* 🔵 Logo y menú sin romper */
-    .site-logo img,
-    .site-menu {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    /* 🔵 Ajuste de "Nuestro Equipo" */
+  /* SOLO APLICAMOS SOBRE LAS TARJETAS Y BLOQUES */
+  .team-boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .team-item {
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .team-img {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+  }
+
+  .team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.4s ease;
+  }
+
+  .team-img:hover img {
+    transform: scale(0.95);
+  }
+
+  .team-info {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  /* Responsivo solo para móviles */
+  @media (max-width: 768px) {
     .team-boxs {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      align-items: stretch;
-      overflow-x: hidden; /* 🔥 Aquí controlamos el desbordamiento, NO en body */
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
-    
-    /* 🔵 Imágenes del equipo */
+
     .team-img {
-      width: 100%;
-      height: 220px;
-      overflow: hidden;
-      border-radius: 10px;
-      position: relative;
+      height: 180px;
     }
-    
-    .team-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      transition: transform 0.4s ease;
+  }
+
+  @media (max-width: 576px) {
+    .team-img {
+      height: 160px;
     }
-    
-    .team-img:hover img {
-      transform: scale(0.95);
-    }
-    
-    /* 🔵 Info de equipo */
-    .team-info {
-      padding-top: 10px;
-      text-align: center;
-    }
-    
-    /* 🔵 Historia y certificaciones */
-    .history-wrapper, .history-content {
-      padding: 20px;
-      background: transparent;
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
-    
-    .blockquote-custom {
-      padding: 20px;
-      font-size: 1rem;
-      line-height: 1.6;
-      background: transparent;
-      border-left: 4px solid #00bcd4;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-    
-    /* 🔵 Responsive solo móviles */
-    @media (max-width: 768px) {
-      .team-boxs {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 15px;
-      }
-    
-      .team-img {
-        height: 180px;
-      }
-    
-      .history-wrapper, .history-content {
-        padding: 15px;
-        margin-bottom: 20px;
-      }
-    
-      .blockquote-custom {
-        padding: 15px;
-        font-size: 0.95rem;
-        line-height: 1.6;
-      }
-    
-      .section-title h2.title {
-        font-size: 1.8rem;
-        text-align: center;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      .team-img {
-        height: 160px;
-      }
-    
-      .section-title h2.title {
-        font-size: 1.6rem;
-      }
-    }
-    </style>
+  }
+  </style>
     
 
   <body>

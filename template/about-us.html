@@ -24,112 +24,109 @@
     <script type="text/javascript">const tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/"); document.write(unescape("<script src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript' %3E%3C/script%3E"));</script>
   </head>
   <style>
-    /* 🔵 Ajuste global */
-    body, html {
+    /* 🔵 Ajuste general: quitar márgenes y overflow para que todo fluya bien */
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       overflow-x: hidden;
+    }
+    
+    /* 🔵 Arreglar header: ancho completo */
+    .header {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    /* 🔵 Que el logo y el menú en el header no rompan */
+    .site-logo img,
+    .site-menu {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* 🔵 Ajuste fluido para "Nuestro Equipo" */
+    .team-boxs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fluido: mínimo 250px por tarjeta */
+      gap: 20px;
+      align-items: stretch;
+    }
+    
+    /* 🔵 Ajuste para las imágenes del equipo */
+    .team-img {
+      width: 100%;
+      height: 220px; /* altura controlada, no muy grande */
+      overflow: hidden;
+      border-radius: 10px;
+      position: relative;
+    }
+    
+    .team-img img {
+      width: 100%;
       height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transition: transform 0.4s ease;
     }
     
-    /* 🔵 HEADER ocupa toda la pantalla del móvil */
-    header.header {
-      min-height: 100vh; /* ocupa 100% de la altura visible */
-      display: flex;
-      align-items: center;
-      background-color: #000; /* color de fondo sólido o puedes cambiarlo */
+    .team-img:hover img {
+      transform: scale(0.95);
     }
     
-    /* 🔵 Ajuste para la sección de Banner principal */
-    .inner-header {
-      min-height: 100vh;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* 🔵 Mejorar la separación entre los textos e imágenes */
+    .team-info {
+      padding-top: 10px;
       text-align: center;
     }
     
-    /* 🔵 Ajustes para los bloques de Historia y Certificaciones */
+    /* 🔵 Ajuste de los bloques de Historia y Certificaciones */
     .history-wrapper, .history-content {
-      background: #0d0d0d; /* fondo más oscuro */
-      border-radius: 10px;
       padding: 20px;
-      margin-bottom: 20px;
+      background: transparent; /* 🔥 no cambia el color original */
+      border-radius: 10px;
+      margin-bottom: 30px;
     }
     
-    /* 🔵 Blockquotes personalizados */
     .blockquote-custom {
-      background: #1a1a1a;
-      border-left: 5px solid #00bcd4;
-      padding: 15px 20px;
+      padding: 20px;
       font-size: 1rem;
-      color: #ccc;
+      line-height: 1.6;
+      background: transparent; /* 🔥 mantiene fondo original */
+      border-left: 4px solid #00bcd4;
       margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    
-    /* 🔵 Imágenes */
-    img.img-fluid {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-      object-position: center center;
       border-radius: 10px;
     }
     
-    /* 🔵 Responsive especial para móviles */
+    /* 🔵 Responsive para móviles */
     @media (max-width: 768px) {
-      /* Header para móviles */
-      header.header {
-        padding: 20px 10px;
+      /* Grid de equipo en pantallas chicas */
+      .team-boxs {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
       }
     
-      /* Ajuste de sección banner */
-      .inner-header {
-        min-height: 80vh;
+      .team-img {
+        height: 180px;
       }
     
-      /* Títulos */
       .section-title h2.title {
         font-size: 1.8rem;
       }
+    }
     
-      /* Textos más cómodos */
-      .history-content p, .history-wrapper p, .blockquote-custom {
-        font-size: 0.95rem;
-        line-height: 1.6;
-      }
-    
-      /* Grid para imágenes del equipo */
-      .team-boxs {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 20px;
-      }
-    
+    @media (max-width: 576px) {
       .team-img {
         height: 160px;
       }
-    }
     
-    /* 🔵 Ajuste para celulares más chicos (576px para abajo) */
-    @media (max-width: 576px) {
-      header.header {
-        min-height: 100vh;
-      }
-    
-      .inner-header {
-        min-height: 70vh;
-      }
-    
-      .team-img {
-        height: 140px;
+      .section-title h2.title {
+        font-size: 1.6rem;
       }
     }
     </style>
+    
     
 
   <body>

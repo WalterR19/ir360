@@ -877,102 +877,122 @@
 
 <!--===========================================================================================================================
           Our Staff -->
-          <section class="space-pb bg-black z-index-2">
-            <div class="container">
-              <div class="row">
-                <div class="col-xxl-6 col-lg-8">
-                  <div class="section-title mb-lg-0">
-                    <span class="sub-title"><img class="img-fluid" src="images/subtitle-icon.png" alt=""> Nuestro equipo</span>
-                    <h2 class="title mb-0">Ciberseguridad de élite, con enfoque cercano y compromiso absoluto.</h2>
-                  </div>
-                </div>
-                <!-- <div class="col-xxl-6 col-lg-4 align-self-end">
-                  <p class="mb-0 ps-xxl-5">So, make the decision to move forward. Commit your decision to paper, just to bring it into focus. Then, go for it!</p>
-                 </div>-->
-              </div>
-
-              <div class="row mt-xl-5 pt-5">
-                <div class="col-md-12">
-                  <div class="team-boxs grid-wrapper grid-xl-4 grid-lg-3 grid-md-2 grid-sm-2 grid-xs-1">
-                    <div class="team-item team-style-1">
-                      <div class="team-img">
-                        <img class="img-fluid" src="images/team/01.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
-                      </div>
-                      <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Marcelo Infante Alcaino</a>
-                        <span class="team-destination">Abogado, con maestria en delitos penales y ciberneticos</span>
-                        <div class="team-social">
-                          <ul>
-                            <li><a href="#">Fb</a></li>
-                          <!--<li><a href="#">Dr</a></li>-->
-                            <li><a href="#">Lk</a></li>
-                          <!--<li><a href="#">Be</a></li>-->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-item team-style-1">
-                      <div class="team-img">
-                        <img class="img-fluid" src="images/team/marcela.png" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="template/images/team/symbol.png" alt="" /></div>
-                      </div>
-                      <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Marcela Morales Rubilar</a>
-                        <span class="team-destination">CEO Founder</span>
-                        <div class="team-social">
-                          <ul>
-                            <li><a href="#">Fb</a></li>
-                            <li><a href="#">Dr</a></li>
-                            <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="team-item team-style-1">
-                      <div class="team-img">
-                        <img class="img-fluid" src="images/team/03.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
-                      </div>
-                      <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Mellissa Doe</a>
-                        <span class="team-destination">Analyst</span>
-                        <div class="team-social">
-                          <ul>
-                            <li><a href="#">Fb</a></li>
-                            <li><a href="#">Dr</a></li>
-                            <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-item team-style-1">
-                      <div class="team-img">
-                        <img class="img-fluid" src="images/team/04.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
-                      </div>
-                      <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Paul Flavius</a>
-                        <span class="team-destination">Coordinator</span>
-                        <div class="team-social">
-                          <ul>
-                            <li><a href="#">Fb</a></li>
-                            <li><a href="#">Dr</a></li>
-                            <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
-                          </ul>
-                        </div>
-                      </div>
+          <style>
+            .team-img {
+              width: 100%;
+              height: 240px; /* 🔵 Más pequeño aún: de 280px bajamos a 240px */
+              overflow: hidden;
+              position: relative;
+              border-radius: 10px; /* 🔵 Bordes suaves pero más discretos */
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 🔵 Sombra más natural */
+              background-color: #000; /* 🔵 Fondo negro por si la imagen no cubre exactamente */
+            }
+            
+            .team-img img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; /* 🔵 Asegura que la imagen llene todo el recuadro */
+              object-position: center center; /* 🔵 Centra perfectamente la imagen */
+              transition: transform 0.4s ease, filter 0.4s ease;
+              filter: brightness(0.98) contrast(1.05); /* 🔵 Corrección ligera de colores */
+            }
+            
+            .team-img:hover img {
+              transform: scale(0.95);
+              filter: brightness(1) contrast(1.20); /* 🔵 Mejora el color al hacer hover */
+            }
+            </style>
+            
+            
+            <section class="space-pb bg-black z-index-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xxl-6 col-lg-8">
+                    <div class="section-title mb-lg-0">
+                      <span class="sub-title"><img class="img-fluid" src="images/subtitle-icon.png" alt=""> Nuestro equipo</span>
+                      <h2 class="title mb-0">Ciberseguridad de élite, con enfoque cercano y compromiso absoluto.</h2>
                     </div>
                   </div>
                 </div>
+            
+                <div class="row mt-xl-5 pt-5">
+                  <div class="col-md-12">
+                    <div class="team-boxs grid-wrapper grid-xl-4 grid-lg-3 grid-md-2 grid-sm-2 grid-xs-1">
+                      
+                      <!-- Miembro 1 -->
+                      <div class="team-item team-style-1">
+                        <div class="team-img">
+                          <img class="img-fluid" src="images/team/01.jpg" alt="Marcelo Infante Alcaino" />
+                        </div>
+                        <div class="team-info">
+                          <a href="team-detail.html" class="team-title">Marcelo Infante Alcaino</a>
+                          <span class="team-destination">Abogado, con maestría en delitos penales y cibernéticos</span>
+                          <div class="team-social">
+                            <ul>
+                              <li><a href="#">Fb</a></li>
+                              <li><a href="#">Lk</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <!-- Miembro 2 -->
+                      <div class="team-item team-style-1">
+                        <div class="team-img">
+                          <img class="img-fluid" src="images/team/marcela3.png" alt="Marcela Morales Rubilar" />
+                        </div>
+                        <div class="team-info">
+                          <a href="team-detail.html" class="team-title">Marcela Morales Rubilar</a>
+                          <span class="team-destination">CEO Founder</span>
+                          <div class="team-social">
+                            <ul>
+                              <li><a href="#">Fb</a></li>
+                              <li><a href="#">Lk</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <!-- Miembro 3 -->
+                      <div class="team-item team-style-1">
+                        <div class="team-img">
+                          <img class="img-fluid" src="images/team/Naty.jpeg" alt="Natalia Elgueta Pinochet" />
+                        </div>
+                        <div class="team-info">
+                          <a href="team-detail.html" class="team-title">Natalia Elgueta Pinochet</a>
+                          <span class="team-destination">Recursos Humanos</span>
+                          <div class="team-social">
+                            <ul>
+                              <li><a href="#">Fb</a></li>
+                              <li><a href="#">Lk</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <!-- Miembro 4 -->
+                      <div class="team-item team-style-1">
+                        <div class="team-img">
+                          <img class="img-fluid" src="images/team/04.jpg" alt="Paul Flavius" />
+                        </div>
+                        <div class="team-info">
+                          <a href="team-detail.html" class="team-title">Paul Flavius</a>
+                          <span class="team-destination">Coordinator</span>
+                          <div class="team-social">
+                            <ul>
+                              <li><a href="#">Fb</a></li>
+                              <li><a href="#">Lk</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+            
+                    </div>
+                  </div>
+                </div>
               </div>
-
-            </div>
-          </section>
+            </section>
+            
        
           <!--=================================
           Our Staff -->

@@ -35,7 +35,7 @@
     
     <div id="page" class="main">
 
-      <!--=================================
+<!--=================================
       Header -->
       <header class="header header-default header-sticky">
         <div class="header-inner">
@@ -113,7 +113,7 @@
         </div>
       </header>
 
-      <!--==================================================================
+<!--==================================================================
       Main Menu OffCanvas -->
       <div class="offcanvas main-menu-offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
         <div class="offcanvas-header">
@@ -184,8 +184,9 @@
         </div>
       </div>
 
-     <!--=================================
+<!--=========================================================================================================
       Header Side Panel -->
+      
       <div class="offcanvas offcanvas-end sidepanel-offcanvas" tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-header">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
@@ -200,16 +201,18 @@
             <div class="socail-info">
               <div class="socail-info mt-4">
                 <ul class="list-unstyled">
-                  <li><a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a></li>
-                  <li><a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
-                  <li><a href="#"><i class="fa-brands fa-x-twitter me-2"></i>linkedIn</a></li>
+                  <!--<li><a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>-->
+                  <li><a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+
                   <!--<li><a href="#"><i class="fa-brands fa-dribbble me-2"></i>Dribbble</a></li>-->
                 </ul>
               </div>
             </div>
+            
             <div class="contact-info">
               <span class="número">+56 9 39661894</span>
-              <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto.soluciones@ir360.store</a>
+              <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto@ir360.cl</a>
               <span class="text">¿Buscas colaboración para proteger tu próxima gran idea?</span>
             </div>
           </div>
@@ -229,8 +232,70 @@
       </div>
 
 
-        <!--=================================
+
+<!--==========================================================================================================================
         Page Header -->
+        <style>
+          /* ✅ Estilo responsive para sección de servicios */
+          @media (max-width: 768px) {
+            .service-card {
+              padding: 1.25rem !important;
+              text-align: left !important;
+            }
+
+            .service-card h4 {
+              font-size: 1.1rem !important;
+              line-height: 1.4 !important;
+            }
+
+            .service-card p {
+              font-size: 0.95rem !important;
+              line-height: 1.5 !important;
+              margin-bottom: 0.75rem !important;
+            }
+
+            .service-card .badge {
+              font-size: 0.75rem !important;
+              padding: 0.35rem 0.6rem !important;
+              margin-left: 0.3rem;
+            }
+
+            .pulse-icon {
+              font-size: 1.4rem !important;
+              margin-right: 0.75rem !important;
+            }
+
+            .section-title {
+              font-size: 1.5rem !important;
+            }
+
+            .lead {
+              font-size: 1rem !important;
+            }
+
+            .inner-header h1.title {
+              font-size: 1.8rem !important;
+            }
+
+            .inner-header p {
+              font-size: 1rem !important;
+              line-height: 1.4 !important;
+            }
+
+            .row.g-4 > [class*="col-"] {
+              padding-left: 0.75rem !important;
+              padding-right: 0.75rem !important;
+            }
+
+            .rounded.shadow.h-100 {
+              height: auto !important;
+              margin-bottom: 1rem !important;
+            }
+          }
+
+        </style>
+
+
         <div class="inner-header bg-holder" style="background-image: url(images/banner/inner-header/page-header-01.jpg);">
           <div class="container">
             <div class="row  justify-content-center">
@@ -332,84 +397,95 @@
 <!--=================================================================================================================
       Site Footer -->
       <footer class="site-footer footer-dark">
-        <div class="footer-main">
+        <div class="footer-main py-4"> <!-- Menor padding vertical -->
           <div class="container">
             <div class="row">
+              <!-- Columna de contacto -->
               <div class="col-xl-3 col-md-5">
                 <div class="widget widget-address-info">
-                  <h5 class="widget-title">Contactanos</h5>
+                  <h5 class="widget-title">Contáctanos</h5>
                   <ul class="address-info-list">
-                    <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i><span class="info"><span>Avenida Rafael Riesco Bernales Nro 501 </span>Maipu, Region Metropolitana, Chile</span></li>
-                    <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i><span class="info"><span>+56 9 39661894 </span>Lunes a viernes 8:30am 6:30pm</span></li>
-                    <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i><span class="info"><span>contacto@ir360.cl </span></span></li>
+                    <li>
+                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
+                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Maipú, Región Metropolitana, Chile</span>
+                    </li>
+                    <li>
+                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
+                      <span class="info">+56 9 3966 1894<br>Lunes a viernes 8:30am – 6:30pm</span>
+                    </li>
+                    <li>
+                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i>
+                      <span class="info">contacto@ir360.cl</span>
+                    </li>
                   </ul>
                 </div>
               </div>
+      
+              <!-- Columna de newsletter -->
               <div class="col-xl-5 col-md-7">
                 <div class="widget">
-                  <h5 class="widget-title">Escribenos</h5>
-                  <div class="widget widget-newsletter mb-4 pb-2">
+                  <h5 class="widget-title">Escríbenos</h5>
+                  <div class="widget-newsletter mb-3 pb-1">
                     <form class="newsletter-form">
-                      <input type="text" class="form-control" placeholder="Enter Your Email">
+                      <input type="text" class="form-control" placeholder="Ingresa tu correo">
                       <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
                     </form>
                   </div>
-                    <!--<div class="widget widget-menu">
-                    <h6 class="widget-title">Quick Links</h6>
-                    <ul class="list-unstyled list-col-3 mb-0">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about-us.html">About us</a></li>
-                      <li><a href="team.html">Team</a></li>
-                      <li><a href="team-single.html">Team Single</a></li>
-                      <li><a href="service.html">Service</a></li>
-                      <li><a href="service-detail.html">Service Single</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-detail.html">Blog Single</a></li>
-                      <li><a href="contact-us.html">Contact</a></li>
-                    </ul>
-                  </div>-->
                 </div>
               </div>
+      
+              <!-- Columna de Call Center y Redes -->
               <div class="col-xl-3 col-md-12 ms-auto">
                 <div class="widget widget-info">
                   <h5 class="widget-title">Call Center</h5>
-                  <a class="number" href="tel:+56998765432">+56 9 39661894</a>
+                  <a class="number" href="tel:+56939661894">+56 9 3966 1894</a>
                   <h6 class="title">Consulta gratis con nuestros expertos en seguridad</h6>
                 </div>
-                <div class="widget-socail">
-                  <ul class="socail-icon">
-                    <li><a href="#">Fb</a></li>
-                    <li><a href="#">Ig</a></li>
-                    <li><a href="#">Lkdin</a></li>
-                    </ul>
+                <div class="widget-socail mt-3">
+                  <h6 class="widget-title">Nuestra red social</h6>
+                  <ul class="socail-icon list-unstyled d-flex align-items-center">
+                    <li>
+                      <a href="https://www.linkedin.com/company/ir360" target="_blank" style="font-size: 1.4rem;">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="ms-2" style="font-size: 1rem;">LinkedIn</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+      
+            <!-- Certificado -->
             <div class="trust-logo-wrapper text-center mt-4">
               <script language="JavaScript" type="text/javascript">
                 TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_lg.png", "CL1", "none");
               </script>
-              <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile">
-                
-              </a>
+              <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile"></a>
             </div>
-            
- 
-
           </div>
         </div>
-        <div class="footer-copyright">
+      
+        <!-- Pie de página inferior -->
+        <div class="footer-copyright py-2">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-lg-6"><p><a class="footer-logo" href="index.html"><img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="logo" /></a></p></div>
-              <div class="col-lg-6 text-lg-end"><p>Develop and design by <a href="#">Potenza Global Solutions</a></p></div>
+              <div class="col-lg-6">
+                <p class="mb-0">
+                  <a class="footer-logo" href="index.html">
+                    <img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="logo" style="max-height: 40px;" />
+                  </a>
+                </p>
+              </div>
+              <div class="col-lg-6 text-lg-end">
+                <p class="mb-0 small">Desarrollado por <a href="#">Potenza Global Solutions</a> © 2025 IR360</p>
+              </div>
             </div>
           </div>
         </div>
-        
       </footer>
+      
 
-      <!--=================================
+<!--=================================
       Back To Top -->
       <div class="back-to-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

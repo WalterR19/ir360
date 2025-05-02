@@ -35,7 +35,7 @@
     
     <div id="page" class="main">
 
-      <!--=================================
+<!--=================================
       Header -->
       <header class="header header-default header-sticky">
         <div class="header-inner">
@@ -113,7 +113,7 @@
         </div>
       </header>
 
-      <!--==================================================================
+<!--==================================================================
       Main Menu OffCanvas -->
       <div class="offcanvas main-menu-offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
         <div class="offcanvas-header">
@@ -185,8 +185,9 @@
       </div>
 
 
-      <!--=================================
+<!--=================================
       Header Side Panel -->
+     
       <div class="offcanvas offcanvas-end sidepanel-offcanvas" tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-header">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
@@ -201,16 +202,18 @@
             <div class="socail-info">
               <div class="socail-info mt-4">
                 <ul class="list-unstyled">
-                  <li><a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a></li>
-                  <li><a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
-                  <li><a href="#"><i class="fa-brands fa-x-twitter me-2"></i>linkedIn</a></li>
+                  <!--<li><a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>-->
+                  <li><a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+
                   <!--<li><a href="#"><i class="fa-brands fa-dribbble me-2"></i>Dribbble</a></li>-->
                 </ul>
               </div>
             </div>
+            
             <div class="contact-info">
               <span class="número">+56 9 39661894</span>
-              <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto.soluciones@ir360.store</a>
+              <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto@ir360.cl</a>
               <span class="text">¿Buscas colaboración para proteger tu próxima gran idea?</span>
             </div>
           </div>
@@ -229,7 +232,7 @@
         </div>
       </div>
 
-        <!--=================================
+<!--=============================================================================
         Page Header -->
         <div class="inner-header bg-holder" style="background-image: url(images/banner/inner-header/page-header-01.jpg);">
           <div class="container">
@@ -246,7 +249,66 @@
 
 <!--=============================================================================================================
           Our Staff -->
+          <style>
+            
+              .team-img {
+                width: 260px;              /* tamaño más pequeño */
+                height: 260px;             /* cuadrado */
+                border-radius: 50%;        /* opcional: circular */
+                overflow: hidden;          /* recorta el exceso */
+                margin-bottom: 1rem;
+                box-shadow: 0 0 12px rgba(0,0,0,0.3);
+              }
 
+              .team-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;         /* mantiene proporción y rellena el contenedor */
+                display: block;
+              }
+
+              .team-boxs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+              }
+
+              .team-boxs .team-item {
+                flex: 1 1 calc(33.333% - 2rem);
+                max-width: calc(33.333% - 2rem);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+              }
+
+              .team-boxs .team-item:nth-child(n+4) {
+                flex: 1 1 calc(50% - 2rem);
+                max-width: calc(50% - 2rem);
+              }
+
+              /* Responsive para tablets y smartphones */
+              @media (max-width: 992px) {
+                .team-boxs .team-item {
+                  flex: 1 1 calc(50% - 1rem);
+                  max-width: calc(50% - 1rem);
+                }
+              }
+
+              @media (max-width: 576px) {
+                .team-boxs .team-item {
+                  flex: 1 1 100%;
+                  max-width: 100%;
+                }
+              }
+
+
+            
+
+          </style>
+
+          
           <section class="space-ptb text-center bg-dark text-white">
             <div class="container">
               <div class="row justify-content-center mb-4">
@@ -267,72 +329,72 @@
                   <div class="team-boxs grid-wrapper grid-xl-4 grid-lg-3 grid-md-2 grid-sm-2 grid-xs-1">
                     <div class="team-item team-style-1">
                       <div class="team-img">
-                        <img class="img-fluid" src="images/team/01.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
+                        <img class="img-fluid" src="images/marcelo.jpg" alt="Marcelo Infante Alcaino" />
+                        
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Anne Smith</a>
-                        <span class="team-destination">Senior Software Engineer</span>
+                        <a href="team-detail.html" class="team-title">Marcelo Infante Alcaino</a>
+                        <span class="team-destination">Abogado, con maestría en delitos penales y cibernéticos, mantiene mas de veinte años en el area, con diversos diplomados, ademas de mencionar que se desempeño por 11 años en Carabineros de Chile, teniendo una carrera distingida en la institucion castrense</span>
                         <div class="team-social">
                           <ul>
-                            <li><a href="#">Fb</a></li>
+                            <!--<li><a href="#">Fb</a></li>
                             <li><a href="#">Dr</a></li>
                             <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
+                            <li><a href="#">Be</a></li>-->
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="team-item team-style-1">
                       <div class="team-img">
-                        <img class="img-fluid" src="images/team/02.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
+                        <img class="img-fluid" src="images/team/marcela3.png" alt="Marcela Morales Rubilar" />
+                       
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">John Doe</a>
-                        <span class="team-destination">IT Project Manager</span>
+                        <a href="team-detail.html" class="team-title">Marcela Morales Rubilar</a>
+                        <span class="team-destination">Ex funcionaria de la Policia de Investigaciones de Chile, desempeñando funciones en la Brigada de Cibercrimen, con basto conocimiento en el area administrativa de la institucion, actualmente corresponde a la CEO Founder de esta empresa</span>
                         <div class="team-social">
                           <ul>
-                            <li><a href="#">Fb</a></li>
+                            <!--<li><a href="#">Fb</a></li>
                             <li><a href="#">Dr</a></li>
                             <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
+                            <li><a href="#">Be</a></li>-->
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="team-item team-style-1">
                       <div class="team-img">
-                        <img class="img-fluid" src="images/team/03.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
+                        <img class="img-fluid" src="images/walter.jpg" alt="Walter Rubilar" />
+                        
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Mellissa Doe</a>
-                        <span class="team-destination">Network Engineer</span>
+                        <a href="team-detail.html" class="team-title">Walter Rubilar Morales</a>
+                        <span class="team-destination">Ingeniero en Ciberseguridad y Lider auditor en la norma ISO 27001:2022, con certificado internacional IQNet, quien se desempeño durante 11 años en la Policia de Investigaciones, especificamente en las areas de investigacion de delitos contra la propiedad, delitos ciberneticos e inteligencia, quien tiene diversas certificaciones en Inteligencia Artificial y Ciencia de datos, acreditadas por IBM</span>
                         <div class="team-social">
                           <ul>
-                            <li><a href="#">Fb</a></li>
+                            <!--<li><a href="#">Fb</a></li>
                             <li><a href="#">Dr</a></li>
                             <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
+                            <li><a href="#">Be</a></li>-->
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="team-item team-style-1">
                       <div class="team-img">
-                        <img class="img-fluid" src="images/team/04.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
+                        <img class="img-fluid" src="images/team/Naty.jpeg" alt="Natalia Elgueta Pinochet" />
+                        
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Paul Flavius</a>
-                        <span class="team-destination">Frontend Developer</span>
+                        <a href="team-detail.html" class="team-title">Natalia Elgueta Pinochet</a>
+                        <span class="team-destination">Ingeniera en Recursos humanos y Administracion de empresa, con una basta carrera en el ambito, participando en diversos proyectos empresariales tanto nacionales como internacionales</span>
                         <div class="team-social">
                           <ul>
-                            <li><a href="#">Fb</a></li>
+                            <!--<li><a href="#">Fb</a></li>
                             <li><a href="#">Dr</a></li>
                             <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
+                            <li><a href="#">Be</a></li>-->
                           </ul>
                         </div>
                       </div>
@@ -340,23 +402,23 @@
 
                     <div class="team-item team-style-1">
                       <div class="team-img">
-                        <img class="img-fluid" src="images/team/05.jpg" alt="" />
-                        <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
+                        <img class="img-fluid" src="images/cristobal.jpg" alt="Paul Flavius" />
+                        
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Michael Davis</a>
-                        <span class="team-destination">Data Analyst</span>
+                        <a href="team-detail.html" class="team-title">Cristobal Jara Escobar</a>
+                        <span class="team-destination">Ingeniero en Ciberseguridad, quien se desempeñó como Oficial de la Fuerza Aerea de Chile, dentro de la Direccion de Inteligencia, Subdireccion de Ciberoperaciones y como Jefe del Departamento de Informatica CSIRT, actualmente cursando Master en Ciberseguridad certificado por Deloitte y la Universidad Catolica de Avila, España</span>
                         <div class="team-social">
                           <ul>
-                            <li><a href="#">Fb</a></li>
+                            <!--<li><a href="#">Fb</a></li>
                             <li><a href="#">Dr</a></li>
                             <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>
+                            <li><a href="#">Be</a></li>-->
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="team-item team-style-1">
+                    <!--<div class="team-item team-style-1">
                       <div class="team-img">
                         <img class="img-fluid" src="images/team/06.jpg" alt="" />
                         <div class="image-overlay"><img class="img-fluid" src="images/team/symbol.png" alt="" /></div>
@@ -406,7 +468,7 @@
                             <li><a href="#">Dr</a></li>
                             <li><a href="#">Tw</a></li>
                             <li><a href="#">Be</a></li>
-                          </ul>
+                          </ul>-->
                         </div>
                       </div>
                     </div>
@@ -417,7 +479,7 @@
 
             </div>
           </section>
-          <!--=================================
+<!--=========================================================================================================
           Our Staff -->
 
 <!--====================================================================================================================
@@ -552,84 +614,95 @@
 <!--==============================================================================================================
       Site Footer -->
       <footer class="site-footer footer-dark">
-        <div class="footer-main">
+        <div class="footer-main py-4"> <!-- Menor padding vertical -->
           <div class="container">
             <div class="row">
+              <!-- Columna de contacto -->
               <div class="col-xl-3 col-md-5">
                 <div class="widget widget-address-info">
-                  <h5 class="widget-title">Contactanos</h5>
+                  <h5 class="widget-title">Contáctanos</h5>
                   <ul class="address-info-list">
-                    <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i><span class="info"><span>Avenida Rafael Riesco Bernales Nro 501 </span>Maipu, Region Metropolitana, Chile</span></li>
-                    <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i><span class="info"><span>+56 9 39661894 </span>Lunes a viernes 8:30am 6:30pm</span></li>
-                    <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i><span class="info"><span>contacto@ir360.cl </span></span></li>
+                    <li>
+                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
+                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Maipú, Región Metropolitana, Chile</span>
+                    </li>
+                    <li>
+                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
+                      <span class="info">+56 9 3966 1894<br>Lunes a viernes 8:30am – 6:30pm</span>
+                    </li>
+                    <li>
+                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i>
+                      <span class="info">contacto@ir360.cl</span>
+                    </li>
                   </ul>
                 </div>
               </div>
+      
+              <!-- Columna de newsletter -->
               <div class="col-xl-5 col-md-7">
                 <div class="widget">
-                  <h5 class="widget-title">Escribenos</h5>
-                  <div class="widget widget-newsletter mb-4 pb-2">
+                  <h5 class="widget-title">Escríbenos</h5>
+                  <div class="widget-newsletter mb-3 pb-1">
                     <form class="newsletter-form">
-                      <input type="text" class="form-control" placeholder="Enter Your Email">
+                      <input type="text" class="form-control" placeholder="Ingresa tu correo">
                       <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
                     </form>
                   </div>
-                    <!--<div class="widget widget-menu">
-                    <h6 class="widget-title">Quick Links</h6>
-                    <ul class="list-unstyled list-col-3 mb-0">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about-us.html">About us</a></li>
-                      <li><a href="team.html">Team</a></li>
-                      <li><a href="team-single.html">Team Single</a></li>
-                      <li><a href="service.html">Service</a></li>
-                      <li><a href="service-detail.html">Service Single</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-detail.html">Blog Single</a></li>
-                      <li><a href="contact-us.html">Contact</a></li>
-                    </ul>
-                  </div>-->
                 </div>
               </div>
+      
+              <!-- Columna de Call Center y Redes -->
               <div class="col-xl-3 col-md-12 ms-auto">
                 <div class="widget widget-info">
                   <h5 class="widget-title">Call Center</h5>
-                  <a class="number" href="tel:+56998765432">+56 9 39661894</a>
+                  <a class="number" href="tel:+56939661894">+56 9 3966 1894</a>
                   <h6 class="title">Consulta gratis con nuestros expertos en seguridad</h6>
                 </div>
-                <div class="widget-socail">
-                  <ul class="socail-icon">
-                    <li><a href="#">Fb</a></li>
-                    <li><a href="#">Ig</a></li>
-                    <li><a href="#">Lkdin</a></li>
-                    </ul>
+                <div class="widget-socail mt-3">
+                  <h6 class="widget-title">Nuestra red social</h6>
+                  <ul class="socail-icon list-unstyled d-flex align-items-center">
+                    <li>
+                      <a href="https://www.linkedin.com/company/ir360" target="_blank" style="font-size: 1.4rem;">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="ms-2" style="font-size: 1rem;">LinkedIn</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+      
+            <!-- Certificado -->
             <div class="trust-logo-wrapper text-center mt-4">
               <script language="JavaScript" type="text/javascript">
                 TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_lg.png", "CL1", "none");
               </script>
-              <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile">
-                
-              </a>
+              <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile"></a>
             </div>
-            
- 
-
           </div>
         </div>
-        <div class="footer-copyright">
+      
+        <!-- Pie de página inferior -->
+        <div class="footer-copyright py-2">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-lg-6"><p><a class="footer-logo" href="index.html"><img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="logo" /></a></p></div>
-              <div class="col-lg-6 text-lg-end"><p>Develop and design by <a href="#">Potenza Global Solutions</a></p></div>
+              <div class="col-lg-6">
+                <p class="mb-0">
+                  <a class="footer-logo" href="index.html">
+                    <img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="logo" style="max-height: 40px;" />
+                  </a>
+                </p>
+              </div>
+              <div class="col-lg-6 text-lg-end">
+                <p class="mb-0 small">Desarrollado por <a href="#">Potenza Global Solutions</a> © 2025 IR360</p>
+              </div>
             </div>
           </div>
         </div>
-        
       </footer>
+      
 
-      <!--=================================
+<!--=================================
       Back To Top -->
       <div class="back-to-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

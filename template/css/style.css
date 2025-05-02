@@ -10427,6 +10427,8 @@ html, body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .site-footer .col-xl-3,
@@ -10436,9 +10438,10 @@ html, body {
   .site-footer .col-md-7 {
     width: 100% !important;
     max-width: 100% !important;
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
     margin-bottom: 1.5rem !important;
+    box-sizing: border-box;
   }
 
   .site-footer .widget-info .number {
@@ -10447,19 +10450,32 @@ html, body {
 
   .site-footer .widget-socail {
     margin-top: 1rem !important;
+    justify-content: center;
   }
 
   .footer-logo img {
     max-height: 50px !important;
     margin-bottom: 1rem !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-copyright .row {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  .site-footer .widget {
+    text-align: center;
   }
 }
+
 
 /*----------------========================----team-------========================================================
 

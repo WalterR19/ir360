@@ -290,17 +290,18 @@
 
               @media (max-width: 992px) {
                 .team-boxs {
-                  flex-wrap: nowrap;
-                  overflow-x: auto;
-                  justify-content: flex-start;
+                  flex-wrap: wrap;               /* ✅ permitir que se apilen */
+                  flex-direction: column;        /* ✅ disposición vertical */
+                  overflow-x: visible;           /* ❌ desactivar scroll horizontal */
+                  align-items: center;           /* ✅ centrar los ítems */
                 }
               
                 .team-boxs .team-item {
-                  flex: 0 0 auto;
-                  width: 260px; /* o el tamaño que uses para las imágenes */
+                  flex: 1 1 100%;                /* ✅ que ocupen todo el ancho */
+                  max-width: 100%;
                 }
               }
-
+              
           </style>
 
           
@@ -322,31 +323,13 @@
               <div class="row mt-xl-5 pt-5">
                 <div class="col-md-12">
                   <div class="team-boxs grid-wrapper grid-xl-4 grid-lg-3 grid-md-2 grid-sm-2 grid-xs-1">
-                    <div class="team-item team-style-1">
-                      <div class="team-img">
-                        <img class="img-fluid" src="images/team/marcelo.JPG" alt="Marcelo Infante Alcaino" />
-                        
-                      </div>
-                      <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Marcelo Infante Alcaino</a>
-                        <span class="team-destination">Abogado, con maestría en delitos penales y cibernéticos, mantiene mas de veinte años en el area, con diversos diplomados, ademas de mencionar que se desempeño por 11 años en Carabineros de Chile, teniendo una carrera distingida en la institucion castrense</span>
-                        <div class="team-social">
-                          <ul>
-                            <!--<li><a href="#">Fb</a></li>
-                            <li><a href="#">Dr</a></li>
-                            <li><a href="#">Tw</a></li>
-                            <li><a href="#">Be</a></li>-->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-item team-style-1">
+                      <div class="team-item team-style-1">
                       <div class="team-img">
                         <img class="img-fluid" src="images/team/marcela3.png" alt="Marcela Morales Rubilar" />
                        
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Marcela Morales Rubilar</a>
+                        <a  class="team-title">Marcela Morales Rubilar</a>
                         <span class="team-destination">Ex funcionaria de la Policia de Investigaciones de Chile, desempeñando funciones en la Brigada de Cibercrimen, con basto conocimiento en el area administrativa de la institucion, actualmente corresponde a la CEO Founder de esta empresa</span>
                         <div class="team-social">
                           <ul>
@@ -358,13 +341,34 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="team-item team-style-1">
+                      <div class="team-img">
+                        <img class="img-fluid" src="images/team/marcelo.JPG" alt="Marcelo Infante Alcaino" />
+                        
+                      </div>
+                      <div class="team-info">
+                        <a class="team-title">Marcelo Infante Alcaino</a>
+                        <span class="team-destination">Abogado, con maestría en delitos penales y cibernéticos, mantiene mas de veinte años en el area, con diversos diplomados, ademas de mencionar que se desempeño por 11 años en Carabineros de Chile, teniendo una carrera distingida en la institucion castrense</span>
+                        <div class="team-social">
+                          <ul>
+                            <!--<li><a href="#">Fb</a></li>
+                            <li><a href="#">Dr</a></li>
+                            <li><a href="#">Tw</a></li>
+                            <li><a href="#">Be</a></li>-->
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
                     <div class="team-item team-style-1">
                       <div class="team-img">
                         <img class="img-fluid" src="images/team/walter.JPG" alt="Walter Rubilar" />
                         
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Walter Rubilar Morales</a>
+                        <a class="team-title">Walter Rubilar Morales</a>
                         <span class="team-destination">Ingeniero en Ciberseguridad y Lider auditor en la norma ISO 27001:2022, con certificado internacional IQNet, quien se desempeño durante 11 años en la Policia de Investigaciones, especificamente en las areas de investigacion de delitos contra la propiedad, delitos ciberneticos e inteligencia, quien tiene diversas certificaciones en Inteligencia Artificial y Ciencia de datos, acreditadas por IBM</span>
                         <div class="team-social">
                           <ul>
@@ -382,7 +386,7 @@
                         
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Natalia Elgueta Pinochet</a>
+                        <a class="team-title">Natalia Elgueta Pinochet</a>
                         <span class="team-destination">Ingeniera en Recursos humanos y Administracion de empresa, con una basta carrera en el ambito, participando en diversos proyectos empresariales tanto nacionales como internacionales</span>
                         <div class="team-social">
                           <ul>
@@ -401,7 +405,7 @@
                         
                       </div>
                       <div class="team-info">
-                        <a href="team-detail.html" class="team-title">Cristobal Jara Escobar</a>
+                        <a class="team-title">Cristobal Jara Escobar</a>
                         <span class="team-destination">Ingeniero en Ciberseguridad, quien se desempeñó como Oficial de la Fuerza Aerea de Chile, dentro de la Direccion de Inteligencia, Subdireccion de Ciberoperaciones y como Jefe del Departamento de Informatica CSIRT, actualmente cursando Master en Ciberseguridad certificado por Deloitte y la Universidad Catolica de Avila, España</span>
                         <div class="team-social">
                           <ul>

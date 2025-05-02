@@ -10423,74 +10423,88 @@ html, body {
 
 /* ✅ Responsividad para footer en móviles y tablets */
 @media (max-width: 992px) {
-  .site-footer .row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .site-footer .widget-socail a,
-  .site-footer .widget-socail li {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
+
+    .site-footer,
+    .footer-main,
+    .footer-copyright,
+    .site-footer .container,
+    .footer-copyright .container {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      box-sizing: border-box;
+    }
+  
+    .site-footer .row,
+    .footer-copyright .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+      gap: 1rem;
+    }
+  
+    .site-footer .col-xl-3,
+    .site-footer .col-xl-5,
+    .site-footer .col-md-12,
+    .site-footer .col-md-5,
+    .site-footer .col-md-7,
+    .footer-copyright .col-lg-6 {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .site-footer .widget-socail {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      width: 100%;
+      margin-top: 1rem;
+      overflow-x: hidden;
+    }
+  
+    .site-footer .widget-socail a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .footer-logo img {
+      max-height: 50px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+  
+    .trust-logo-wrapper {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .newsletter-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .newsletter-form input {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  
+    .newsletter-form button {
+      width: auto;
+    }
   }
   
-  .site-footer .col-xl-3,
-  .site-footer .col-xl-5,
-  .site-footer .col-md-12,
-  .site-footer .col-md-5,
-  .site-footer .col-md-7 {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    margin-bottom: 1.5rem !important;
-    box-sizing: border-box;
-  }
-
-  .site-footer .widget-info .number {
-    font-size: 1.2rem !important;
-  }
-
-  .site-footer .widget-socail {
-    display: flex;
-    justify-content: center;    /* 🔹 Centra los íconos horizontalmente */
-    flex-wrap: wrap;            /* 🔹 Permite que pasen a otra línea si no caben */
-    gap: 0.5rem;                /* 🔹 Espacio entre íconos */
-    margin-top: 1rem !important;
-    width: 100%;
-    overflow-x: hidden;
-  }
-  
-
-  .footer-logo img {
-    max-height: 50px !important;
-    margin-bottom: 1rem !important;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-copyright .row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 100%;
-  }
-
-  .site-footer .widget {
-    text-align: center;
-  }
-}
-
 
 /*----------------========================----team-------========================================================
 

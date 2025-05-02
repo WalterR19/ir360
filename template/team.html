@@ -288,23 +288,18 @@
                 max-width: calc(50% - 2rem);
               }
 
-              /* Responsive para tablets y smartphones */
               @media (max-width: 992px) {
+                .team-boxs {
+                  flex-wrap: nowrap;
+                  overflow-x: auto;
+                  justify-content: flex-start;
+                }
+              
                 .team-boxs .team-item {
-                  flex: 1 1 calc(50% - 1rem);
-                  max-width: calc(50% - 1rem);
+                  flex: 0 0 auto;
+                  width: 260px; /* o el tamaño que uses para las imágenes */
                 }
               }
-
-              @media (max-width: 576px) {
-                .team-boxs .team-item {
-                  flex: 1 1 100%;
-                  max-width: 100%;
-                }
-              }
-
-
-            
 
           </style>
 

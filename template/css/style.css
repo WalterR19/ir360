@@ -10423,7 +10423,6 @@ html, body {
 
 /* ✅ Responsividad para footer en móviles y tablets */
 @media (max-width: 992px) {
-
  
     .site-footer,
     .footer-main,
@@ -10434,6 +10433,7 @@ html, body {
       max-width: 100%;
       padding: 1rem;
       box-sizing: border-box;
+      text-align: center; /* ✅ Centrado global de texto */
     }
   
     .site-footer .row,
@@ -10455,6 +10455,7 @@ html, body {
       max-width: 100% !important;
       padding: 0 !important;
       margin-bottom: 1rem;
+      text-align: center; /* ✅ Alineación de columna */
     }
   
     .footer-logo img {
@@ -10467,32 +10468,35 @@ html, body {
     .site-footer .widget-address-info,
     .site-footer .widget-info {
       width: 100%;
+      text-align: center; /* ✅ Asegura textos centrados en cada bloque */
+    }
+  
+    .address-info-list,
+    .widget-socail ul {
+      padding-left: 0;
+      margin: 0 auto;
+      list-style: none;
+      text-align: center;
+    }
+  
+    .address-info-list li,
+    .widget-socail li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .widget-socail h6 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
       text-align: center;
     }
   
     .widget-socail {
       width: 100%;
       margin-top: 1rem;
-    }
-  
-    .widget-socail h6 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-  
-    .widget-socail ul {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      padding-left: 0;
-      margin: 0;
-      list-style: none;
-    }
-  
-    .widget-socail li {
-      display: flex;
-      align-items: center;
     }
   
     .widget-socail a {
@@ -10521,12 +10525,19 @@ html, body {
     .newsletter-form input {
       width: 100%;
       padding: 0.5rem;
+      text-align: center; /* ✅ Centra el texto en el input */
     }
   
     .newsletter-form button {
       padding: 0.5rem 1rem;
     }
+  
+    .footer-copyright p {
+      text-align: center;
+      margin: 0;
+    }
   }
+  
   
 /*----------------========================----team-------========================================================
 

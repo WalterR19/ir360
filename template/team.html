@@ -251,56 +251,79 @@
           Our Staff -->
           <style>
             
-              .team-img {
-                width: 260px;              /* tamaño más pequeño */
-                height: 260px;             /* cuadrado */
-                border-radius: 50%;        /* opcional: circular */
-                overflow: hidden;          /* recorta el exceso */
-                margin-bottom: 1rem;
-                box-shadow: 0 0 12px rgba(0,0,0,0.3);
-              }
-
-              .team-img img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;         /* mantiene proporción y rellena el contenedor */
-                display: block;
-              }
-
+            .team-img {
+              width: 260px;
+              height: 260px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-bottom: 1rem;
+              box-shadow: 0 0 12px rgba(0,0,0,0.3);
+            }
+          
+            .team-img img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            }
+          
+            .team-boxs {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 1rem;
+            }
+          
+            .team-boxs .team-item {
+              flex: 1 1 calc(33.333% - 2rem);
+              max-width: calc(33.333% - 2rem);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 1rem;
+            }
+          
+            .team-boxs .team-item:nth-child(n+4) {
+              flex: 1 1 calc(50% - 2rem);
+              max-width: calc(50% - 2rem);
+            }
+          
+            .team-boxs .team-item .team-title {
+              font-weight: bold;
+              font-size: 1.1rem;
+              margin-bottom: 0.5rem;
+              text-align: center;
+            }
+          
+            .team-boxs .team-item .team-destination {
+              text-align: justify;
+              text-justify: inter-word;
+              line-height: 1.6;
+              padding: 0 1.5rem;
+              margin: 0 auto;
+              max-width: 100%;
+              hyphens: auto; /* divide palabras si es necesario */
+            }
+          
+            @media (max-width: 992px) {
               .team-boxs {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-              }
-
-              .team-boxs .team-item {
-                flex: 1 1 calc(33.333% - 2rem);
-                max-width: calc(33.333% - 2rem);
-                display: flex;
                 flex-direction: column;
                 align-items: center;
-                text-align: center;
+                overflow-x: visible;
               }
-
-              .team-boxs .team-item:nth-child(n+4) {
-                flex: 1 1 calc(50% - 2rem);
-                max-width: calc(50% - 2rem);
+          
+              .team-boxs .team-item {
+                flex: 1 1 100%;
+                max-width: 100%;
               }
-
-              @media (max-width: 992px) {
-                .team-boxs {
-                  flex-wrap: wrap;               /* ✅ permitir que se apilen */
-                  flex-direction: column;        /* ✅ disposición vertical */
-                  overflow-x: visible;           /* ❌ desactivar scroll horizontal */
-                  align-items: center;           /* ✅ centrar los ítems */
-                }
-              
-                .team-boxs .team-item {
-                  flex: 1 1 100%;                /* ✅ que ocupen todo el ancho */
-                  max-width: 100%;
-                }
+          
+              .team-boxs .team-item .team-destination {
+                text-align: justify !important;
+                text-justify: inter-word;
+                padding: 0 1.5rem;
+                max-width: 100%;
               }
+            }
               
           </style>
 

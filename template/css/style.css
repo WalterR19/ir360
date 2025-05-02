@@ -10430,7 +10430,16 @@ html, body {
     margin-left: 0;
     margin-right: 0;
   }
-
+  .site-footer .widget-socail a,
+  .site-footer .widget-socail li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
   .site-footer .col-xl-3,
   .site-footer .col-xl-5,
   .site-footer .col-md-12,
@@ -10449,9 +10458,15 @@ html, body {
   }
 
   .site-footer .widget-socail {
+    display: flex;
+    justify-content: center;    /* 🔹 Centra los íconos horizontalmente */
+    flex-wrap: wrap;            /* 🔹 Permite que pasen a otra línea si no caben */
+    gap: 0.5rem;                /* 🔹 Espacio entre íconos */
     margin-top: 1rem !important;
-    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
   }
+  
 
   .footer-logo img {
     max-height: 50px !important;

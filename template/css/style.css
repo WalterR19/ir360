@@ -10424,6 +10424,7 @@ html, body {
 /* ✅ Responsividad para footer en móviles y tablets */
 @media (max-width: 992px) {
 
+ 
     .site-footer,
     .footer-main,
     .footer-copyright,
@@ -10431,8 +10432,7 @@ html, body {
     .footer-copyright .container {
       width: 100%;
       max-width: 100%;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding: 1rem;
       box-sizing: border-box;
     }
   
@@ -10441,9 +10441,8 @@ html, body {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin-left: 0;
-      margin-right: 0;
-      gap: 1rem;
+      gap: 1.5rem;
+      margin: 0;
     }
   
     .site-footer .col-xl-3,
@@ -10454,28 +10453,8 @@ html, body {
     .footer-copyright .col-lg-6 {
       width: 100% !important;
       max-width: 100% !important;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+      padding: 0 !important;
       margin-bottom: 1rem;
-      text-align: center;
-    }
-  
-    .site-footer .widget-socail {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      width: 100%;
-      margin-top: 1rem;
-      overflow-x: hidden;
-    }
-  
-    .site-footer .widget-socail a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      padding: 0.5rem 1rem;
     }
   
     .footer-logo img {
@@ -10484,28 +10463,71 @@ html, body {
       display: block;
     }
   
-    .trust-logo-wrapper {
+    .site-footer .widget,
+    .site-footer .widget-address-info,
+    .site-footer .widget-info {
       width: 100%;
       text-align: center;
+    }
+  
+    .widget-socail {
+      width: 100%;
       margin-top: 1rem;
     }
   
+    .widget-socail h6 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .widget-socail ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+    }
+  
+    .widget-socail li {
+      display: flex;
+      align-items: center;
+    }
+  
+    .widget-socail a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      gap: 0.5rem;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+    }
+  
+    .trust-logo-wrapper {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+  
     .newsletter-form {
+      display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 0.5rem;
     }
   
     .newsletter-form input {
       width: 100%;
-      margin-bottom: 0.5rem;
+      padding: 0.5rem;
     }
   
     .newsletter-form button {
-      width: auto;
+      padding: 0.5rem 1rem;
     }
   }
   
-
 /*----------------========================----team-------========================================================
 
 /

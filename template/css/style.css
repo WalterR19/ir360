@@ -10114,6 +10114,7 @@ form.form-dark .form-control:focus {
 
 
 body {
+  font-family: 'Inter', 'Jost', sans-serif;
   background: linear-gradient(160deg, #0d1f3f 0%, #001a33 100%) !important;
   background-image: url("../images/redes3.png"),
     radial-gradient(ellipse at center, rgba(86, 179, 255, 0.06) 0%, rgba(0, 44, 78, 0.2) 40%, rgba(0, 24, 64, 0.4) 70%, rgba(0, 14, 44, 1) 100%) !important;

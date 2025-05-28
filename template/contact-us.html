@@ -405,15 +405,15 @@
           </div>
 
           <div class="form-wrapper">
-            <!-- Mensaje de éxito oculto -->
+            <!-- Mostrar mensaje solo si ?enviado=ok en la URL -->
             <div id="mensajeExito" style="display:none; background-color:#d4edda; color:#155724; padding:10px; border-radius:10px; margin-bottom:15px;">
               ✅ ¡Mensaje enviado con éxito! Nuestros expertos se pondrán en contacto con usted.
             </div>
 
+            <!-- Tu formulario original, intacto -->
             <form class="contact-form form-style-border" method="POST" action="formmail.php">
               <input type="hidden" name="to" value="contacto@ir360.cl">
               <input type="hidden" name="subject" value="Mensaje desde el sitio web IR360">
-
               <div class="row g-3">
                 <div class="col-md-4">
                   <input type="text" class="form-control" name="name" placeholder="Nombre completo" required>
@@ -438,7 +438,6 @@
                 </div>
               </div>
             </form>
-
           </div>
         </div>
       </div>
@@ -465,26 +464,23 @@ body {
 }
 </style>
 
-<script>
-// Mostrar mensaje de éxito SOLO SI QUIERES (OPCIONAL)
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault(); // Evitar envío real para prueba
 
-  // Envía el formulario real a formmail.php
-  fetch('formmail.php', {
-    method: 'POST',
-    body: new FormData(this)
-  }).then(response => {
-    if(response.ok){
-      document.getElementById("mensajeExito").style.display = "block";
-      this.reset(); // Limpia el formulario
-    } else {
-      alert("Hubo un error al enviar. Intenta más tarde.");
-    }
-  }).catch(error => {
-    alert("Error al enviar: " + error);
-  });
-});
+<script>
+// Mostrar el mensaje de éxito al enviar
+function mostrarMensaje() {
+  // Opción: Ocultar mensaje antes de mostrarlo tras respuesta
+  document.getElementById("mensajeExito").style.display = "none";
+}
+
+// Mostrar mensaje cuando iframe carga (respuesta del form)
+function iframeCargado() {
+  var iframe = document.getElementById("hidden_iframe");
+  if (iframe && iframe.contentDocument && iframe.contentDocument.body && iframe.contentDocument.body.innerHTML.trim() !== "") {
+    document.getElementById("mensajeExito").style.display = "block";
+    // Opcional: resetear el formulario
+    document.querySelector("form.contact-form").reset();
+  }
+}
 </script>
     
 

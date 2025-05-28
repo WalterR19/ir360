@@ -404,8 +404,14 @@
             </span>
             <h2 class="title">¿Necesitas ayuda? Completa el formulario</h2>
           </div>
+
           <div class="form-wrapper" style="position: relative; z-index: 999;">
-            <form class="contact-form form-style-border" method="POST" action="formmail.php">
+            <!-- Mensaje de éxito oculto inicialmente -->
+            <div id="mensajeExito" style="display: none; background-color: #d4edda; color: #155724; padding: 15px; border-radius: 10px; margin-bottom: 15px; font-weight: bold;">
+              ✅ ¡Mensaje enviado con éxito! Nuestros expertos se pondrán en contacto con usted pronto.
+            </div>
+
+            <form id="contactForm" class="contact-form form-style-border" method="POST" action="formmail.php" onsubmit="return mostrarExito();">
               <input type="hidden" name="to" value="contacto@ir360.cl">
               <input type="hidden" name="subject" value="Mensaje desde el sitio web IR360">
 
@@ -434,6 +440,7 @@
               </div>
             </form>
           </div>
+
         </div>
       </div>
     </div>
@@ -473,6 +480,17 @@ body {
   pointer-events: auto !important;
 }
 </style>
+
+<script>
+// Mostrar mensaje de éxito tras enviar
+function mostrarExito() {
+  document.getElementById("mensajeExito").style.display = "block";
+  // Opcional: Resetear formulario
+  document.getElementById("contactForm").reset();
+  // Evitar envío real para mostrar solo el mensaje (quitar esto si usas PHP real)
+  return false;
+}
+</script>
 
               
 

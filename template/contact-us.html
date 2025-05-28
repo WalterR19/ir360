@@ -472,6 +472,15 @@ window.onload = function() {
     document.getElementById("mensajeExito").style.display = "block";
   }
 };
+
+window.onload = function() {
+  if (window.location.search.indexOf('enviado=ok') > -1) {
+    document.getElementById("mensajeExito").style.display = "block";
+  } else if (window.location.search.indexOf('enviado=error') > -1) {
+    alert("Lo sentimos, ocurrió un error al enviar el mensaje. Intente nuevamente.");
+  }
+};
+
 </script>
 
 <!--===================================================================================================================

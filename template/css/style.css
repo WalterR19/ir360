@@ -10113,10 +10113,22 @@ form.form-dark .form-control:focus {
 /* 🌌 Fondo espacial con degradado y textura */
 
 
+/* CSS Base Manteniendo el Fondo Original */
+/* CSS Base - No tocar (mantiene tu fondo e imagen actual) */
+
+/* Mantiene tu fondo original */
+/* Mantenemos tu estilo global */
+/* ============================== */
+/* ======== CSS GLOBAL ========= */
+/* ============================== */
+
+/* =====================================
+   🔵 HEADER: Fondo con imagen redes3.png
+   ===================================== */
 body {
   font-family: 'Inter', 'Jost', sans-serif;
   background: linear-gradient(160deg, #0d1f3f 0%, #001a33 100%) !important;
-  background-image: url("../images/redes3.png"),
+  background-image: url("../images/redes8.png"),
     radial-gradient(ellipse at center, rgba(86, 179, 255, 0.06) 0%, rgba(0, 44, 78, 0.2) 40%, rgba(0, 24, 64, 0.4) 70%, rgba(0, 14, 44, 1) 100%) !important;
   background-size: cover, cover !important;
   background-attachment: fixed !important;
@@ -10131,7 +10143,6 @@ body {
   overflow-y: auto;   /* ✅ permitir scroll vertical */
   overflow-x: hidden; /* ✅ evitar scroll horizontal */
 }
-
 
 /* 🌌 Red espacio-tiempo carmesí ondulante */
 body::after {
@@ -10230,6 +10241,8 @@ html, body {
   margin: 4rem 0;
 }
 
+
+
 /* Responsive para móviles */
 @media (max-width: 768px) {
   body {
@@ -10275,61 +10288,25 @@ html, body {
 }
 
 
-/*========================================FIN BODY=================================================
-/* ==== CORRECCIÓN DE ESTILOS PARA FORMULARIO DE CONTACTO ==== */
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button,
-.contact-form a.btn {
-  pointer-events: all !important;
-  opacity: 1 !important;
-  z-index: 2 !important;
-  background-color: rgba(255, 255, 255, 0.05) !important; /* Fondo suave y transparente */
-  color: #fff !important;
-  border: 1px solid rgba(242, 75, 136, 0.25) !important; /* Borde carmesí suave */
-  border-radius: 8px;
-  padding: 12px 14px;
-  backdrop-filter: blur(6px); /* Consistencia con tarjetas */
-  box-shadow: 0 4px 12px rgba(242, 75, 136, 0.15);
-  transition: all 0.3s ease;
-}
-
-/* Hover para inputs y botón */
-.contact-form input:hover,
-.contact-form textarea:hover,
-.contact-form button:hover,
-.contact-form a.btn:hover {
-  box-shadow: 0 6px 16px rgba(242, 75, 136, 0.35);
-  transform: scale(1.01);
-}
-
-/* Si están deshabilitados */
-.contact-form input[disabled],
-.contact-form textarea[disabled] {
-  pointer-events: all !important;
-  opacity: 0.6 !important;
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  color: #aaa !important;
-  border: 1px dashed rgba(242, 75, 136, 0.15) !important;
-}
-
-/* Asegura clics y posición correcta */
-.form-wrapper * {
-  pointer-events: all !important;
-  z-index: 3 !important;
-}
 
 
-/*===============================================footer==============================================-*/
-/* Reduce márgenes y paddings internos */
-/* Reduce márgenes y paddings generales del footer */
-.site-footer .footer-main {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
 
+
+
+
+
+
+
+
+
+/* ======================== Footer ======================== */
+
+/* ======================== Footer Global ======================== */
+/* ======================== Footer Global ======================== */
+/* ======================== Footer Global ======================== */
 /* Reduce espacio entre widgets */
+
+
 .site-footer .widget {
   margin-bottom: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -10422,6 +10399,11 @@ html, body {
   z-index: 10 !important;
 }
 
+/* ✅ Responsividad para footer en móviles y tablets */
+
+
+/* ✅ Responsividad para footer en móviles y tablets */
+/* Estilos solo para móviles y pantallas pequeñas */
 /* ✅ Responsividad para footer en móviles y tablets */
 @media (max-width: 992px) {
  
@@ -10538,7 +10520,7 @@ html, body {
       margin: 0;
     }
   }
-  
+
   
 /*----------------========================----team-------========================================================*/
 

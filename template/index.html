@@ -265,6 +265,25 @@
 
 <!--==================================VISTA TELEFONOS MOVILES==========================================================
         Main Banner -->
+      
+        <head>
+  <!-- Otros <link> o <meta> que ya tengas -->
+  <style>
+    .banner-content h2 {
+      font-size: 2.9rem;
+      line-height: 1.3;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6); /* Más contraste */
+      }
+   
+    @media (max-width: 768px) {
+      .banner-content h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>    
+        
         <div class="main-banner main-banner-1">
           <div class="banner-inner">
             <img class="img-fluid banner-bg-one" src="images/banner/banner-01/banner-bg-01.png" alt="#">
@@ -293,8 +312,14 @@
 
         <div class="content-wrapper">
 
+
+  
+
+
+
 <!--=============================================================================================================
 =================================--->
+<!---==nosotros==-->
 
 <section class="space-pt py-5 bg-dark text-white" style="position: relative; overflow: hidden; z-index: 1;">
   <div class="container" style="position: relative; z-index: 1;">
@@ -304,12 +329,13 @@
       <div class="col-lg-7 mb-5 mb-lg-0">
         <div class="section-title pb-0 pb-lg-4">
           <span class="sub-title d-inline-flex align-items-center mb-3">
-            <img class="img-fluid me-2" src="images/subtitle-icon.png" alt="Icono Sobre Nosotros"> Sobre Nosotros
+            <img class="img-fluid me-2" src="images/subtitle-icon.png" alt="Icono Sobre Nosotros"> 
+            <span class="highlight-subtitle">Sobre Nosotros</span>
           </span>
-          <h2 class="title fw-bold">Somos especialistas en seguridad de la información</h2>
+          <h2 class="title fw-bold highlight-title">Somos especialistas en seguridad de la información</h2>
         </div>
 
-        <p class="fs-5">
+        <p class="fs-5 highlight-paragraph">
           Somos una <strong>empresa nueva en Chile</strong>, comprometida con la ciberseguridad para empresas de todos los tamaños. En IR360 auditamos, escaneamos y analizamos infraestructuras digitales para proteger lo que más importa.
         </p>
 
@@ -328,31 +354,63 @@
   </div>
 </section>
 
-<!-- CSS para el botón -->
 <style>
+/* Botón destacado */
 .btn-contacto {
   background-color: #9B00B8;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
-  padding: 12px 28px;
-  border-radius: 8px; /* Esquinas ovaladas */
+  padding: 14px 30px;
+  border-radius: 10px;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
-  z-index: 3; /* Asegura que el botón esté por encima de otros elementos */
+  z-index: 3;
 }
 
 .btn-contacto:hover {
   background-color: #7A00B8;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
+
+/* Títulos y texto destacados */
+.highlight-subtitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #E8E8E8;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.highlight-title {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6); /* Más contraste */
+}
+
+.highlight-paragraph {
+  font-size: 1.2rem;
+  color: #DDDDDD;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .highlight-title {
+    font-size: 1.8rem;
+  }
+  .highlight-paragraph {
+    font-size: 1rem;
+  }
+}
 </style>
+
 
 
 
@@ -404,137 +462,169 @@
 
 <!--=======================================================================================================
           Our Services -->
-          <style>
-.mt-shift {
-  margin-top: 40px;
-}
-@media (max-width: 768px) {
-  .mt-shift {
-    margin-top: 0 !important;
-  }
+         
+         
+<style>
+/* Fondo tipo Startup con contraste suave */
+#servicios {
+  background: url("images/nuevo-fondo-startup.jpg") center/cover no-repeat;
+  background-color: rgba(54, 56, 175, 0.233); /* Filtro sutil para resaltar */
+  color: #fff;
+  padding: 5rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
+#servicios::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Capa adicional para texto destacado */
+  z-index: 0;
+}
+
+#servicios > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title .sub-title img {
+  filter: brightness(1.5);
+}
+
+.section-title h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+#servicios p {
+  color: #f0f0f0;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Añadido */
+}
+
+/* Botón vibrante estilo Startup */
 .btn-consulta {
-  background-color: #9B00B8;
-  color: white;
-  font-weight: 600;
+  background-color: #f03e5f; /* Un rojo coral vibrante y elegante */
+  color: #fff;
+  font-weight: 700;
   font-size: 1rem;
   padding: 12px 28px;
-  border-radius: 8px;
+  border-radius: 50px;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.4);
+  transition: all 0.3s ease;
 }
+
 .btn-consulta:hover {
-  background-color: #7A00B8;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  text-decoration: none;
+  background-color: #E63950; /* Un tono más oscuro al pasar el mouse */
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(230, 57, 80, 0.5);
+}
+
+.btn-consulta:hover {
+  background-color: #410a61;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(54, 4, 116, 0.6);
+}
+
+/* Tarjetas modernas Startup con glassmorphism MEJORADAS */
+.service-wrapper {
+  background: rgba(21, 10, 126, 0.15); /* Un poco más destacadas */
+  border: 2px solid rgba(106, 0, 255, 0.3); /* Borde más vibrante */
+  border-radius: 16px;
+  padding: 1.8rem; /* Más espacio interior */
+  box-shadow: 0 12px 28px rgba(0,0,0,0.4); /* Sombra más profunda */
+  transition: all 0.3s ease;
+  backdrop-filter: blur(15px); /* Blur más notorio */
+  height: 100%;
+}
+.service-wrapper:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.5);
+}
+
+.service-wrapper .service-title {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8); /* Mejor visibilidad */
+}
+
+.service-wrapper p {
+  color: #f0f0f0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Añadido */
+}
+
+.service-icon i {
+  font-size: 2.2rem; /* Ícono más grande */
+  color: #e7e7cc; /* Color vibrante */
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.9rem;
+  }
+  #servicios p, .service-wrapper p {
+    font-size: 1rem;
+  }
 }
 </style>
 
-<section class="space-pt bg-black z-index-2 ellipse-top">
-  <div class="space-pb ellipse-bottom">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-xxl-5 col-xl-5 mb-5 mb-xl-0">
-          <div class="sticky-top" style="top: 80px;">
-            <div class="section-title">
-              <span class="sub-title">
-                <img class="img-fluid" src="images/subtitle-icon.png" alt=""> Nuestros Servicios
-              </span>
-              <h2 class="title">Protegemos tu información, potenciamos tu confianza</h2>
+<section id="servicios" class="space-pt z-index-2 ellipse-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-xxl-5 col-xl-5 mb-5 mb-xl-0">
+        <div class="section-title">
+          <span class="sub-title">
+            <img class="img-fluid" src="images/subtitle-icon.png" alt=""> Nuestros Servicios
+          </span>
+          <h2 class="title">Protegemos tu información, potenciamos tu confianza</h2>
+          <p>"La mayor vulnerabilidad es no decidir. En ciberseguridad, la inacción también es una elección. Protege lo que más importa con soluciones adaptadas a tu negocio."</p>
+          <a href="contact-us.html" class="btn-consulta mt-3">Consulta a nuestros expertos</a>
+        </div>
+      </div>
+      <div class="col-xxl-6 col-xl-7">
+        <div class="row">
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper">
+              <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+              <h5 class="service-title">Auditoría ISO 27001</h5>
+              <p>Evaluamos tu infraestructura para cumplir con las normas internacionales de seguridad, reduciendo riesgos y asegurando la continuidad del negocio.</p>
             </div>
-            <div class="ps-xxl-5 ms-0 ms-md-5">
-              <p>"La mayor vulnerabilidad es no decidir. En ciberseguridad, la inacción también es una elección. Protege lo que más importa con soluciones adaptadas a tu negocio."</p>
-              <a href="contact-us.html" class="btn-consulta mt-3">Consulta a nuestros expertos</a>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper">
+              <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+              <h5 class="service-title">Concientización en Seguridad</h5>
+              <p>Capacitamos a tu personal con programas claros y prácticos, creando una cultura de seguridad y reduciendo los riesgos de error humano.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper">
+              <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+              <h5 class="service-title">Escaneo de Vulnerabilidades</h5>
+              <p>Detectamos brechas y debilidades en tus sistemas mediante análisis detallados, ayudando a prevenir ciberataques antes de que ocurran.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper">
+              <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+              <h5 class="service-title">Análisis Predictivo y Ciberseguridad</h5>
+              <p>Convertimos tus datos en información útil para tomar decisiones inteligentes y proteger tu infraestructura digital.</p>
             </div>
           </div>
         </div>
-
-        <div class="col-xxl-6 col-xl-7">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="services grid-wrapper">
-
-                <!-- Auditoría -->
-                <div class="service-wrapper service-style-1">
-                  <div class="service-inner">
-                    <div class="service-icon">
-                      <i class="fas fa-shield-alt fa-2x me-3 text-info"></i>
-                    </div>
-                    <div class="bg-icon">
-                      <i class="fas fa-shield-alt fa-2x me-3 text-info"></i>
-                    </div>
-                    <div class="service-content">
-                      <h5 class="service-title">Auditoría ISO 27001</h5>
-                      <p>Evaluamos tu infraestructura para cumplir con las normas internacionales de seguridad, reduciendo riesgos y asegurando la continuidad del negocio.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Concientización -->
-                <div class="service-wrapper service-style-1 mt-shift">
-                  <div class="service-inner">
-                    <div class="service-icon">
-                      <i class="fas fa-user-shield fa-2x me-3 text-primary"></i>
-                    </div>
-                    <div class="bg-icon">
-                      <i class="fas fa-user-shield fa-2x me-3 text-primary"></i>
-                    </div>
-                    <div class="service-content">
-                      <h5 class="service-title">Concientización en Seguridad</h5>
-                      <p>Capacitamos a tu personal con programas claros y prácticos, creando una cultura de seguridad y reduciendo los riesgos de error humano.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="services grid-wrapper service-top-space">
-
-                <!-- Escaneo -->
-                <div class="service-wrapper service-style-1">
-                  <div class="service-inner">
-                    <div class="service-icon">
-                      <i class="fas fa-network-wired fa-2x me-3 text-warning"></i>
-                    </div>
-                    <div class="bg-icon">
-                      <i class="fas fa-network-wired fa-2x me-3 text-warning"></i>
-                    </div>
-                    <div class="service-content">
-                      <h5 class="service-title">Escaneo de Vulnerabilidades</h5>
-                      <p>Detectamos brechas y debilidades en tus sistemas mediante análisis detallados, ayudando a prevenir ciberataques antes de que ocurran.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Análisis de datos -->
-                <div class="service-wrapper service-style-1 mt-shift">
-                  <div class="service-inner">
-                    <div class="service-icon">
-                      <i class="fas fa-chart-line fa-2x me-3 text-success"></i>
-                    </div>
-                    <div class="bg-icon">
-                      <i class="fas fa-chart-line fa-2x me-3 text-success"></i>
-                    </div>
-                    <div class="service-content">
-                      <h5 class="service-title">Análisis Predictivo y Ciberseguridad</h5>
-                      <p>Convertimos tus datos en información útil para tomar decisiones inteligentes y proteger tu infraestructura digital.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -1079,10 +1169,12 @@
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
         <div class="section-title">
-          <span class="sub-title d-inline-flex align-items-center mb-2" style="color: #9B00B8;">
+          <span class="sub-title d-inline-flex align-items-center mb-2" style="color: #fff; font-weight: 700;">
             <img class="img-fluid me-2" src="images/subtitle-icon.png" alt="Casos de Éxito"> Casos de Éxito
           </span>
-          <h2 class="title fw-bold">Resultados Reales con Impacto</h2>
+          <h2 class="title fw-bold" style="font-size: 2.7rem; letter-spacing: 0.02em; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">
+            Resultados Reales con Impacto
+          </h2>
         </div>
       </div>
     </div>
@@ -1092,27 +1184,31 @@
       <div class="carousel-inner">
         <!-- Caso 1 - Pohestudio -->
         <div class="carousel-item active">
-          <div class="row align-items-center">
+          <div class="row align-items-center shadow-lg rounded-4 p-4" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
             <div class="col-lg-4 text-center mb-3 mb-lg-0">
-              <img src="images/poh estudio.png" alt="Pohestudio" style="max-width: 200px; border-radius: 15px;">
+              <img src="images/poh estudio.png" alt="Pohestudio" style="max-width: 240px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
             </div>
             <div class="col-lg-8">
-              <h4 class="fw-bold text-white">Poh estudio: Mitigación de Ingeniería Social y Refuerzo ISO 27001:2022</h4>
-              <p class="text-light fs-5">
-                En <strong>IR360</strong> demostramos nuestro compromiso con la excelencia al ayudar a <a href="https://pohestudios.com/" target="_blank" style="color:#9B00B8;">Pohestudio</a> a mitigar un ataque de ingeniería social. Aplicamos prácticas alineadas con la <strong>ISO 27001:2022</strong>, recuperando activos digitales clave y mejorando su infraestructura para garantizar continuidad y disponibilidad de servicios. Este caso refleja nuestra capacidad para actuar con rapidez y precisión, protegiendo a nuestros clientes con un enfoque profesional y proactivo.
+              <h4 class="fw-bold" style="color: #fff; font-size: 1.7rem; text-shadow: 1px 1px 6px rgba(0,0,0,0.8);">
+                Poh estudio: Mitigación de Ingeniería Social y Refuerzo ISO 27001:2022
+              </h4>
+              <p style="color: #fff; font-size: 1.2rem; line-height: 1.7; font-weight: 500; text-shadow: 1px 1px 5px rgba(0,0,0,0.7);">
+                En <strong>IR360</strong>, transformamos desafíos en oportunidades. Con el caso de <a href="https://pohestudios.com/" target="_blank" style="color:#fff; font-weight: 700; text-decoration: underline;">Poh estudio</a>, actuamos con rapidez para mitigar un <strong>ataque de ingeniería social</strong>, recuperando activos digitales clave y asegurando la continuidad del negocio, evitando que el ataque siguiera escalando.
+              </p>
+              <p style="color: #fff; font-size: 1.1rem; line-height: 1.7; font-style: italic;">
+                Aplicamos los estándares más altos de la <strong>ISO 27001:2022</strong> y fortalecimos su infraestructura, permitiendo a Pohestudio continuar su operación con resiliencia y confianza. Este caso demuestra nuestra capacidad para brindar soluciones ágiles y efectivas ante las amenazas cibernéticas.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Puedes añadir más casos duplicando el bloque "carousel-item" -->
+        <!-- Puedes añadir más casos duplicando este bloque -->
 
       </div>
 
       <!-- Indicadores -->
       <div class="carousel-indicators" style="bottom: -30px;">
         <button type="button" data-bs-target="#casosSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Caso 1"></button>
-        <!-- Agregar más botones aquí para otros casos -->
       </div>
     </div>
   </div>
@@ -1120,50 +1216,55 @@
 
 <style>
 .carousel-indicators [data-bs-target] {
-  background-color: #9B00B8;
-  width: 10px;
-  height: 10px;
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 6px;
+}
+
+.section-title h2 {
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.section-title .sub-title img {
+  filter: brightness(1.4);
 }
 
 .carousel-item h4 {
+  font-weight: 900;
   color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
 }
 
 .carousel-item p {
-  color: #ccc;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.7;
 }
 
-.section-title h2, .section-title p {
+.carousel-item p strong {
   color: #fff;
 }
 
-/* Si deseas oscurecer ligeramente el fondo (opcional) */
-section[style*="background"]::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.3); /* oscurece sutilmente */
-  z-index: 0;
+.carousel-item {
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-section[style*="background"] .container {
-  position: relative;
-  z-index: 1;
+.carousel-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
 }
 </style>
 
 
-        </div>
-      </div>
-     
-
-
-
 <!--=====================================================================================================================
       Site Footer -->
-      <footer class="site-footer footer-dark">
+      
+        <footer class="site-footer footer-dark footer-startup">
+
         <div class="footer-main py-4"> <!-- Menor padding vertical -->
           <div class="container-fluid px-4">
           <div class="container">
@@ -1175,7 +1276,7 @@ section[style*="background"] .container {
                   <ul class="address-info-list">
                     <li>
                       <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
-                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Maipú, Región Metropolitana, Chile</span>
+                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Región Metropolitana, Chile</span>
                     </li>
                     <li>
                       <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
@@ -1246,6 +1347,7 @@ section[style*="background"] .container {
               </div>
               <div class="col-lg-6 text-lg-end">
                 <p class="mb-0 small">Desarrollado por <a href="#">Potenza Global Solutions</a> © 2025 IR360</p>
+               </div>
               </div>
             </div>
           </div>
@@ -1282,3 +1384,81 @@ section[style*="background"] .container {
     <script src="js/custom.js"></script> <!-- Template Scripts (Do not remove)-->
   </body>
 </html>
+
+
+<style>
+.site-footer.footer-startup {
+  background-color: #010a1be7; /* Fondo elegante */
+  color: #ffffff; /* Textos blancos */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.site-footer.footer-startup .widget-title {
+  font-size: 1.3rem;
+  color: #070568c0; /* Color vibrante startup */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.site-footer.footer-startup .address-info-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+.site-footer.footer-startup .widget-info .number {
+  font-size: 1.2rem;
+  color: #070568c0;
+  font-weight: 800;
+}
+
+.site-footer.footer-startup .widget-socail a {
+  color: #ffffff;
+  background-color: #070568c0;
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+.site-footer.footer-startup .widget-socail a:hover {
+  background-color: #070568c0;
+}
+
+.site-footer.footer-startup .newsletter-form input.form-control {
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+}
+
+.site-footer.footer-startup .newsletter-form .subscribe-btn {
+  background-color: #070568c0;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  color: #fff;
+  border-radius: 30px;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.site-footer.footer-startup .newsletter-form .subscribe-btn:hover {
+  background-color: #070568c0;
+}
+
+.footer-copyright {
+  background-color: #020a16;
+  color: #ccc;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-copyright a {
+  color: #070568c0;
+  font-weight: 600;
+}
+</style>

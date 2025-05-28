@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS Global Compulsory (Do not remove)-->
     <link rel="stylesheet" href="css/font-awesome/all.min.css">
@@ -310,6 +311,82 @@
           </section>
           
           </section>
+
+
+
+
+          <style>
+
+          /* Moderniza la tipografía y colores para estilo startup */
+        .space-ptb .section-title .sub-title {
+          font-size: 1.2rem;
+          color: #ffffff; /* Color vibrante */
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        .space-ptb .section-title h2.title {
+          color: #fff; /* Texto principal blanco */
+          font-size: 2.4rem;
+          font-weight: 900; /* Más negrita */
+          text-shadow: 2px 2px 5px rgba(0,0,0,0.6); /* Sombra elegante */
+        }
+
+        .space-ptb .section-title p {
+          color: #f0f0f0; /* Texto secundario más claro */
+          font-size: 1.1rem;
+          line-height: 1.6;
+        }
+
+        .space-ptb .city-name a {
+          color: #fafafa; /* Resalta la ciudad */
+          font-weight: 700;
+          font-size: 1.3rem;
+        }
+
+        .space-ptb .list-label {
+          color: #fff; /* Blanco puro para datos de contacto */
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        /* Mejorar estilo del mapa */
+        .map-title {
+          color: #6A00FF;
+          font-weight: 700;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .map-container iframe {
+          border: 3px solid #2600ff;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* General para el contenedor */
+        .space-ptb {
+          background: linear-gradient(160deg, #0d1f3fb7 0%, #032446cc 100%);
+          padding: 4rem 2rem;
+          border-radius: 12px;
+        }
+
+        .location-wrapper {
+          background: rgba(255,255,255,0.05);
+          border-radius: 12px;
+          padding: 2rem;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+          backdrop-filter: blur(6px);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .location-wrapper:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        }
+
+          </style>
           <!--=================================
           Contact Us -->
 
@@ -398,6 +475,110 @@
               </script>
               
           </section>
+
+              <style>
+
+              /* Botón enviar profesional */
+              .btn.btn-effect {
+                background-color: #094391; /* Azul profesional */
+                color: #fff;
+                font-weight: 700;
+                font-size: 1rem;
+                padding: 12px 28px;
+                border-radius: 50px;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                transition: all 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+              }
+
+              .btn.btn-effect:hover {
+                background-color: #004C99; /* Azul más oscuro en hover */
+                transform: translateY(-3px);
+                box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+              }
+
+              /* Títulos y textos estilo startup */
+              .section-title h2, .section-title p, .section-title span, .form-wrapper label {
+                color: #ffffff;
+                font-weight: 800;
+                font-size: 1.4rem;
+                text-align: center;
+              }
+
+              .section-title .sub-title {
+                color: #00BFFF; /* Celeste vibrante startup */
+                font-weight: 700;
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .section-title h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+              }
+
+              .section-title p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: #dddddd;
+              }
+
+              /* Campos de formulario bien demarcados */
+              .form-control {
+                background-color: rgba(255, 255, 255, 0.05);
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                color: #ffffff;
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                transition: all 0.3s ease;
+              }
+
+              .form-control:focus {
+                border-color: #0066CC;
+                background-color: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 0 12px rgba(0,102,204,0.6), 0 0 20px rgba(0,102,204,0.4);
+                outline: none;
+              }
+
+              .form-control::placeholder {
+                color: #cccccc;
+                font-weight: 500;
+              }
+
+              /* Alineación del formulario y disposición responsiva */
+              .form-wrapper {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+              }
+
+              @media (max-width: 768px) {
+                .section-title h2 {
+                  font-size: 1.6rem;
+                }
+
+                .form-control {
+                  font-size: 1rem;
+                }
+
+                .btn.btn-effect {
+                  width: 100%;
+                  text-align: center;
+                }
+              }
+
+
+              </style>
+
 <!--===================================================================================================================
           Contact Us -->
 
@@ -406,8 +587,11 @@
 
 <!--=========================================================================================
       Site Footer -->
-      <footer class="site-footer footer-dark">
+
+      <footer class="site-footer footer-dark footer-startup">
+
         <div class="footer-main py-4"> <!-- Menor padding vertical -->
+          <div class="container-fluid px-4">
           <div class="container">
             <div class="row">
               <!-- Columna de contacto -->
@@ -417,7 +601,7 @@
                   <ul class="address-info-list">
                     <li>
                       <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
-                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Maipú, Región Metropolitana, Chile</span>
+                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Región Metropolitana, Chile</span>
                     </li>
                     <li>
                       <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
@@ -488,6 +672,7 @@
               </div>
               <div class="col-lg-6 text-lg-end">
                 <p class="mb-0 small">Desarrollado por <a href="#">Potenza Global Solutions</a> © 2025 IR360</p>
+               </div>
               </div>
             </div>
           </div>
@@ -524,3 +709,81 @@
     <script src="js/custom.js"></script> <!-- Template Scripts (Do not remove)-->
   </body>
 </html>
+
+
+<style>
+.site-footer.footer-startup {
+  background-color: #010a1be7; /* Fondo elegante */
+  color: #ffffff; /* Textos blancos */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.site-footer.footer-startup .widget-title {
+  font-size: 1.3rem;
+  color: #070568c0; /* Color vibrante startup */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.site-footer.footer-startup .address-info-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+.site-footer.footer-startup .widget-info .number {
+  font-size: 1.2rem;
+  color: #070568c0;
+  font-weight: 800;
+}
+
+.site-footer.footer-startup .widget-socail a {
+  color: #ffffff;
+  background-color: #070568c0;
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+.site-footer.footer-startup .widget-socail a:hover {
+  background-color: #070568c0;
+}
+
+.site-footer.footer-startup .newsletter-form input.form-control {
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+}
+
+.site-footer.footer-startup .newsletter-form .subscribe-btn {
+  background-color: #070568c0;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  color: #fff;
+  border-radius: 30px;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.site-footer.footer-startup .newsletter-form .subscribe-btn:hover {
+  background-color: #070568c0;
+}
+
+.footer-copyright {
+  background-color: #020a16;
+  color: #ccc;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-copyright a {
+  color: #070568c0;
+  font-weight: 600;
+}
+</style>

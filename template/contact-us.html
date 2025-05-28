@@ -392,7 +392,6 @@
 
 <!--=====================================================================================================================
      contacto---->     
-
 <section class="space-pt ellipse-top bg-black">
   <div class="space-pb ellipse-bottom">
     <div class="container">
@@ -405,28 +404,28 @@
             <h2 class="title">¿Necesitas ayuda? Completa el formulario</h2>
           </div>
 
-          <div class="form-wrapper" style="position: relative; z-index: 999;">
-            <!-- Mensaje de éxito oculto inicialmente -->
-            <div id="mensajeExito" style="display: none; background-color: #d4edda; color: #155724; padding: 15px; border-radius: 10px; margin-bottom: 15px; font-weight: bold;">
-              ✅ ¡Mensaje enviado con éxito! Nuestros expertos se pondrán en contacto con usted pronto.
+          <div class="form-wrapper">
+            <!-- Mensaje de éxito oculto -->
+            <div id="mensajeExito" style="display:none; background-color:#d4edda; color:#155724; padding:10px; border-radius:10px; margin-bottom:15px;">
+              ✅ ¡Mensaje enviado con éxito! Nuestros expertos se pondrán en contacto con usted.
             </div>
 
-            <form id="contactForm" class="contact-form form-style-border" method="POST" action="formmail.php" onsubmit="return mostrarExito();">
+            <form id="contactForm" class="contact-form form-style-border" method="POST" action="formmail.php">
               <input type="hidden" name="to" value="contacto@ir360.cl">
               <input type="hidden" name="subject" value="Mensaje desde el sitio web IR360">
 
               <div class="row g-3">
                 <div class="col-md-4">
-                  <input type="text" class="form-control fix-input" name="name" placeholder="Nombre completo" required>
+                  <input type="text" class="form-control" name="name" placeholder="Nombre completo" required>
                 </div>
                 <div class="col-md-4">
-                  <input type="email" class="form-control fix-input" name="email" placeholder="Correo electrónico" required>
+                  <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
                 </div>
                 <div class="col-md-4">
-                  <input type="tel" class="form-control fix-input" name="phone" placeholder="Teléfono">
+                  <input type="tel" class="form-control" name="phone" placeholder="Teléfono">
                 </div>
                 <div class="col-lg-12">
-                  <textarea class="form-control fix-input" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                  <textarea class="form-control" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
                 </div>
                 <div class="col-lg-12 text-center">
                   <button type="submit" class="btn btn-effect">
@@ -439,8 +438,8 @@
                 </div>
               </div>
             </form>
-          </div>
 
+          </div>
         </div>
       </div>
     </div>
@@ -448,22 +447,12 @@
 </section>
 
 <style>
-/* Forzar inputs funcionales */
-.fix-input {
-  pointer-events: auto !important;
-  background-color: #2069f0d2 !important;
+/* Remover reglas que bloquean los inputs */
+.form-control {
+  background-color: #3875e7d3 !important;
   color: #000 !important;
-  opacity: 1 !important;
-  z-index: 9999 !important;
-  position: relative !important;
-}
-
-.fix-input:disabled {
   pointer-events: auto !important;
-  background-color: #1c8eecd8 !important;
-  color: #000 !important;
   opacity: 1 !important;
-  cursor: text !important;
 }
 
 .form-wrapper {
@@ -474,25 +463,30 @@
 body {
   pointer-events: auto !important;
 }
-
-/* Quitar overlays invisibles */
-*[style*="pointer-events: none"] {
-  pointer-events: auto !important;
-}
 </style>
 
 <script>
-// Mostrar mensaje de éxito tras enviar
-function mostrarExito() {
-  document.getElementById("mensajeExito").style.display = "block";
-  // Opcional: Resetear formulario
-  document.getElementById("contactForm").reset();
-  // Evitar envío real para mostrar solo el mensaje (quitar esto si usas PHP real)
-  return false;
-}
-</script>
+// Mostrar mensaje de éxito SOLO SI QUIERES (OPCIONAL)
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // Evitar envío real para prueba
 
-              
+  // Envía el formulario real a formmail.php
+  fetch('formmail.php', {
+    method: 'POST',
+    body: new FormData(this)
+  }).then(response => {
+    if(response.ok){
+      document.getElementById("mensajeExito").style.display = "block";
+      this.reset(); // Limpia el formulario
+    } else {
+      alert("Hubo un error al enviar. Intenta más tarde.");
+    }
+  }).catch(error => {
+    alert("Error al enviar: " + error);
+  });
+});
+</script>
+    
 
 <!--===================================================================================================================
           Contact Us -->

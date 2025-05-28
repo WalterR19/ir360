@@ -10306,221 +10306,204 @@ html, body {
 /* ======================== Footer Global ======================== */
 /* Reduce espacio entre widgets */
 
+/* ====== Estilo General del Footer Startup ====== */
+/* ====== Estilo General del Footer Startup ====== */
+/* ====== Estilo General del Footer Startup ====== */
 .site-footer.footer-startup {
-  background-color: #010a1be7; /* Fondo elegante */
-  color: #ffffff; /* Textos blancos */
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  background-color: #010a1be7;
+  color: #ffffff;
+  padding: 3rem 1.5rem;
   position: relative;
   width: 100%;
+  font-family: 'Arial', sans-serif;
 }
 
 .site-footer .widget {
-  margin-bottom: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
 
-/* Ajusta los títulos */
 .site-footer .widget-title {
-  font-size: 1.15rem !important;
-  margin-bottom: 0.75rem !important;
-  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.site-footer .widget-address-info .info {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.site-footer .widget-info .number {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.site-footer .widget-info .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* 📌 Social icon perfectamente centrado */
+.site-footer .widget-socail {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.site-footer .widget-socail h6 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.site-footer .socail-icon {
+  display: flex;
+  justify-content: center; /* CENTRADO siempre */
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.site-footer .socail-icon i.fa-linkedin {
+  background: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.site-footer .socail-icon i.fa-linkedin:hover {
   color: #F26D9A;
 }
 
-/* ✅ Ajusta texto general dentro del footer para que sea blanco y en negrita (excepto el número telefónico) */
-.site-footer .address-info-list span,
-.site-footer .widget-info h6:not(.widget-info .number),
-.site-footer .widget-info .title,
-.site-footer .newsletter-form input,
-.site-footer .newsletter-form button,
-.site-footer .widget-title:not(.number) {
-  font-size: 1.05rem !important;
-  line-height: 1.4 !important;
-  color: #ffffff !important;
-  font-weight: 600 !important;
-}
-/* 🔽 Reduce ligeramente el tamaño del número del Call Center */
-.site-footer .widget-info .number {
-  font-size: 1.10rem !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-
-/* ✅ Asegura que "Nuestra red social" también sea blanco */
-.site-footer .widget-socail .widget-title {
-  color: #ffffff !important;
-  font-weight: 600 !important;
-}
-
-/* ✅ Elimina cualquier fondo o círculo del ícono LinkedIn */
-.site-footer .socail-icon i.fa-linkedin {
-  background: none !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  font-size: 1.4rem !important;
-  color: #ffffff !important;
-}
-.site-footer .socail-icon a span {
-  color: #ffffff !important;
-  font-weight: 500;
-}
-
-
-
-/* Formulario de newsletter más compacto pero visible */
 .newsletter-form input.form-control {
-  background-color: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.1);
+  border: none;
   color: #fff;
-  padding: 0.4rem 0.75rem;
-  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  width: 70%;
+  max-width: 300px;
+  text-align: left;
+  font-weight: 700;
 }
 
 .newsletter-form .subscribe-btn {
   background-color: #F26D9A;
   border: none;
-  padding: 0.45rem 1rem;
+  padding: 0.6rem 1.2rem;
   color: #fff;
   font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 800;
+  transition: background-color 0.3s ease;
 }
-
-/* Controla altura de la zona final del footer */
-.footer-copyright {
-  padding-top: 0.4rem !important;
-  padding-bottom: 0.5rem !important;
-  font-size: 0.85rem !important;
-}
-
-/* Logo del footer más proporcionado */
-
 
 .footer-logo img {
-  display: block !important;
-  max-height: 60px !important; /* ✅ Reduce altura del logo */
-  width: auto !important;       /* Mantiene proporción natural */
-  margin: 0 auto !important;    /* Centrado horizontal */
-  object-fit: contain !important;
-  opacity: 1 !important;        /* Asegura visibilidad */
-  visibility: visible !important;
-  z-index: 10 !important;
+  display: block;
+  max-height: 60px;
+  margin: 1rem auto;
+  object-fit: contain;
 }
 
-/* ✅ Responsividad para footer en móviles y tablets */
+.footer-copyright {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+}
 
+.footer-copyright p, .footer-copyright a {
+  color: #ffffff !important;
+  font-weight: 700;
+}
 
-/* ✅ Responsividad para footer en móviles y tablets */
-/* Estilos solo para móviles y pantallas pequeñas */
-/* ✅ Responsividad para footer en móviles y tablets */
+/* ====== RESPONSIVE ====== */
 @media (max-width: 992px) {
-  .site-footer, .footer-main, .footer-copyright,
-  .site-footer .container, .footer-copyright .container {
-    width: 100%;
-    max-width: 100%;
-    padding: 1rem 1.2rem;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .site-footer .row, .footer-copyright .row {
+  .site-footer .row {
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
-    margin: 0 auto;
+    gap: 1.5rem;
   }
 
-  .site-footer .col-xl-3, .site-footer .col-xl-5,
-  .site-footer .col-md-12, .site-footer .col-md-5, .site-footer .col-md-7,
-  .footer-copyright .col-lg-6 {
+  .site-footer .widget, .site-footer .widget-info, .site-footer .widget-address-info {
+    text-align: center;
     width: 100%;
-    max-width: 100%;
-    padding: 0.5rem 0;
-    margin-bottom: 0.8rem;
+  }
+
+  .site-footer .widget-address-info .info {
     text-align: center;
-  }
-
-  .footer-logo img {
-    max-height: 48px;
-    margin: 0 auto 1rem;
-    display: block;
-  }
-
-  .site-footer .widget, .site-footer .widget-address-info, .site-footer .widget-info {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .address-info-list, .widget-socail ul {
-    padding-left: 0;
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-  }
-
-  .address-info-list li, .widget-socail li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-  }
-
-  .widget-socail h6 {
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-    text-align: center;
-  }
-
-  .widget-socail {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .widget-socail a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.1rem;
-    gap: 0.4rem;
-    text-decoration: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
+    font-weight: 900;
   }
 
-  .trust-logo-wrapper {
+  .site-footer .address-info-list li, .site-footer .widget-socail li {
+    justify-content: center; /* CENTRADO */
+    gap: 0.5rem;
+    font-size: 1rem;
     text-align: center;
-    margin-top: 1.2rem;
+    font-weight: 600;
   }
 
   .newsletter-form {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
     width: 100%;
+    align-items: center;
   }
 
   .newsletter-form input {
     width: 90%;
     max-width: 350px;
-    padding: 0.5rem;
     text-align: center;
+    font-weight: 700;
   }
 
   .newsletter-form button {
+    width: auto;
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    font-weight: 800;
   }
 
-  .footer-copyright p {
-    text-align: center;
-    margin: 0.5rem 0;
+  .footer-logo img {
+    max-height: 50px;
+  }
+
+  .footer-copyright {
     font-size: 0.85rem;
   }
+
+  /* 📌 Asegurar el icono LinkedIn centrado debajo del "C" de Call Center */
+  .site-footer .widget-socail {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .site-footer .socail-icon {
+    justify-content: center !important; /* CENTRADO RESPONSIVE */
+    width: 100%;
+  }
 }
+
+
+
 
 
   

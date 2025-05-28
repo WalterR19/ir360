@@ -391,193 +391,144 @@
           Contact Us -->
 
 <!--=====================================================================================================================
-          Contact Us -->
-          <section class="space-pt ellipse-top bg-black">
-            <div class="space-pb ellipse-bottom">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-md-10">
-                    <div class="section-title text-center">
-                      <span class="sub-title d-flex justify-content-center">
-                        <img class="img-fluid" src="images/subtitle-icon.png" alt=""> contact us
-                      </span>
-                      <h2 class="title"> ¿Necesitas ayuda? Por favor, completa el formulario. </h2>
-                    </div>
-                    <div class="form-wrapper">
-                      <form class="contact-form form-style-border" method="POST" action="formmail.php">
-                        <input type="hidden" name="to" value="contacto@ir360.cl">
-                        <input type="hidden" name="subject" value="Mensaje desde el sitio web IR360">
-                      
-                        <div class="row">
-                          <div class="col-md-4">
-                            <input type="text" class="form-control" name="name" placeholder="Name" aria-label="Name" required>
-                          </div>
-                          <div class="col-md-4">
-                            <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" required>
+     contacto---->     
 
-                          </div>
-                          <div class="col-md-4">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone">
-                          </div>
-                          <div class="col-lg-12">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                          </div>
-                          <div class="col-lg-12">
-                            <button type="submit" class="btn btn-effect">
-                              <span>Send Message</span>
-                              <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_59_253)">
-                                  <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2"/>
-                                  <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2"/>
-                                </g>
-                                <defs>
-                                  <clipPath id="clip0_59_253">
-                                    <rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)"/>
-                                  </clipPath>
-                                </defs>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-          
-                  </div>
+<section class="space-pt ellipse-top bg-black">
+  <div class="space-pb ellipse-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="section-title text-center">
+            <span class="sub-title d-flex justify-content-center">
+              <img class="img-fluid" src="images/subtitle-icon.png" alt=""> Contact Us
+            </span>
+            <h2 class="title">¿Necesitas ayuda? Por favor, completa el formulario.</h2>
+          </div>
+          <div class="form-wrapper">
+            <form class="contact-form form-style-border" method="POST" action="formmail.php">
+              <input type="hidden" name="to" value="contacto@ir360.cl">
+              <input type="hidden" name="subject" value="Mensaje desde el sitio web IR360">
+
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" name="phone" placeholder="Teléfono">
+                </div>
+                <div class="col-lg-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="col-lg-12 text-center">
+                  <button type="submit" class="btn btn-effect">
+                    <span>Enviar Mensaje</span>
+                  </button>
                 </div>
               </div>
-            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <script>
-              document.querySelector('.contact-form').addEventListener('submit', function(e) {
-                e.preventDefault(); // Evitar que se recargue la página
+<style>
+  /* Estilo startup para el formulario */
+  .section-title h2, .section-title p, .section-title span {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .section-title .sub-title {
+    color: #00BFFF;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+
+  .form-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .form-control {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  .form-control:focus {
+    border-color: #00BFFF;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 0 12px rgba(0,191,255,0.6), 0 0 20px rgba(0,191,255,0.4);
+    outline: none;
+  }
+
+  .form-control::placeholder {
+    color: #ccc;
+    font-weight: 500;
+  }
+
+  textarea.form-control {
+    resize: vertical;
+  }
+
+  .btn.btn-effect {
+    background-color: #3700ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+
+  .btn.btn-effect:hover {
+    background-color: #4800cd;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  }
+
+  @media (max-width: 768px) {
+    .section-title h2 {
+      font-size: 1.6rem;
+    }
+    .form-control {
+      font-size: 1rem;
+    }
+    .btn.btn-effect {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
+
               
-                const form = e.target;
-                const formData = new FormData(form);
-              
-                fetch(form.action, {
-                  method: 'POST',
-                  body: formData
-                })
-                .then(response => response.text())
-                .then(result => {
-                  if (result.trim() === "OK") {
-                    // Mostrar el mensaje de éxito
-                    form.innerHTML = '<div class="alert alert-success" role="alert">Tu información fue enviada y será revisada por nuestros expertos. Nos pondremos en contacto a la brevedad.</div>';
-                  } else {
-                    // Mostrar un error
-                    alert("Hubo un error al enviar el formulario. Inténtalo nuevamente.");
-                  }
-                })
-                .catch(error => {
-                  console.error('Error:', error);
-                  alert("Hubo un error al enviar el formulario. Inténtalo nuevamente.");
-                });
-              });
-              </script>
-              
-          </section>
-
-              <style>
-
-              /* Botón enviar profesional */
-              .btn.btn-effect {
-                background-color: #094391; /* Azul profesional */
-                color: #fff;
-                font-weight: 700;
-                font-size: 1rem;
-                padding: 12px 28px;
-                border-radius: 50px;
-                text-decoration: none;
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-                transition: all 0.3s ease;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-              }
-
-              .btn.btn-effect:hover {
-                background-color: #004C99; /* Azul más oscuro en hover */
-                transform: translateY(-3px);
-                box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-              }
-
-              /* Títulos y textos estilo startup */
-              .section-title h2, .section-title p, .section-title span, .form-wrapper label {
-                color: #ffffff;
-                font-weight: 800;
-                font-size: 1.4rem;
-                text-align: center;
-              }
-
-              .section-title .sub-title {
-                color: #00BFFF; /* Celeste vibrante startup */
-                font-weight: 700;
-                font-size: 1rem;
-                margin-bottom: 0.5rem;
-              }
-
-              .section-title h2 {
-                font-size: 2rem;
-                margin-bottom: 1rem;
-                line-height: 1.2;
-                text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-              }
-
-              .section-title p {
-                font-size: 1.1rem;
-                line-height: 1.6;
-                color: #dddddd;
-              }
-
-              /* Campos de formulario bien demarcados */
-              .form-control {
-                background-color: rgba(255, 255, 255, 0.05);
-                border: 2px solid rgba(255, 255, 255, 0.5);
-                color: #ffffff;
-                padding: 0.75rem 1rem;
-                font-size: 1rem;
-                margin-bottom: 1rem;
-                border-radius: 10px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-                transition: all 0.3s ease;
-              }
-
-              .form-control:focus {
-                border-color: #0066CC;
-                background-color: rgba(255, 255, 255, 0.1);
-                box-shadow: 0 0 12px rgba(0,102,204,0.6), 0 0 20px rgba(0,102,204,0.4);
-                outline: none;
-              }
-
-              .form-control::placeholder {
-                color: #cccccc;
-                font-weight: 500;
-              }
-
-              /* Alineación del formulario y disposición responsiva */
-              .form-wrapper {
-                background-color: rgba(0, 0, 0, 0.5);
-                padding: 2rem;
-                border-radius: 12px;
-                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-              }
-
-              @media (max-width: 768px) {
-                .section-title h2 {
-                  font-size: 1.6rem;
-                }
-
-                .form-control {
-                  font-size: 1rem;
-                }
-
-                .btn.btn-effect {
-                  width: 100%;
-                  text-align: center;
-                }
-              }
-
-
-              </style>
 
 <!--===================================================================================================================
           Contact Us -->
@@ -709,5 +660,3 @@
     <script src="js/custom.js"></script> <!-- Template Scripts (Do not remove)-->
   </body>
 </html>
-
-

@@ -10306,6 +10306,14 @@ html, body {
 /* ======================== Footer Global ======================== */
 /* Reduce espacio entre widgets */
 
+.site-footer.footer-startup {
+  background-color: #010a1be7; /* Fondo elegante */
+  color: #ffffff; /* Textos blancos */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
 
 .site-footer .widget {
   margin-bottom: 0.5rem !important;

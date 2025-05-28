@@ -1209,28 +1209,27 @@
     <!-- Slider de Casos -->
     <div id="casosSlider" class="carousel slide mt-4" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <!-- Caso 1 -->
         <div class="carousel-item active">
-          <div class="row align-items-center shadow-lg rounded-4 p-4 caso-item">
-            <div class="col-lg-4 text-center mb-3 mb-lg-0">
+          <div class="row justify-content-center align-items-center caso-item p-4">
+            <div class="col-md-4 text-center">
               <img src="images/poh estudio.png" alt="Pohestudio" class="caso-img">
             </div>
-            <div class="col-lg-8 text-lg-start text-center">
-              <h4 class="fw-bold caso-titulo">Poh estudio: Mitigación de Ingeniería Social y Refuerzo ISO 27001:2022</h4>
-              <p class="caso-texto">
-                En <strong>IR360</strong>, transformamos desafíos en oportunidades. Con el caso de 
-                <a href="https://pohestudios.com/" target="_blank" style="color:#fff; font-weight: 700; text-decoration: underline;">Poh estudio</a>, actuamos con rapidez para mitigar un <strong>ataque de ingeniería social</strong>, recuperando activos digitales clave y asegurando la continuidad del negocio.
-              </p>
-              <p class="caso-texto" style="font-style: italic;">
-                Aplicamos los estándares más altos de la <strong>ISO 27001:2022</strong> y fortalecimos su infraestructura, permitiendo continuar su operación con resiliencia y confianza.
-              </p>
+            <div class="col-md-8 text-center text-md-start caso-content">
+              <div class="caso-box">
+                <h4 class="fw-bold caso-titulo">Poh estudio: Mitigación de Ingeniería Social y Refuerzo ISO 27001:2022</h4>
+                <p class="caso-texto">
+                  En <strong>IR360</strong>, transformamos desafíos en oportunidades. Con el caso de 
+                  <a href="https://pohestudios.com/" target="_blank" style="color:#fff; font-weight: 700; text-decoration: underline;">Poh estudio</a>, actuamos con rapidez para mitigar un <strong>ataque de ingeniería social</strong>, recuperando activos digitales clave y asegurando la continuidad del negocio.
+                </p>
+                <p class="caso-texto" style="font-style: italic;">
+                  Aplicamos los estándares más altos de la <strong>ISO 27001:2022</strong> y fortalecimos su infraestructura, permitiendo continuar su operación con resiliencia y confianza.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Puedes duplicar para más casos -->
+        <!-- Duplica para más casos -->
       </div>
-
-      <!-- Indicadores -->
       <div class="carousel-indicators" style="bottom: -30px;">
         <button type="button" data-bs-target="#casosSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Caso 1"></button>
       </div>
@@ -1239,12 +1238,12 @@
 </section>
 
 <style>
-/* Imagen adaptativa y tamaño ajustado */
+/* Imagen más pequeña y ajustada */
 .caso-img {
-  width: 80%; /* 🔹 Reducimos tamaño general */
-  max-width: 220px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 70%;
+  max-width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   transition: transform 0.3s ease;
 }
 
@@ -1252,53 +1251,45 @@
   transform: scale(1.05);
 }
 
-/* Títulos y textos responsivos */
+/* Caja del contenido con fondo gris transparente y padding */
+.caso-box {
+  background-color: rgba(100, 100, 100, 0.4); /* Gris claro y transparente */
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Textos centrados y responsivos */
 .caso-titulo {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .caso-texto {
   color: #fff;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-bottom: 0.6rem;
 }
 
 .carousel-indicators [data-bs-target] {
   background-color: #fff;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
-/* Responsividad */
+/* Mejor responsividad */
 @media (max-width: 992px) {
   .caso-img {
-    max-width: 180px;
-  }
-  .caso-titulo {
-    font-size: 1.5rem;
-  }
-  .caso-texto {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .caso-item {
-    flex-direction: column;
-    text-align: center !important;
-    padding: 1rem;
-  }
-  .caso-img {
-    max-width: 150px;
+    max-width: 120px;
     width: 60%;
-    margin-bottom: 1rem;
   }
   .caso-titulo {
     font-size: 1.3rem;
@@ -1307,7 +1298,30 @@
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 576px) {
+  .caso-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  .caso-img {
+    max-width: 100px;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .caso-titulo {
+    font-size: 1.1rem;
+  }
+  .caso-texto {
+    font-size: 0.9rem;
+  }
+  .caso-box {
+    padding: 10px;
+  }
+}
 </style>
+
 
 
 <!--=====================================================================================================================

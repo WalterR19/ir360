@@ -466,23 +466,13 @@ body {
 
 
 <script>
-// Mostrar el mensaje de éxito al enviar
-function mostrarMensaje() {
-  // Opción: Ocultar mensaje antes de mostrarlo tras respuesta
-  document.getElementById("mensajeExito").style.display = "none";
-}
-
-// Mostrar mensaje cuando iframe carga (respuesta del form)
-function iframeCargado() {
-  var iframe = document.getElementById("hidden_iframe");
-  if (iframe && iframe.contentDocument && iframe.contentDocument.body && iframe.contentDocument.body.innerHTML.trim() !== "") {
+// Mostrar mensaje de éxito si URL contiene ?enviado=ok
+window.onload = function() {
+  if (window.location.search.indexOf('enviado=ok') > -1) {
     document.getElementById("mensajeExito").style.display = "block";
-    // Opcional: resetear el formulario
-    document.querySelector("form.contact-form").reset();
   }
-}
+};
 </script>
-    
 
 <!--===================================================================================================================
           Contact Us -->

@@ -9073,216 +9073,6 @@ form.form-dark .form-control:focus {
   }
 }
 
-/*****************************
-    Footer
-*****************************/
-.site-footer {
-  background-color: #000000;
-  padding-top: 145px;
-  position: relative;
-  z-index: 9;
-  /*-------------------------*/
-  /* Footer Main */
-  /*-------------------------*/
-  /*-------------------------*/
-  /* Footer Copyright */
-  /*-------------------------*/
-  /*-------------------------*/
-  /* Footer Dark CSS */
-  /*-------------------------*/
-}
-
-.site-footer .footer-main > .container > .row {
-  --bs-gutter-y: 50px;
-}
-
-.site-footer .widget-socail {
-  margin-top: 130px;
-}
-
-.site-footer .footer-padding {
-  padding: 80px 0;
-}
-
-.site-footer .footer-copyright {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 30px 0;
-}
-
-.site-footer .footer-copyright a {
-  color: #D4D6D7;
-}
-
-.site-footer .footer-copyright a:hover {
-  color: #77BEFF;
-}
-
-.site-footer .footer-copyright p {
-  color: #D4D6D7;
-  margin: 0px;
-}
-
-.site-footer.footer-dark {
-  /* Footer Copyright */
-}
-
-.site-footer.footer-dark .widget .widget-title {
-  color: #ffffff;
-}
-
-.site-footer.footer-dark .widget-menu li a {
-  color: #D4D6D7;
-}
-
-.site-footer.footer-dark .widget-menu li a:hover {
-  color: #77BEFF;
-}
-
-.site-footer.footer-dark .widget-info .title {
-  color: #D4D6D7;
-}
-
-.site-footer.footer-dark .widget-newsletter .newsletter-form .form-control {
-  color: #ffffff;
-  padding-right: 60px;
-  border-color: rgba(255, 255, 255, 0.05);
-}
-
-.site-footer.footer-dark .widget-newsletter .newsletter-form .form-control:focus {
-  border-color: #77BEFF;
-}
-
-.site-footer.footer-dark .widget-newsletter .newsletter-form .form-control::-ms-input-placeholder {
-  color: #D4D6D7;
-}
-
-.site-footer.footer-dark .widget-newsletter .newsletter-form .form-control::placeholder {
-  color: #D4D6D7;
-}
-
-.site-footer.footer-dark .footer-copyright {
-  color: #ffffff;
-  border-top-color: rgba(255, 255, 255, 0.05);
-  margin-top: 80px;
-}
-
-.site-footer.footer-dark .footer-copyright > .container > .row {
-  --bs-gutter-y: 30px;
-}
-
-.site-footer.footer-dark .footer-copyright a {
-  font-weight: 600;
-  color: #77BEFF;
-  background: linear-gradient(60deg, #3663D8 -20%, #77BEFF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.site-footer.footer-dark .footer-copyright a:hover {
-  color: #ffffff;
-}
-
-/*-------------------------*/
-/* Footer Sticky */
-/*-------------------------*/
-.site-content {
-  position: relative;
-  z-index: 2;
-  background-color: #000000;
-}
-
-.site-footer.sticky-footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-/*************************
-       Responsive
-*************************/
-@media (max-width: 1199px) {
-  .site-footer .widget-socail {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .site-footer .footer-main-inner {
-    display: flex;
-    gap: 50px 100px;
-  }
-  .site-footer .footer-main-inner .footer-logo {
-    width: 41.6666%;
-  }
-  .site-footer .footer-main-inner .footer-social {
-    width: 20%;
-  }
-  .site-footer .footer-main-inner .footer-info {
-    width: 38.3333%;
-  }
-}
-
-@media (max-width: 991px) {
-  .site-footer {
-    padding-top: 90px;
-  }
-  .site-footer .footer-main-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 50px 0;
-  }
-  .site-footer .footer-main-inner .footer-logo {
-    width: 100%;
-  }
-  .site-footer .footer-main-inner .footer-social {
-    width: 100%;
-  }
-  .site-footer .footer-main-inner .footer-info {
-    width: 100%;
-  }
-  /* Footer Social */
-  .site-footer .widget-menu ul.list-col-2 li,
-  .site-footer .widget-menu ul.list-col-3 li {
-    width: calc(50% - 8px);
-  }
-  /* Footer Sticky */
-  .site-content {
-    margin-bottom: 0 !important;
-  }
-  .site-footer.sticky-footer {
-    position: relative;
-  }
-}
-
-@media (max-width: 767px) {
-  .site-footer {
-    padding-top: 70px;
-  }
-  /* Footer Social */
-  .site-footer.footer-dark .widget-socail .socail-icon li {
-    flex: 0;
-    border-right: 0;
-  }
-  .site-footer.footer-dark .widget-socail .socail-icon li a {
-    padding: 0;
-  }
-  .site-footer.footer-dark .widget-socail .socail-icon li a i {
-    color: #ffffff;
-  }
-}
-
-@media (max-width: 479px) {
-  .site-footer {
-    padding-top: 50px;
-  }
-  .site-footer .widget-menu ul.list-col-2 li,
-  .site-footer .widget-menu ul.list-col-3 li {
-    width: 100%;
-  }
-}
-
 /*************************
        Widget
 *************************/
@@ -10144,38 +9934,8 @@ body {
   overflow-x: hidden; /* ✅ evitar scroll horizontal */
 }
 
-/* 🌌 Red espacio-tiempo carmesí ondulante */
 body::after {
-  content: "";
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 900px;
-  height: 900px;
-  transform: translate(-50%, -50%);
-  background-image: 
-    radial-gradient(circle, rgba(242, 75, 136, 0.15) 1px, transparent 1px),
-    radial-gradient(circle, rgba(242, 75, 136, 0.05) 2px, transparent 2px);
-  background-size: 60px 60px, 120px 120px;
-  border-radius: 50%;
-  opacity: 0.4;
-  filter: blur(1.5px);
-  z-index: 0;
-  pointer-events: none;
-  animation: gravedadEspacio 90s linear infinite;
-}
-
-/* 🌀 Animación espacio-tiempo */
-@keyframes gravedadEspacio {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(180deg) scale(1.02);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg) scale(1);
-  }
+  display: none !important;
 }
 
 /* Contenido por encima de la malla */
@@ -10299,6 +10059,9 @@ html, body {
 
 
 
+
+
+
 /* ======================== Footer ======================== */
 
 /* ======================== Footer Global ======================== */
@@ -10309,131 +10072,188 @@ html, body {
 /* ====== Estilo General del Footer Startup ====== */
 /* ====== Estilo General del Footer Startup ====== */
 /* ====== Estilo General del Footer Startup ====== */
+/* FOOTER BASE */
+
+
+
+/*****************************
+    Nuevo Footer IR360
+*****************************/
+/*****************************
+    Footer Moderno Azul-Blanco
+*****************************/
+/*****************************
+    Footer Moderno Azul-Blanco Mejorado
+*****************************/
 .site-footer.footer-startup {
-  background-color: #010a1be7;
+  background-color: #0A1F3D;
   color: #ffffff;
-  padding: 2rem 1rem; /* 🔹 Menor padding vertical */
+  padding: 2rem 1rem;
   position: relative;
   width: 100%;
-  font-family: 'Arial', sans-serif;
-}
-
-.site-footer .widget {
-  margin-bottom: 1rem; /* 🔹 Menos espacio entre bloques */
-  padding-bottom: 0.3rem;
+  font-family: 'Inter', sans-serif;
   text-align: center;
 }
 
-.site-footer .widget-title {
-  font-size: 1.2rem; /* 🔹 Más compacto */
-  margin-bottom: 0.8rem;
+.site-footer.footer-startup .widget-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.site-footer .widget-address-info .info {
-  font-size: 1rem;
-  line-height: 1.5;
+.site-footer.footer-startup .info, 
+.site-footer.footer-startup p, 
+.site-footer.footer-startup a {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-.site-footer .widget-info .number {
-  font-size: 1rem;
+.site-footer.footer-startup a:hover {
+  color: #77BEFF;
+  text-decoration: underline;
 }
 
-.site-footer .widget-info .title {
-  font-size: 0.95rem;
-}
-
-.site-footer .socail-icon {
+.site-footer.footer-startup .newsletter-form {
   display: flex;
   justify-content: center;
-  gap: 0.4rem;
-  margin-top: 0.3rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #77BEFF;
 }
 
-.newsletter-form input.form-control {
-  padding: 0.5rem 1rem;
-  width: 100%;
-  max-width: 250px;
-  font-size: 0.95rem;
+.site-footer.footer-startup .newsletter-form input.form-control {
+  padding: 0.9rem 1.2rem;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
 }
 
-.newsletter-form .subscribe-btn {
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
+.site-footer.footer-startup .newsletter-form .subscribe-btn {
+  padding: 0.9rem 1.4rem;
+  font-size: 1rem;
+  background-color: #77BEFF;
+  color: #0A1F3D;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.footer-logo img {
+.site-footer.footer-startup .newsletter-form .subscribe-btn:hover {
+  background-color: #569ed9;
+}
+
+.site-footer.footer-startup .socail-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  gap: 1rem;
+}
+
+.site-footer.footer-startup .socail-icon a {
+  color: #ffffff;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.site-footer.footer-startup .socail-icon a:hover {
+  color: #77BEFF;
+}
+
+/* 🔵 MODIFICADO: Ajuste de tamaño del logo IR360 */
+.site-footer.footer-startup .footer-logo img {
+  max-height: 30px; /* 🔵 Cambia este valor para hacer el logo más pequeño */
+  width: auto; /* Mantiene la proporción */
+  margin: 0 auto;
   display: block;
-  max-height: 120px; /* 🔹 Hacemos el logo más angosto (de 60px a 45px) */
-  max-width: 200px; /* 🔹 Limitamos ancho para que se vea proporcionado */
-  margin: 0.5rem auto;
-  object-fit: contain; /* 🔹 Aseguramos que se ajuste bien */
 }
 
 
-.footer-copyright {
-  padding: 0.5rem 0;
-  font-size: 0.8rem;
+.site-footer.footer-startup .footer-copyright {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.7px;
 }
 
-/* ====== RESPONSIVE ====== */
+.site-footer.footer-startup .footer-copyright a {
+  color: #77BEFF;
+  font-weight: 900;
+  background: linear-gradient(60deg, #3663D8 -20%, #77BEFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.site-footer.footer-startup .footer-copyright a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .site-footer.footer-startup {
-    padding: 1.5rem 1rem; /* 🔹 Aún menos padding en móviles */
+  .site-footer.footer-startup .newsletter-form {
+    flex-direction: row;
+    width: 90%;
   }
 
-  .site-footer .row {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .site-footer .widget-title {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .site-footer .widget, .site-footer .widget-info, .site-footer .widget-address-info {
-    width: 100%;
-  }
-
-  .site-footer .widget-address-info .info {
+  .site-footer.footer-startup .newsletter-form input.form-control {
+    flex: 1;
     font-size: 0.95rem;
   }
 
-  .site-footer .socail-icon i.fa-linkedin {
-    font-size: 1.5rem; /* 🔹 Ícono más pequeño */
+  .site-footer.footer-startup .newsletter-form .subscribe-btn {
+    font-size: 0.95rem;
   }
 
-  .newsletter-form {
-    flex-direction: column;
-    align-items: center;
+  .site-footer.footer-startup .socail-icon {
+    justify-content: center;
+    margin-top: 1rem;
   }
 
-  .newsletter-form input {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-
-  .newsletter-form button {
-    width: auto;
-    margin-top: 0.3rem;
-    font-size: 0.9rem;
-  }
-
-  .footer-logo img {
-    max-height: 40px;
-  }
-
-  .footer-copyright {
-    font-size: 0.75rem;
+  /* 🔵 MODIFICADO: Ajuste de tamaño del logo IR360 en tablet/móvil */
+  .site-footer.footer-startup .footer-logo img {
+    max-height: 40px; /* 🔵 Más pequeño en responsive */
   }
 }
 
+@media (max-width: 480px) {
+  .site-footer.footer-startup .newsletter-form {
+    flex-direction: row;
+    width: 100%;
+  }
 
+  .site-footer.footer-startup .newsletter-form input.form-control {
+    flex: 1;
+    font-size: 0.9rem;
+  }
 
+  .site-footer.footer-startup .newsletter-form .subscribe-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
 
+  .site-footer.footer-startup .socail-icon {
+    justify-content: center;
+  }
 
-  
-/*----------------========================----team-------========================================================*/
+  .site-footer.footer-startup .socail-icon a {
+    font-size: 1.8rem;
+  }
 
-/* Elimina cualquier decoración animada sospechosa o visual no deseada */
-  
+  /* 🔵 MODIFICADO: Ajuste de tamaño del logo IR360 en móvil */
+  .site-footer.footer-startup .footer-logo img {
+    max-height: 35px; /* 🔵 Más pequeño para smartphone */
+  }
+}

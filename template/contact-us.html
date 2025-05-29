@@ -233,7 +233,7 @@
       </div>
 
 
-        <!--=================================
+<!--=======================================================================================================================
         Page Header -->
         <div class="inner-header bg-holder" style="background-image: url(images/banner/inner-header/page-header-01.jpg);">
           <div class="container">
@@ -275,7 +275,7 @@
                             <div class="city-location">
                               <div class="location-item">
                                 <i class="icon"><img class="img-fluid" src="images/icon-location.png" alt=""></i>
-                                <div class="list-label">Rafael Riesco Bernales 501, Maipú, Región Metropolitana</div>
+                                <div class="list-label"> Avenida Rafael Riesco Bernales Nro. 501, Región Metropolitana</div>
                               </div>
                               <div class="location-item">
                                 <i class="icon"><img class="img-fluid" src="images/icon-phone-call.png" alt=""></i>
@@ -283,7 +283,7 @@
                               </div>
                               <div class="location-item">
                                 <i class="icon"><img class="img-fluid" src="images/icon-email.png" alt=""></i>
-                                <div class="list-label">contacto.soluciones@ir360.store</div>
+                                <div class="list-label">contacto@ir360.cl</div>
                               </div>
                             </div>
                           </div>
@@ -317,79 +317,162 @@
 
           <style>
 
-          /* Moderniza la tipografía y colores para estilo startup */
-        .space-ptb .section-title .sub-title {
-          font-size: 1.2rem;
-          color: #ffffff; /* Color vibrante */
-          font-weight: 700;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-        }
+          /* 🔹 Estilo general para el área de contacto */
+          .space-ptb {
+            background: linear-gradient(160deg, #0d1f3fb7 0%, #032446cc 100%);
+            padding: 4rem 2rem;
+            border-radius: 12px;
+            box-sizing: border-box;
+            text-align: center; /* 🔵 Centra el contenido general */
+          }
 
-        .space-ptb .section-title h2.title {
-          color: #fff; /* Texto principal blanco */
-          font-size: 2.4rem;
-          font-weight: 900; /* Más negrita */
-          text-shadow: 2px 2px 5px rgba(0,0,0,0.6); /* Sombra elegante */
-        }
+          .space-ptb .section-title {
+            margin-bottom: 2rem;
+          }
 
-        .space-ptb .section-title p {
-          color: #f0f0f0; /* Texto secundario más claro */
-          font-size: 1.1rem;
-          line-height: 1.6;
-        }
+          .space-ptb .section-title .sub-title {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+          }
 
-        .space-ptb .city-name a {
-          color: #fafafa; /* Resalta la ciudad */
-          font-weight: 700;
-          font-size: 1.3rem;
-        }
+          .space-ptb .section-title h2.title {
+            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+          }
 
-        .space-ptb .list-label {
-          color: #fff; /* Blanco puro para datos de contacto */
-          font-size: 1.1rem;
-          font-weight: 600;
-        }
+          .space-ptb .section-title p {
+            color: #f0f0f0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify; /* 🔵 Justificado para párrafos */
+          }
 
-        /* Mejorar estilo del mapa */
-        .map-title {
-          color: #6A00FF;
-          font-weight: 700;
-          font-size: 1.2rem;
-          margin-bottom: 0.5rem;
-        }
+          .space-ptb .city-name a {
+            color: #fafafa;
+            font-weight: 700;
+            font-size: 1.3rem;
+          }
 
-        .map-container iframe {
-          border: 3px solid #2600ff;
-          border-radius: 12px;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
+          .space-ptb .list-label {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: justify; /* 🔵 Justificado */
+          }
 
-        /* General para el contenedor */
-        .space-ptb {
-          background: linear-gradient(160deg, #0d1f3fb7 0%, #032446cc 100%);
-          padding: 4rem 2rem;
-          border-radius: 12px;
-        }
+          .map-title {
+            color: #6A00FF;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
 
-        .location-wrapper {
-          background: rgba(255,255,255,0.05);
-          border-radius: 12px;
-          padding: 2rem;
-          box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-          backdrop-filter: blur(6px);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+          .map-container iframe {
+            border: 3px solid #2600ff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            width: 100%;
+            height: 250px;
+          }
 
-        .location-wrapper:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 12px 30px rgba(0,0,0,0.4);
-        }
+          .location-wrapper {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(6px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: justify; /* 🔵 Justificado dentro del recuadro */
+            box-sizing: border-box;
+          }
+
+          .location-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+          }
+
+          /* 🔹 Responsive ajustes */
+          @media (max-width: 1024px) {
+            .space-ptb {
+              padding: 3rem 1.5rem;
+            }
+
+            .space-ptb .section-title h2.title {
+              font-size: 2rem;
+            }
+
+            .space-ptb .section-title p {
+              font-size: 1rem;
+            }
+
+            .location-wrapper {
+              padding: 1.5rem;
+            }
+
+            .map-container iframe {
+              height: 220px;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .space-ptb {
+              padding: 2.5rem 1rem;
+            }
+
+            .space-ptb .row {
+              flex-direction: column;
+              gap: 1.5rem;
+            }
+
+            .space-ptb .section-title h2.title {
+              font-size: 1.7rem;
+            }
+
+            .space-ptb .section-title p {
+              font-size: 1rem;
+            }
+
+            .location-wrapper {
+              padding: 1.2rem;
+            }
+
+            .map-container iframe {
+              height: 200px;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .space-ptb {
+              padding: 2rem 0.5rem;
+            }
+
+            .space-ptb .section-title h2.title {
+              font-size: 1.4rem;
+            }
+
+            .space-ptb .section-title p {
+              font-size: 0.95rem;
+            }
+
+            .location-wrapper {
+              padding: 1rem;
+            }
+
+            .map-container iframe {
+              height: 180px;
+            }
+          }
+
 
           </style>
           <!--=================================
           Contact Us -->
-
 <!--=====================================================================================================================
      contacto---->     
 <section class="space-pt ellipse-top bg-black">
@@ -492,7 +575,7 @@ window.onload = function() {
 <!--=========================================================================================
       Site Footer -->
 
-      <footer class="site-footer footer-dark footer-startup">
+       <footer class="site-footer footer-startup">
 
         <div class="footer-main py-4"> <!-- Menor padding vertical -->
           <div class="container-fluid px-4">

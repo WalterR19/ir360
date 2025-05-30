@@ -56,9 +56,6 @@
     
 
 
-
-
-
 <!--==================================================================================================================
       Header -->
       <header class="header header-default header-sticky header-absolute">
@@ -283,28 +280,32 @@
 
   <style>
     /* General */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
 
-    /* Main Banner */
-    .main-banner {
-      position: relative;
-      background-image: url('images/Hacker2.jpg'); /* Ruta de la imagen */
-      background-size: cover;
-      background-position: center center;
-      background-attachment: scroll;
-      color: #fff;
-      height: 100vh; /* Asegura que el banner ocupe el 100% de la altura de la pantalla */
-      display: flex;
-      justify-content: center; /* Centrar el contenido horizontalmente */
-      align-items: center; /* Centrar el contenido verticalmente */
-      text-align: center;
-    }
-
-    /* Capa superpuesta con fondo oscuro y transparente (solo afecta a la imagen) */
+/* Main Banner */
+.main-banner {
+  position: relative; /* Cambio de absolute a relative */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('images/Hacker2.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Asegura que la imagen ocupe todo el contenedor */
+  background-position: center center;
+  background-attachment: fixed; /* Asegura que la imagen de fondo no se mueva al hacer scroll */
+  color: #fff;
+  height: 100vh; /* Asegura que el banner ocupe toda la altura de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  text-align: center;
+  z-index: 0;
+}
+/* Capa superpuesta con fondo oscuro y transparente sobre el header */
     .overlay {
       position: absolute;
       top: 0;
@@ -312,82 +313,84 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
-      z-index: 1; /* Asegura que esté debajo del contenido pero encima de la imagen */
+      z-index: 1;
     }
 
-    /* Texto del banner */
-    .banner-text {
-      position: relative;
-      z-index: 2; /* Asegura que el texto esté sobre la capa de fondo */
-      color: white;
-      font-size: 4.5rem; /* Aumento del tamaño de la fuente */
-      line-height: 1.3;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px rgba(255, 253, 253, 0.993); /* Más contraste */
-      max-width: 700px;
-    }
-
-    .banner-text p {
-      font-size: 1.5rem;
-      color: #f0f0f0;
-      margin-bottom: 30px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-      max-width: 700px;
-    }
-
-     /* Texto del banner */
-    .highlight-subtitle {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #ffffff; /* Texto blanco */
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.836);
-    }
-
-    .highlight-title {
-      font-size: 4.5rem; /* Aumento del tamaño de la fuente */
-      line-height: 1.3;
-      font-weight: bold;
-      color: #ffffff; /* Texto blanco */
-      text-shadow: 2px 2px 5px rgba(255, 253, 253, 0.993); /* Más contraste */
-    }
+ 
 
 
+/* Texto del header */
+.banner-text {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté sobre la capa de fondo */
+  color: white;
+  font-size: 4.5rem; /* Aumento del tamaño de la fuente */
+  line-height: 1.3;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(255, 253, 253, 0.993); /* Más contraste */
+  max-width: 700px;
+  margin-top: 0; /* El texto no debe tener margen superior */
+}
+
+/* Banner text (below the header) */
+.main-banner {
+  padding-top: 200px; /* Aumentamos la separación superior para que esté más abajo del header */
+}
+
+.main-banner .banner-text {
+  position: relative;
+  z-index: 100;
+  color: white;
+  font-size: 3rem; /* Reducimos un poco el tamaño de la fuente para que sea más elegante */
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para resaltar el texto */
+  max-width: 700px;
+  margin-top: 0;
+  padding: 20px;
+}
 
 
-    /* Botón de llamada a la acción */
-    .btn-effect {
-      padding: 12px 24px;
-      background-color: #9b00b8;
-      color: white;
-      border-radius: 30px;
-      font-weight: bold;
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-      transition: all 0.3s ease;
-    }
+@media (max-width: 768px) {
+  /* Ajuste para pantallas pequeñas */
+  .main-banner {
+    padding-top: 120px; /* Menos separación en pantallas pequeñas */
+  }
 
-    .btn-effect:hover {
-      background-color: #7A00B8;
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    }
+  .main-banner .banner-text {
+    font-size: 2.5rem; /* Reducción del tamaño de la fuente en pantallas pequeñas */
+  }
 
-    /* Responsividad para pantallas pequeñas */
-    @media (max-width: 768px) {
-      .banner-text {
-        font-size: 2.5rem;
-      }
+  /* Ajustar la capa overlay */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo más oscuro en móviles */
+  }
 
-      .banner-text p {
-        font-size: 1.2rem;
-      }
+  /* Hacer la imagen de fondo más grande en pantallas pequeñas */
+  header {
+    background-size: cover;
+    background-position: center center;
+  }
+}
 
-      .main-banner {
-        padding: 100px 20px 40px 20px;
-      }
-    }
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .main-banner {
+    padding-top: 120px; /* Menos separación en pantallas pequeñas */
+    height: 100vh; /* Asegura que la imagen ocupe toda la altura en pantallas pequeñas */
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo más oscuro en móviles */
+  }
+
+  /* Hacer la imagen de fondo más grande en pantallas pequeñas */
+  header {
+    background-size: cover;
+    background-position: center center;
+  }
+}
 
   </style>
 
@@ -395,20 +398,28 @@
 
 <body>
 
-  <!-- Main Banner -->
-  <div class="main-banner">
-    <!-- Capa de fondo oscuro transparente sobre la imagen -->
-    <div class="overlay"></div>
+ <!-- Main Banner -->
+<div class="main-banner">
+  <!-- Capa de fondo oscuro transparente sobre la imagen -->
+  <div class="overlay"></div>
 
-    <!-- Contenido del banner -->
-    <div class="banner-text">
-      <h2 class="highlight-title">Soluciones creativas para resultados reales en ciberseguridad</h2>
+  <!-- Contenido del banner -->
+  <div class="banner-text">
+    <h2 class="highlight-title">Soluciones creativas para resultados reales en ciberseguridad</h2>
+    
+    <!-- Botón interactivo arreglado -->
+     
     </div>
   </div>
+</div>
 
-</body>
+
+  
 
 </html>
+
+
+
 
 
 

@@ -54,15 +54,10 @@
 <body>
 
     
-<!--===================================================================================================================
-    cursor -->
-    <div id="cursor">
-      <!--<div class="cursor__circle"></div>-->
-    </div>
-<!--=======================================================================================================================
-    cursor -->
-    
-    <div id="page" class="main">
+
+
+
+
 
 <!--==================================================================================================================
       Header -->
@@ -143,7 +138,9 @@
             </div>
           </div>
         </div>
+      
       </header>
+
 
 <!--============================================================================================
       Main Menu OffCanvas -->
@@ -217,6 +214,7 @@
         </div>
       </div>
 
+
 <!--==================================================================================================================================================================
       Header Side Panel -->
       <div class="offcanvas offcanvas-end sidepanel-offcanvas" tabindex="-1" id="offcanvasRight">
@@ -263,57 +261,156 @@
         </div>
       </div>
 
+
+
 <!--==================================VISTA TELEFONOS MOVILES==========================================================
         Main Banner -->
-      
-        <head>
-  <!-- Otros <link> o <meta> que ya tengas -->
+        
+<!--==================================VISTA TELEFONOS MOVILES==========================================================
+        Main Banner -->
+        
+<!--==================================VISTA TELEFONOS MOVILES==========================================================
+        Main Banner -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banner Ciberseguridad</title>
+
   <style>
-    .banner-content h2 {
-      font-size: 2.9rem;
+    /* General */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Main Banner */
+    .main-banner {
+      position: relative;
+      background-image: url('images/Hacker2.jpg'); /* Ruta de la imagen */
+      background-size: cover;
+      background-position: center center;
+      background-attachment: scroll;
+      color: #fff;
+      height: 100vh; /* Asegura que el banner ocupe el 100% de la altura de la pantalla */
+      display: flex;
+      justify-content: center; /* Centrar el contenido horizontalmente */
+      align-items: center; /* Centrar el contenido verticalmente */
+      text-align: center;
+    }
+
+    /* Capa superpuesta con fondo oscuro y transparente (solo afecta a la imagen) */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+      z-index: 1; /* Asegura que esté debajo del contenido pero encima de la imagen */
+    }
+
+    /* Texto del banner */
+    .banner-text {
+      position: relative;
+      z-index: 2; /* Asegura que el texto esté sobre la capa de fondo */
+      color: white;
+      font-size: 4.5rem; /* Aumento del tamaño de la fuente */
       line-height: 1.3;
-      color: #ffffff;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.6); /* Más contraste */
-      }
-   
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(255, 253, 253, 0.993); /* Más contraste */
+      max-width: 700px;
+    }
+
+    .banner-text p {
+      font-size: 1.5rem;
+      color: #f0f0f0;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      max-width: 700px;
+    }
+
+     /* Texto del banner */
+    .highlight-subtitle {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #ffffff; /* Texto blanco */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.836);
+    }
+
+    .highlight-title {
+      font-size: 4.5rem; /* Aumento del tamaño de la fuente */
+      line-height: 1.3;
+      font-weight: bold;
+      color: #ffffff; /* Texto blanco */
+      text-shadow: 2px 2px 5px rgba(255, 253, 253, 0.993); /* Más contraste */
+    }
+
+
+
+
+    /* Botón de llamada a la acción */
+    .btn-effect {
+      padding: 12px 24px;
+      background-color: #9b00b8;
+      color: white;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn-effect:hover {
+      background-color: #7A00B8;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Responsividad para pantallas pequeñas */
     @media (max-width: 768px) {
-      .banner-content h2 {
-        font-size: 2rem;
+      .banner-text {
+        font-size: 2.5rem;
+      }
+
+      .banner-text p {
+        font-size: 1.2rem;
+      }
+
+      .main-banner {
+        padding: 100px 20px 40px 20px;
       }
     }
+
   </style>
-</head>    
-        
-        <div class="main-banner main-banner-1">
-          <div class="banner-inner">
-            <img class="img-fluid banner-bg-one" src="images/banner/banner-01/banner-bg-01.png" alt="#">
 
-          <!--========================================
-            !<h1 class="banner-title">Seguridad</h1>==-->
-            
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <img class="img-fluid rotate rotate-img" src="images/banner/banner-01/banner-shape-01.png" alt="#">
-                </div>
-                <div class="col-md-6 ms-auto">
-                  <div class="banner-content">
-                    <h2>Soluciones creativas para resultados reales en ciberseguridad</h2>
-                    <a class="btn btn-effect" href="#">
-                      <!--<span>Get A Quote</span>-->
-                      <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_59_253)"><path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2"/><path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2"/></g><defs><clipPath id="clip0_59_253"><rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)"/></clipPath></defs></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+</head>
 
-        <div class="content-wrapper">
+<body>
+
+  <!-- Main Banner -->
+  <div class="main-banner">
+    <!-- Capa de fondo oscuro transparente sobre la imagen -->
+    <div class="overlay"></div>
+
+    <!-- Contenido del banner -->
+    <div class="banner-text">
+      <h2 class="highlight-title">Soluciones creativas para resultados reales en ciberseguridad</h2>
+    </div>
+  </div>
+
+</body>
+
+</html>
 
 
-  
 
 
 
@@ -321,7 +418,7 @@
 =================================--->
 <!---==nosotros==-->
 
-<section class="space-pt py-5 bg-dark text-white" style="position: relative; overflow: hidden; z-index: 1;">
+<section class="space-pt py-5 bg-dark text-white" style="position: relative; overflow: hidden; z-index: 1; margin-top: 150px;"> <!-- Mayor margen top aquí -->
   <div class="container" style="position: relative; z-index: 1;">
     <div class="row justify-content-between align-items-center">
 
@@ -353,6 +450,7 @@
     </div>
   </div>
 </section>
+
 
 <style>
 /* Botón destacado */
@@ -401,6 +499,12 @@
   line-height: 1.6;
 }
 
+/* Aumentar la separación desde la parte superior */
+section {
+  margin-top: 100px; /* Ajusta el valor según el espacio deseado */
+}
+
+/* Ajustes responsivos */
 @media (max-width: 768px) {
   .highlight-title {
     font-size: 1.8rem;
@@ -410,9 +514,6 @@
   }
 }
 </style>
-
-
-
 
 
 <!--======================================================================================================================
@@ -657,540 +758,6 @@
   </div>
 </section>
 
-
-          
-<!--=================================
-          Our Services -->
-
-          <!--=================================
-          Case Studies -->
-          <!--<section class="space-ptb z-index-2">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-5">
-                  <div class="section-title mb-4 mb-lg-0">
-                    <span class="sub-title"><img class="img-fluid" src="images/subtitle-icon.png" alt=""> Case Studies</span>
-                    <h2 class="title"> Proteccion de activos para nuestros clientes</h2>
-                  </div>
-                </div>
-               <div class="col-xl-5 col-lg-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-               </div>
-               <div class="col-xl-2 col-lg-3 text-end">
-                  <a class="btn btn-effect" href="#">
-                    <span>About Us</span>
-                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_59_255)"><path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2"/><path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2"/></g><defs><clipPath id="clip0_59_255"><rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)"/></clipPath></defs></svg>
-                  </a>
-               </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="case-studies-wrapper case-studies-style-2">
-                    <div class="case-studies-item">
-                      <div class="item-inner">
-                        <h3 class="case-studies-title">Gozzby</h3>
-                        <div class="case-studies-description">Some people will tell you there are four while others may tell you there are eight thing.</div>
-                        <div class="case-studies-action"><a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_139)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"></path><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path></g><defs><clipPath id="clip0_923_139"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"></rect></clipPath></defs></svg></a></div>
-                      </div>
-                      <div class="case-studies-image"><img class="img-fluid gsap-img-animation" src="images/case-studies/01.png" alt="" style="scale: none; transform: translate(-50%, -50%) translate(746px, 498px); opacity: 0; visibility: hidden;"></div>
-                      <div class="marquee-wrapper">
-                        <div class="marquee-inner">
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="case-studies-item">
-                      <div class="item-inner">
-                        <h3 class="case-studies-title">Petfluent</h3>
-                        <div class="case-studies-description">Some people will tell you there are four while others may tell you there are eight thing.</div>
-                        <div class="case-studies-action"><a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_140)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"></path><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path></g><defs><clipPath id="clip0_923_140"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"></rect></clipPath></defs></svg></a></div>
-                      </div>
-                      <div class="case-studies-image"><img class="img-fluid gsap-img-animation" src="images/case-studies/02.png" alt="" style="scale: none; transform: translate(-50%, -50%) translate(746px, 498px); opacity: 0; visibility: hidden;"></div>
-                      <div class="marquee-wrapper">
-                        <div class="marquee-inner">
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="case-studies-item">
-                      <div class="item-inner">
-                        <h3 class="case-studies-title">Mobifluent</h3>
-                        <div class="case-studies-description">Some people will tell you there are four while others may tell you there are eight thing.</div>
-                        <div class="case-studies-action"><a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_141)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"></path><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path></g><defs><clipPath id="clip0_923_141"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"></rect></clipPath></defs></svg></a></div>
-                      </div>
-                      <div class="case-studies-image"><img class="img-fluid gsap-img-animation" src="images/case-studies/03.png" alt="" style="scale: none; transform: translate(-50%, -50%) translate(746px, 498px); opacity: 0; visibility: hidden;"></div>
-                      <div class="marquee-wrapper">
-                        <div class="marquee-inner">
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="case-studies-item">
-                      <div class="item-inner">
-                        <h3 class="case-studies-title">Financeoont</h3>
-                        <div class="case-studies-description">Some people will tell you there are four while others may tell you there are eight thing.</div>
-                        <div class="case-studies-action"><a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_142)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"></path><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path></g><defs><clipPath id="clip0_923_142"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"></rect></clipPath></defs></svg></a></div>
-                      </div>
-                      <div class="case-studies-image"><img class="img-fluid gsap-img-animation" src="images/case-studies/01.png" alt="" style="scale: none; transform: translate(-50%, -50%) translate(746px, 498px); opacity: 0; visibility: hidden;"></div>
-                      <div class="marquee-wrapper">
-                        <div class="marquee-inner">
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="case-studies-item">
-                      <div class="item-inner">
-                        <h3 class="case-studies-title">Educatgenix</h3>
-                        <div class="case-studies-description">Some people will tell you there are four while others may tell you there are eight thing.</div>
-                        <div class="case-studies-action"><a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_143)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"></path><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path></g><defs><clipPath id="clip0_923_143"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"></rect></clipPath></defs></svg></a></div>
-                      </div>
-                      <div class="case-studies-image"><img class="img-fluid gsap-img-animation" src="images/case-studies/02.png" alt="" style="scale: none; transform: translate(-50%, -50%) translate(746px, 498px); opacity: 0; visibility: hidden;"></div>
-                      <div class="marquee-wrapper">
-                        <div class="marquee-inner">
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon1.png" alt=""></span>
-                            <span class="title">Web Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon2.png" alt=""></span>
-                            <span class="title">UI/UX Design</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon3.png" alt=""></span>
-                            <span class="title">Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon4.png" alt=""></span>
-                            <span class="title">ISO Developer</span>
-                          </div>
-                          <div class="marquee-item">
-                            <span class="icon"><img class="img-fluid" src="images/client-logo/brand-icon5.png" alt=""></span>
-                            <span class="title">Digital Agency</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          =================================
-          Case Studies -->
-
-          <!--=================================
-          Our Testimonial -->
-          <!--<section class="space-ptb testimonial-section overflow-hidden ellipse-top bg-black z-index-2">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-md-10">
-                  <div class="section-title text-center">
-                    <span class="sub-title justify-content-center"><img class="img-fluid" src="images/subtitle-icon.png" alt=""> Our Testimonial</span>
-                    <h2 class="title"> Over 500 clients and 5,000 projects across the globe.</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-start">
-                <div class="col-md-11">
-                  <div class="owl-carousel slider-overflow" data-cursor-type="text" data-custom-text="Drag" data-nav-arrow="false" data-items="2" data-lg-items="1" data-md-items="1" data-sm-items="1" data-space="50">
-                    <div class="item">
-                      <div class="testimonial-wrapper testimonial-style-2">
-                        <div class="testimonial-ratings">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="testimonial-quote"><img class="img-fluid" src="images/quote-icon-01.png" alt="" /></div>
-                        <div class="testimonial-content">
-                          <p>The IT-Hub database has been one of our current sources for recruitment, backed by a very experienced team who would go out of their way to make sure that requests are taken ahead.</p>
-                        </div>
-                        <div class="testimonial-author">
-                          <div class="author-info">
-                            <h6 class="author-name">Key Benefits</h6>
-                            <span class="author-position">Administrator</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="testimonial-wrapper testimonial-style-2">
-                        <div class="testimonial-ratings">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="testimonial-quote"><img class="img-fluid" src="images/quote-icon-01.png" alt="" /></div>
-                        <div class="testimonial-content">
-                          <p>The IT-Hub database has been one of our current sources for recruitment, backed by a very experienced team who would go out of their way to make sure that requests are taken ahead.</p>
-                        </div>
-                        <div class="testimonial-author">
-                          <div class="author-info">
-                            <h6 class="author-name">Joanna williams</h6>
-                            <span class="author-position">Consultant</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="testimonial-wrapper testimonial-style-2">
-                        <div class="testimonial-ratings">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="testimonial-quote"><img class="img-fluid" src="images/quote-icon-01.png" alt="" /></div>
-                        <div class="testimonial-content">
-                          <p>The IT-Hub database has been one of our current sources for recruitment, backed by a very experienced team who would go out of their way to make sure that requests are taken ahead.</p>
-                        </div>
-                        <div class="testimonial-author">
-                          <div class="author-info">
-                            <h6 class="author-name">Anne Smith</h6>
-                            <span class="author-position">Officer</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="testimonial-wrapper testimonial-style-2">
-                        <div class="testimonial-ratings">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="testimonial-quote"><img class="img-fluid" src="images/quote-icon-01.png" alt="" /></div>
-                        <div class="testimonial-content">
-                          <p>The IT-Hub database has been one of our current sources for recruitment, backed by a very experienced team who would go out of their way to make sure that requests are taken ahead.</p>
-                        </div>
-                        <div class="testimonial-author">
-                          <div class="author-info">
-                            <h6 class="author-name">John Doe</h6>
-                            <span class="author-position">Director</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          =================================
-          Our Testimonial -->
-
-<!--===========================================================================================================================
-          Our Staff -->
-<!--=======================================================CSS STAFF===================================================-->
-          <style>
-            .team-img {
-              width: 100%;
-              height: 240px; /* 🔵 Más pequeño aún: de 280px bajamos a 240px */
-              overflow: hidden;
-              position: relative;
-              border-radius: 10px; /* 🔵 Bordes suaves pero más discretos */
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 🔵 Sombra más natural */
-              background-color: #000; /* 🔵 Fondo negro por si la imagen no cubre exactamente */
-            }
-            
-            .team-img img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover; /* 🔵 Asegura que la imagen llene todo el recuadro */
-              object-position: center center; /* 🔵 Centra perfectamente la imagen */
-              transition: transform 0.4s ease, filter 0.4s ease;
-              filter: brightness(0.98) contrast(1.05); /* 🔵 Corrección ligera de colores */
-            }
-            
-            .team-img:hover img {
-              transform: scale(0.95);
-              filter: brightness(1) contrast(1.20); /* 🔵 Mejora el color al hacer hover */
-            }
-            </style>
-<!--==========================================FIN CSS=====================================================================================================-->            
-            
-            <!--<section class="space-pb bg-black z-index-2">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xxl-6 col-lg-8">
-                    <div class="section-title mb-lg-0">
-                      <span class="sub-title"><img class="img-fluid" src="images/subtitle-icon.png" alt=""> Nuestro equipo</span>
-                      <h2 class="title mb-0">Ciberseguridad de élite, con enfoque cercano y compromiso absoluto.</h2>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="row mt-xl-5 pt-5">
-                  <div class="col-md-12">
-                    <div class="team-boxs grid-wrapper grid-xl-4 grid-lg-3 grid-md-2 grid-sm-2 grid-xs-1">
-                      
-                                
-                      <!-- Miembro 1 -->
-                     <!--<div class="team-item team-style-1">
-                        <div class="team-img">
-                          <img class="img-fluid" src="images/team/marcela3.png" alt="Marcela Morales Rubilar" />
-                        </div>
-                        <div class="team-info">
-                          <a  class="team-title">Marcela Morales Rubilar</a>
-                          <span class="team-destination">CEO Founder</span>
-                          <div class="team-social">
-                            <ul>
-                              <!--<li><a href="#">Fb</a></li>-->
-                              <!--<li><a href="#">Lk</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!--Miembro 2-->
-                      <!--<div class="team-item team-style-1">
-                        <div class="team-img">
-                          <img class="img-fluid" src="images/team/marcelo.JPG" alt="Marcelo Infante Alcaino" />
-                        </div>
-                        <div class="team-info">
-                          <a  class="team-title">Marcelo Infante Alcaino</a>
-                          <span class="team-destination">Abogado, con maestría en delitos penales y cibernéticos</span>
-                          <div class="team-social">
-                            <ul>
-                              <!--<li><a href="#">Fb</a></li>-->
-                              <!--<li><a href="#">Lk</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-            
-                      <!-- Miembro 3 -->
-                      <!--<div class="team-item team-style-1">
-                        <div class="team-img">
-                          <img class="img-fluid" src="images/team/Naty.jpeg" alt="Natalia Elgueta Pinochet" />
-                        </div>
-                        <div class="team-info">
-                          <a  class="team-title">Natalia Elgueta Pinochet</a>
-                          <span class="team-destination">Recursos Humanos</span>
-                          <div class="team-social">
-                            <ul>
-                              <!--<li><a href="#">Fb</a></li>-->
-                              <!--<li><a href="#">Lk</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-            
-                      <!-- Miembro 4 -->
-                      <!--<div class="team-item team-style-1">
-                        <div class="team-img">
-                          <img class="img-fluid" src="images/team/walter.JPG" alt="Paul Flavius" />
-                        </div>
-                        <div class="team-info">
-                          <a  class="team-title">Walter Rubilar Morales</a>
-                          <span class="team-destination">Oficial de ciberseguridad</span>
-                          <div class="team-social">
-                            <ul>
-                              <!--<li><a href="#">Fb</a></li>-->
-                              <!--<li><a href="#">Lk</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-            
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-       
-          <!--=================================
-          Our Staff -->
-
-<!--=============================================================--->
-
-
-
 <section class="space-pt py-5" style="position: relative; background: linear-gradient(160deg, #0d1f3f 0%, #001a33 100%); background-image: url('images/background-puntos.png'); background-size: cover; background-position: center; background-attachment: fixed; color: white;">
   <div class="container">
     <div class="row justify-content-center">
@@ -1324,113 +891,111 @@
 
 
 
+
+
 <!--=====================================================================================================================
       Site Footer -->
       
 
       
- <footer class="site-footer footer-startup">
+      <footer class="site-footer footer-startup">
+  <div class="footer-main py-4">
+    <div class="container-fluid px-4">
+      <div class="container">
+        <div class="row">
+          <!-- Columna de contacto -->
+          <div class="col-xl-3 col-md-5 col-12 mb-4">
+            <div class="widget widget-address-info">
+              <h5 class="widget-title">Contáctanos</h5>
+              <ul class="address-info-list">
+                <li>
+                  <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
+                  <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Región Metropolitana, Chile</span>
+                </li>
+                <li>
+                  <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
+                  <span class="info">+56 9 3966 1894<br>Lunes a viernes 8:30am – 6:30pm</span>
+                </li>
+                <li>
+                  <i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i>
+                  <span class="info">contacto@ir360.cl</span>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <div class="footer-main py-4"> <!-- Menor padding vertical -->
-          <div class="container-fluid px-4">
-          <div class="container">
-            <div class="row">
-              <!-- Columna de contacto -->
-              <div class="col-xl-3 col-md-5">
-                <div class="widget widget-address-info">
-                  <h5 class="widget-title">Contáctanos</h5>
-                  <ul class="address-info-list">
-                    <li>
-                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
-                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Región Metropolitana, Chile</span>
-                    </li>
-                    <li>
-                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
-                      <span class="info">+56 9 3966 1894<br>Lunes a viernes 8:30am – 6:30pm</span>
-                    </li>
-                    <li>
-                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i>
-                      <span class="info">contacto@ir360.cl</span>
-                    </li>
-                  </ul>
-                </div>
+          <!-- Columna de newsletter -->
+          <div class="col-xl-5 col-md-7 col-12 mb-4">
+            <div class="widget">
+              <h5 class="widget-title">Escríbenos</h5>
+              <div class="widget-newsletter mb-3 pb-1">
+                <form class="newsletter-form">
+                  <input type="text" class="form-control" placeholder="Ingresa tu correo">
+                  <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
               </div>
-      
-              <!-- Columna de newsletter -->
-              <div class="col-xl-5 col-md-7">
-                <div class="widget">
-                  <h5 class="widget-title">Escríbenos</h5>
-                  <div class="widget-newsletter mb-3 pb-1">
-                    <form class="newsletter-form">
-                      <input type="text" class="form-control" placeholder="Ingresa tu correo">
-                      <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Columna de Call Center y Redes -->
-              <div class="col-xl-3 col-md-12 ms-auto">
-                <div class="widget widget-info">
-                  <h5 class="widget-title">Call Center</h5>
-                  <a class="number" href="tel:+56939661894">+56 9 3966 1894</a>
-                  <h6 class="title">Consulta gratis con nuestros expertos en seguridad</h6>
-                </div>
-                <div class="widget-socail mt-3">
-                  <h6 class="widget-title">Nuestra red social</h6>
-                  <ul class="socail-icon list-unstyled d-flex align-items-center">
-                    <li>
-                      <a href="https://www.linkedin.com/company/ir360" target="_blank" style="font-size: 1.4rem;">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span class="ms-2" style="font-size: 1rem;">LinkedIn</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Certificado -->
-            <div class="trust-logo-wrapper text-center mt-4">
-              <script language="JavaScript" type="text/javascript">
-                TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_lg.png", "CL1", "none");
-              </script>
-              <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile"></a>
             </div>
           </div>
-        </div>
-      
-        <!-- Pie de página inferior -->
-        <div class="footer-copyright py-2">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <p class="mb-0">
-                  <a class="footer-logo" href="index.html">
-                    <img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="logo" style="max-height: 40px;" />
+
+          <!-- Columna de Call Center y Redes -->
+          <div class="col-xl-3 col-md-12 col-12 ms-auto mb-4">
+            <div class="widget widget-info">
+              <h5 class="widget-title">Call Center</h5>
+              <a class="number" href="tel:+56939661894">+56 9 3966 1894</a>
+              <h6 class="title">Consulta gratis con nuestros expertos en seguridad</h6>
+            </div>
+            <div class="widget-socail mt-3">
+              <h6 class="widget-title">Nuestra red social</h6>
+              <ul class="socail-icon list-unstyled d-flex align-items-center">
+                <li>
+                  <a href="https://www.linkedin.com/company/ir360" target="_blank" style="font-size: 1.4rem;">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="ms-2" style="font-size: 1rem;">LinkedIn</span>
                   </a>
-                </p>
-              </div>
-              <div class="col-lg-6 text-lg-end">
-                <p class="mb-0 small">Desarrollado por <a href="#">Potenza Global Solutions</a> © 2025 IR360</p>
-               </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
-      
+
+        <!-- Certificado -->
+        <div class="trust-logo-wrapper text-center mt-4">
+          <script language="JavaScript" type="text/javascript">
+            TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_lg.png", "CL1", "none");
+          </script>
+          <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página inferior -->
+    <div class="footer-copyright py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="mb-0">
+              <a class="footer-logo" href="index.html">
+                <img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="logo" style="max-height: 40px;" />
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <p class="mb-0 small">Desarrollado por <a href="#">Potenza Global Solutions</a> © 2025 IR360</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back To Top -->
+<div class="back-to-top">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+  </svg>
+</div>
 
 <!--=================================
-      Back To Top -->
-      <div class="back-to-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-        </svg>
-      </div>
-
-    </div>
-    <!--=================================
     Javascript -->
     <!-- JS Global Compulsory (Do not remove)-->
     <script src="js/jquery-3.7.1.min.js"></script>

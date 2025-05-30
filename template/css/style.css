@@ -1031,6 +1031,7 @@ blockquote.blockquote-style-1:before {
 /*=====================================================*/
 /* Grid Col - CSS */
 /*=====================================================*/
+
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -1544,6 +1545,7 @@ blockquote.blockquote-style-1:before {
   }
 }
 
+
 /*****************************
   Accordion
 *****************************/
@@ -1919,7 +1921,7 @@ blockquote.blockquote-style-1:before {
 /*****************************
   Awards
 *****************************/
-.awards-wrapper .awards-item {
+/*.awards-wrapper .awards-item {
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -1997,7 +1999,7 @@ blockquote.blockquote-style-1:before {
 /*=====================================================*/
 /* Responsive CSS */
 /*=====================================================*/
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
   .awards-wrapper .awards-item .item-inner {
     gap: 60px;
   }

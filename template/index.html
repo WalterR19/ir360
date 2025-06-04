@@ -53,7 +53,15 @@
 </head>
 <body>
 
+   <!--=================================
+    cursor -->
+    <div id="cursor">
+      <!--<div class="cursor__circle"></div>-->
+    </div>
+    <!--=================================
+    cursor -->
     
+    <div id="page" class="main">  
 
 
 <!--==================================================================================================================
@@ -109,7 +117,10 @@
                   <li><a class="nav-link" href="blog-detail.html">Blog Single</a></li>
                 </ul>-->
               </li>
-              <li class="nav-item"><a class="nav-link" href="contact-us.html">Contactanos</a></li>
+              <li class="nav-item">
+                <a class="nav-link contact-highlight" href="contact-us.html">Contáctanos</a>
+              </li>
+
             </ul>
           </div>
 
@@ -138,7 +149,22 @@
       
       </header>
 
+<style>
+  .contact-highlight {
+  color: #FFD700 !important; /* texto dorado */
+  border: 2px solid #FFD700; /* borde dorado */
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+.contact-highlight:hover {
+  background-color: #1814012d;
+  color: #e9ec09 !important; /* texto negro al hacer hover */
+}
+
+</style>
 <!--============================================================================================
       Main Menu OffCanvas -->
 
@@ -230,7 +256,7 @@
                 <ul class="list-unstyled">
                   <!--<li><a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a></li>
                   <li><a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>-->
-                  <li><a href="https://www.linkedin.com/company/ir360"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                  <li><a href=www.linkedin.com/in/ir360><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
 
                   <!--<li><a href="#"><i class="fa-brands fa-dribbble me-2"></i>Dribbble</a></li>-->
                 </ul>
@@ -432,7 +458,7 @@ body {
 <!-- Imagen centrada arriba de todo -->
 <!-- Imagen centrada arriba de todo con título estilo Startup -->
 <div style="text-align: center; margin-bottom: 1rem;">
-  <img src="images/firewall2.png" alt="Computador" style="max-width: 200px; height: auto; margin-top: 2cm;">
+  <img src="images/IR360 Blanco.png" alt="Computador" class="logo-contorno" style="max-width: 200px; height: auto; margin-top: 2cm;">
 
   <h1 style="
     font-size: 3rem;
@@ -579,6 +605,34 @@ img.img-fluid.rounded {
   object-fit: cover;
   border-radius: 12px;
 }
+.logo-contorno {
+  max-width: 200px;
+  height: auto;
+  margin-top: 2cm;
+
+  /* Fondo sutil para contraste */
+  background-color: rgba(255, 255, 255, 0.03);
+
+  /* Contorno blanco más marcado */
+  border: 6px solid white;
+  border-radius: 20px;
+  padding: 20px;
+
+  /* Sombra tenue para separarlo sin excesivo brillo */
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-contorno:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.25),
+    0 0 25px rgba(255, 255, 255, 0.15);
+}
+
 
 
 /* Responsive */
@@ -865,15 +919,16 @@ img.img-fluid.rounded {
 
 <!--======================================================================================-->
 
-<section class="space-pt py-5" style="position: relative; background: linear-gradient(160deg, #0d1f3f 0%, #001a33 100%); background-image: url('images/background-puntos.png'); background-size: cover; background-position: center; background-attachment: fixed; color: white;">
-  <div class="container">
+<section class="space-pt py-5 casos-exito-section">
+  <div class="casos-overlay"></div>
+  <div class="container position-relative">
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
         <div class="section-title">
-          <span class="sub-title d-inline-flex align-items-center mb-2" style="color: #fff; font-weight: 700;">
+          <span class="sub-title d-inline-flex align-items-center mb-2">
             <img class="img-fluid me-2" src="images/subtitle-icon.png" alt="Casos de Éxito"> Casos de Éxito
           </span>
-          <h2 class="title fw-bold" style="font-size: 2.7rem; letter-spacing: 0.02em; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">
+          <h2 class="title fw-bold">
             Resultados Reales con Impacto
           </h2>
         </div>
@@ -890,19 +945,36 @@ img.img-fluid.rounded {
             </div>
             <div class="col-md-8 text-center text-md-start caso-content">
               <div class="caso-box">
-                <h4 class="fw-bold caso-titulo">Poh estudio: Mitigación de Ingeniería Social y Refuerzo ISO 27001:2022</h4>
-                <p class="caso-texto">
-                  En <strong>IR360</strong>, transformamos desafíos en oportunidades. Con el caso de 
-                  <a href="https://pohestudios.com/" target="_blank" style="color:#fff; font-weight: 700; text-decoration: underline;">Poh estudio</a>, actuamos con rapidez para mitigar un <strong>ataque de ingeniería social</strong>, recuperando activos digitales clave y asegurando la continuidad del negocio.
-                </p>
-                <p class="caso-texto" style="font-style: italic;">
-                  Aplicamos los estándares más altos de la <strong>ISO 27001:2022</strong> y fortalecimos su infraestructura, permitiendo continuar su operación con resiliencia y confianza.
+                <h4 class="fw-bold caso-titulo">🛡️ Poh Estudio: Recuperamos la confianza tras un intento de ataque de ingeniería social</h4>
+
+              <p class="caso-texto fst-italic">
+                En un momento crítico, fuimos blanco de un <strong>ataque de ingeniería social</strong> que comprometió parte de nuestros sistemas y puso en riesgo activos digitales clave para nuestra operación en 
+                <a href="https://pohestudios.com/" target="_blank" class="fst-italic">Poh Estudio</a>.
+              </p>
+
+              <p class="caso-texto fst-italic">
+                Gracias al trabajo profesional, rápido y comprometido de <strong>IR360</strong>, logramos contener el incidente, recuperar nuestros activos y asegurar la continuidad de nuestros servicios.
+              </p>
+
+              <p class="caso-texto fst-italic">
+                Además, reforzaron nuestra infraestructura aplicando los estándares de la <strong>norma ISO/IEC 27001:2022</strong>, permitiéndonos operar hoy con mayor seguridad, resiliencia y confianza.
+              </p>
+
+              <p class="caso-texto fst-italic">
+                Recomendamos a <strong>IR360</strong> por su capacidad técnica, atención cercana y verdadero compromiso con la seguridad de sus clientes.
+              </p>
+
+              <p class="caso-texto fw-bold mt-3">
+                — Mauricio González, CEO Poh Estudio
+              </p>
+
+                
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Duplica para más casos -->
+        <!-- Puedes duplicar más .carousel-item aquí -->
       </div>
       <div class="carousel-indicators" style="bottom: -30px;">
         <button type="button" data-bs-target="#casosSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Caso 1"></button>
@@ -911,27 +983,78 @@ img.img-fluid.rounded {
   </div>
 </section>
 
+<!-- CSS personalizado -->
 <style>
-/* Imagen más pequeña y ajustada */
+.casos-exito-section {
+  position: relative;
+  background: linear-gradient(160deg, #0d1f3f 0%, #001a33 100%);
+  background-image: url('images/background-puntos.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  overflow: hidden;
+}
+
+.casos-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 30, 0.75);
+  z-index: 1;
+}
+
+.container.position-relative {
+  position: relative;
+  z-index: 2;
+}
+
+/* Título */
+.section-title .sub-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2.7rem;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen */
 .caso-img {
   width: 70%;
   max-width: 160px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  background-color: #0d1f3f;
+  transform: perspective(1200px) rotateY(18deg) rotateX(2deg) translateZ(10px);
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.5),
+    0 0 0 3px rgba(255, 255, 255, 0.05),
+    inset -5px 5px 10px rgba(255, 255, 255, 0.08),
+    10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .caso-item:hover .caso-img {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  transform: perspective(1200px) rotateY(12deg) rotateX(0deg) translateZ(40px) scale(1.08);
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.7),
+    0 0 0 6px rgba(255, 255, 255, 0.1),
+    inset -4px 6px 14px rgba(255, 255, 255, 0.08),
+    15px 20px 30px rgba(0, 0, 0, 0.4);
+  z-index: 3;
 }
 
-/* Caja del contenido con fondo gris transparente y padding */
+/* Contenido de texto */
 .caso-box {
-  background-color: rgba(0, 0, 0, 0.6); /* Gris más oscuro y sutil */
+  background-color: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
   padding: 20px;
   border-radius: 15px;
-  display: inline-block;
   text-align: center;
   width: 100%;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
@@ -942,11 +1065,10 @@ img.img-fluid.rounded {
   transform: translateY(-10px);
 }
 
-/* Textos centrados y responsivos */
 .caso-titulo {
   color: #fff;
   font-size: 1.7rem;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
   margin-bottom: 0.5rem;
 }
 
@@ -954,10 +1076,17 @@ img.img-fluid.rounded {
   color: #fff;
   font-size: 1.2rem;
   line-height: 1.6;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 0.6rem;
 }
 
+.caso-texto a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Indicadores */
 .carousel-indicators [data-bs-target] {
   background-color: #fff;
   width: 12px;
@@ -966,7 +1095,7 @@ img.img-fluid.rounded {
   margin: 0 5px;
 }
 
-/* Mejor responsividad */
+/* Responsividad */
 @media (max-width: 992px) {
   .caso-img {
     max-width: 120px;
@@ -1001,11 +1130,18 @@ img.img-fluid.rounded {
     padding: 10px;
   }
 }
+
 </style>
+
+
+
+
+
+
 
 <!---===================================CUMPLIMIENTO MARCO NORAMTIVO======================================================-->
 
-<section id="ley-datos" style="background: rgba(150, 176, 216, 0.199); padding: 4rem 2rem; font-family: 'Inter', sans-serif;">
+<section id="ley-datos" style="background: rgba(41, 57, 82, 0.199); padding: 4rem 2rem; font-family: 'Inter', sans-serif;">
   <div class="container" style="max-width: 1200px; margin: auto;">
     
     <!-- Título superior con logo centrado -->

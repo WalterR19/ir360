@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS Global Compulsory (Do not remove)-->
     <link rel="stylesheet" href="css/font-awesome/all.min.css">
@@ -25,22 +26,27 @@
   </head>
   <body>
 
-    <!--=================================
-    cursor -->
-    <div id="cursor">
-      <!--<div class="cursor__circle"></div>-->
-    </div>
-    <!--=================================
-    cursor -->
     
-    <div id="page" class="main">
 
       <!--=================================
       Header -->
       <header class="header header-default header-sticky">
         <div class="header-inner">
           <div class="site-logo">
-            <a class="navbar-brand" href="index.html"><img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="Logo IR360" />
+            <a class="navbar-brand" href="index.html"><img src="images/logo3.png" alt="Logo IR360" class="logo-ir360" />
+
+<style>
+  .logo-ir360 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* importante para que no se deforme */
+}
+
+</style>
+
+
           </div>
           <div class="site-menu d-none d-xl-block">
             <ul class="main-menu">
@@ -58,7 +64,7 @@
                   <li><a class="nav-link" href="careers.html">Careers</a></li>-->
                   <li><a class="nav-link" href="contact-us.html">Contactanos</a></li>
                   <!--<li><a class="nav-link" href="faq.html">Faq</a></li>-->
-                  <li><a class="nav-link" href="team.html">Nuestro equipo</a></li>
+                  <!--<li><a class="nav-link" href="team.html">Nuestro equipo</a></li>-->
                   <!--<li><a class="nav-link" href="team-single.html">Team Single</a></li>
                   <li><a class="nav-link" href="typography.html">Typography</a></li>
                   <li><a class="nav-link" href="page-left-sidebar.html">Page Left Sidebar</a></li>
@@ -139,7 +145,7 @@
                     <li><a class="dropdown-item" href="careers.html">Careers</a></li>-->
                     <li><a class="dropdown-item" href="contact-us.html">Contáctanos</a></li>
                     <!--<li><a class="dropdown-item" href="faq.html">Faq</a></li>-->
-                    <li><a class="dropdown-item" href="team.html">Nuestro equipo</a></li>
+                    <!--<li><a class="dropdown-item" href="team.html">Nuestro equipo</a></li>-->
                     <!--<li><a class="dropdown-item" href="team-single.html">Team Single</a></li>
                     <li><a class="dropdown-item" href="typography.html">Typography</a></li>
                     <li><a class="dropdown-item" href="page-left-sidebar.html">Page Left Sidebar</a></li>
@@ -174,9 +180,9 @@
             </nav>
             <div class="bottom-info">
               <div class="contact-info">
-                <span class="número">+569 39661894</span>
-                <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto@ir360.cl</a>
-                <span class="text">¿Buscas colaboración para proteger tus activos criticos?</span>
+                <span class="número">(56-2) 25 03 32 19</span>
+                <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto@equanime.cl</a>
+                <span class="text">¿Buscas asesoria legal experta?</span>
               </div>
             </div>
           </div>
@@ -195,15 +201,15 @@
         <div class="offcanvas-body lenis-scroll-disable">
           <div class="body-inner">
             <div class="about-info">
-              <h4 class="title mb-3">Protege tu negocio con accion y estrategia</h4>
-              <p>La ejecución es el escudo más fuerte. Implementa, mejora, escala.</p>
+              <h4 class="title mb-3">Defensoria policial solidaria</h4>
+              <p>Te apoyamos en  los momentos mas complejos de tu carrera funcionaria</p>
             </div>
             <div class="socail-info">
               <div class="socail-info mt-4">
                 <ul class="list-unstyled">
                   <!--<li><a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a></li>
                   <li><a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>-->
-                  <li><a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                  <!--<li><a href="https://www.linkedin.com/company/ir360spa/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
 
                   <!--<li><a href="#"><i class="fa-brands fa-dribbble me-2"></i>Dribbble</a></li>-->
                 </ul>
@@ -211,9 +217,9 @@
             </div>
             
             <div class="contact-info">
-              <span class="número">+56 9 39661894</span>
-              <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto@ir360.cl</a>
-              <span class="text">¿Buscas colaboración para proteger tu próxima gran idea?</span>
+              <span class="número">(56-2) 25 03 32 19</span>
+              <a class="mail" href="#"><i class="fa-regular fa-envelope"></i>contacto@equanime.cl</a>
+              <span class="text">¿Buscas asesoria legal experta?</span>
             </div>
           </div>
         </div>
@@ -232,22 +238,104 @@
       </div>
 
 
-        <!--=================================
-        Page Header -->
-        <div class="inner-header bg-holder" style="background-image: url(images/banner/inner-header/page-header-01.jpg);">
+
+
+<!--=======================================================================================================================
+        <style>
+          /* ✅ Estilo responsive para sección de servicios */
+          @media (max-width: 768px) {
+            .service-card {
+              padding: 1.25rem !important;
+              text-align: left !important;
+            }
+
+            .service-card h4 {
+              font-size: 1.1rem !important;
+              line-height: 1.4 !important;
+            }
+
+            .service-card p {
+              font-size: 0.95rem !important;
+              line-height: 1.5 !important;
+              margin-bottom: 0.75rem !important;
+            }
+
+            .service-card .badge {
+              font-size: 0.75rem !important;
+              padding: 0.35rem 0.6rem !important;
+              margin-left: 0.3rem;
+            }
+
+            .pulse-icon {
+              font-size: 1.4rem !important;
+              margin-right: 0.75rem !important;
+            }
+
+            .section-title {
+              font-size: 1.5rem !important;
+            }
+
+            .lead {
+              font-size: 1rem !important;
+            }
+
+            .inner-header h1.title {
+              font-size: 1.8rem !important;
+            }
+
+            .inner-header p {
+              font-size: 1rem !important;
+              line-height: 1.4 !important;
+            }
+
+            .row.g-4 > [class*="col-"] {
+              padding-left: 0.75rem !important;
+              padding-right: 0.75rem !important;
+            }
+
+            .rounded.shadow.h-100 {
+              height: auto !important;
+              margin-bottom: 1rem !important;
+            }
+          }
+
+        </style>
+
+
+        <!--<div class="inner-header bg-holder" style="background-image: url(images/banner/inner-header/page-header-01.jpg);">
           <div class="container">
             <div class="row  justify-content-center">
               <div class="col-md-12 text-center">
-                <h1 class="title">Contactanos</h1>
-                <!--<p>Deja que el éxito te motive.</p>-->
+                <h1 class="title"><strong></strong>Nuestros servicios </strong></h1>
+                <p>Servicios expertos en ciberseguridad, para proteger y fortalecer tu infraestructura digital</p>
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
 
-        <div class="content-wrapper">
+        <section class="space-ptb bg-dark text-white">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <div class="col-lg-8 text-center">
+                <h2 class="section-title text-uppercase fw-bold fade-in", style="
+  color: #ffffff;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000;
+">Contactanos</h2>
+
+                <!--<p class="lead text-light fade-in">Soluciones integrales en ciberseguridad para proteger lo que más importa: tu información.</p>-->
+              </div>
+            </div>
 
 <!--======================================================================================================
+
+
+
+
+
           Contact Us -->
           <section class="space-ptb z-index-2">
             <div class="container">
@@ -257,8 +345,8 @@
                     <span class="sub-title">
                       <img class="img-fluid" src="images/subtitle-icon.png" alt=""> Nuestra Oficina
                     </span>
-                    <h2 class="title">Contáctanos. Estamos listos para mejorar tu ciberseguridad</h2>
-                    <p>En IR360 creemos en una comunicación directa, cercana y profesional. Agenda una reunión o visítanos en nuestra sede.</p>
+                    <h2 class="title">Contáctanos. Estamos listos para ser tu primera linea de defensa</h2>
+                    <p>En Equanime creemos en una comunicación directa, cercana y profesional. Agenda una reunión o visítanos en nuestra oficina.</p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-7">
@@ -274,15 +362,15 @@
                             <div class="city-location">
                               <div class="location-item">
                                 <i class="icon"><img class="img-fluid" src="images/icon-location.png" alt=""></i>
-                                <div class="list-label">Rafael Riesco Bernales 501, Maipú, Región Metropolitana</div>
+                                <div class="list-label"> Avenida Rafael Riesco Bernales Nro. 501, Región Metropolitana</div>
                               </div>
                               <div class="location-item">
                                 <i class="icon"><img class="img-fluid" src="images/icon-phone-call.png" alt=""></i>
-                                <div class="list-label">+56 9 3966 1894</div>
+                                <div class="list-label">(56-2) 25 03 32 19</div>
                               </div>
                               <div class="location-item">
                                 <i class="icon"><img class="img-fluid" src="images/icon-email.png" alt=""></i>
-                                <div class="list-label">contacto.soluciones@ir360.store</div>
+                                <div class="list-label">contacto@equanime.cl</div>
                               </div>
                             </div>
                           </div>
@@ -310,94 +398,311 @@
           </section>
           
           </section>
+
+
+
+
+          <style>
+
+          /* 🔹 Estilo general para el área de contacto */
+          .space-ptb {
+            background: linear-gradient(160deg, #3963ad57 0%, #0f549938 100%);
+            padding: 4rem 2rem;
+            border-radius: 12px;
+            box-sizing: border-box;
+            text-align: center; /* 🔵 Centra el contenido general */
+          }
+
+          .space-ptb .section-title {
+            margin-bottom: 2rem;
+          }
+
+          .space-ptb .section-title .sub-title {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+          }
+
+          .space-ptb .section-title h2.title {
+            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+          }
+
+          .space-ptb .section-title p {
+            color: #f0f0f0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify; /* 🔵 Justificado para párrafos */
+          }
+
+          .space-ptb .city-name a {
+            color: #fafafa;
+            font-weight: 700;
+            font-size: 1.3rem;
+          }
+
+          .space-ptb .list-label {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: justify; /* 🔵 Justificado */
+          }
+
+          .map-title {
+            color: #6A00FF;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
+
+          .map-container iframe {
+            border: 3px solid #2600ff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            width: 100%;
+            height: 250px;
+          }
+
+          .location-wrapper {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(6px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: justify; /* 🔵 Justificado dentro del recuadro */
+            box-sizing: border-box;
+          }
+
+          .location-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+          }
+
+          /* 🔹 Responsive ajustes */
+          @media (max-width: 1024px) {
+            .space-ptb {
+              padding: 3rem 1.5rem;
+            }
+
+            .space-ptb .section-title h2.title {
+              font-size: 2rem;
+            }
+
+            .space-ptb .section-title p {
+              font-size: 1rem;
+            }
+
+            .location-wrapper {
+              padding: 1.5rem;
+            }
+
+            .map-container iframe {
+              height: 220px;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .space-ptb {
+              padding: 2.5rem 1rem;
+            }
+
+            .space-ptb .row {
+              flex-direction: column;
+              gap: 1.5rem;
+            }
+
+            .space-ptb .section-title h2.title {
+              font-size: 1.7rem;
+            }
+
+            .space-ptb .section-title p {
+              font-size: 1rem;
+            }
+
+            .location-wrapper {
+              padding: 1.2rem;
+            }
+
+            .map-container iframe {
+              height: 200px;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .space-ptb {
+              padding: 2rem 0.5rem;
+            }
+
+            .space-ptb .section-title h2.title {
+              font-size: 1.4rem;
+            }
+
+            .space-ptb .section-title p {
+              font-size: 0.95rem;
+            }
+
+            .location-wrapper {
+              padding: 1rem;
+            }
+
+            .map-container iframe {
+              height: 180px;
+            }
+          }
+
+
+          </style>
           <!--=================================
           Contact Us -->
-
 <!--=====================================================================================================================
-          Contact Us -->
-          <section class="space-pt ellipse-top bg-black">
-            <div class="space-pb ellipse-bottom">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-md-10">
-                    <div class="section-title text-center">
-                      <span class="sub-title d-flex justify-content-center">
-                        <img class="img-fluid" src="images/subtitle-icon.png" alt=""> contact us
-                      </span>
-                      <h2 class="title"> ¿Necesitas ayuda? Por favor, completa el formulario. </h2>
-                    </div>
-                    <div class="form-wrapper">
-                      <form class="contact-form form-style-border" method="POST" action="formmail.php">
-                        <input type="hidden" name="to" value="contacto@ir360.cl">
-                        <input type="hidden" name="subject" value="Mensaje desde el sitio web IR360">
-                      
-                        <div class="row">
-                          <div class="col-md-4">
-                            <input type="text" class="form-control" name="name" placeholder="Name" aria-label="Name" required>
-                          </div>
-                          <div class="col-md-4">
-                            <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" required>
+     contacto---->     
+<section class="space-pt ellipse-top bg-black">
+  <div class="space-pb ellipse-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="section-title text-center">
+            <span class="sub-title d-flex justify-content-center">
+              <img class="img-fluid" src="images/subtitle-icon.png" alt=""> Contacto
+            </span>
+            <h2 class="title", style="
+  color: #ffffff;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000;
+">¿Necesitas ayuda? Completa el formulario</h2>
+          </div>
 
-                          </div>
-                          <div class="col-md-4">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone">
-                          </div>
-                          <div class="col-lg-12">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                          </div>
-                          <div class="col-lg-12">
-                            <button type="submit" class="btn btn-effect">
-                              <span>Send Message</span>
-                              <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_59_253)">
-                                  <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2"/>
-                                  <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2"/>
-                                </g>
-                                <defs>
-                                  <clipPath id="clip0_59_253">
-                                    <rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)"/>
-                                  </clipPath>
-                                </defs>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-          
-                  </div>
-                </div>
-              </div>
+          <div class="form-wrapper">
+            <!-- Mostrar mensaje solo si ?enviado=ok en la URL -->
+            <div id="mensajeExito" style="display:none; background-color:#d4edda; color:#155724; padding:10px; border-radius:10px; margin-bottom:15px;">
+              ✅ ¡Mensaje enviado con éxito! Nuestros expertos se pondrán en contacto con usted.
             </div>
 
-            <script>
-              document.querySelector('.contact-form').addEventListener('submit', function(e) {
-                e.preventDefault(); // Evitar que se recargue la página
-              
-                const form = e.target;
-                const formData = new FormData(form);
-              
-                fetch(form.action, {
-                  method: 'POST',
-                  body: formData
-                })
-                .then(response => response.text())
-                .then(result => {
-                  if (result.trim() === "OK") {
-                    // Mostrar el mensaje de éxito
-                    form.innerHTML = '<div class="alert alert-success" role="alert">Tu información fue enviada y será revisada por nuestros expertos. Nos pondremos en contacto a la brevedad.</div>';
-                  } else {
-                    // Mostrar un error
-                    alert("Hubo un error al enviar el formulario. Inténtalo nuevamente.");
-                  }
-                })
-                .catch(error => {
-                  console.error('Error:', error);
-                  alert("Hubo un error al enviar el formulario. Inténtalo nuevamente.");
-                });
-              });
-              </script>
-              
-          </section>
+            <!-- Tu formulario original, intacto -->
+            <form class="contact-form form-style-border" method="POST" action="formmail.php">
+              <input type="hidden" name="to" value="contacto@ir360.cl">
+              <input type="hidden" name="subject" value="Mensaje desde el sitio web IR360">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" name="name" placeholder="Nombre completo" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="tel" class="form-control" name="phone" placeholder="Teléfono">
+                </div>
+                <div class="col-lg-12">
+                  <textarea class="form-control" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+                <div class="col-lg-12 text-center">
+                  <!--<button type="submit" class="btn btn-effect">-->
+                    <!--<span>Enviar Mensaje</span>-->
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2"/>
+                      <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2"/>
+                    </svg>
+                 <div class="col-lg-12 text-center">
+  <button type="submit" class="btn-consulta mt-3">
+    Enviar Mensaje
+  </button>
+</div>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Remover reglas que bloquean los inputs */
+.form-control {
+  background-color: #6076ee9a !important;
+  color: #000 !important;
+  pointer-events: auto !important;
+  opacity: 1 !important;
+}
+
+.form-wrapper {
+  position: relative !important;
+  z-index: 999 !important;
+}
+
+body {
+  pointer-events: auto !important;
+}
+
+.form-control,
+.form-control::placeholder,
+textarea,
+textarea::placeholder {
+  color: #fff !important;
+  /*text-shadow: 
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+  opacity: 1 !important; /* Asegura que el placeholder sea visible */
+}
+
+/* Botón con color rojo oscuro */
+.btn-consulta {
+  background-color: #8B0000 !important; /* Rojo oscuro profesional */
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 8px 20px rgba(139, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-consulta:hover {
+  background-color: #a10000 !important;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(139, 0, 0, 0.4);
+}
+
+</style>
+
+
+<script>
+// Mostrar mensaje de éxito si URL contiene ?enviado=ok
+window.onload = function() {
+  if (window.location.search.indexOf('enviado=ok') > -1) {
+    document.getElementById("mensajeExito").style.display = "block";
+  }
+};
+
+window.onload = function() {
+  if (window.location.search.indexOf('enviado=ok') > -1) {
+    document.getElementById("mensajeExito").style.display = "block";
+  } else if (window.location.search.indexOf('enviado=error') > -1) {
+    alert("Lo sentimos, ocurrió un error al enviar el mensaje. Intente nuevamente.");
+  }
+};
+
+</script>
+
 <!--===================================================================================================================
           Contact Us -->
 
@@ -406,105 +711,107 @@
 
 <!--=========================================================================================
       Site Footer -->
-      <footer class="site-footer footer-dark">
-        <div class="footer-main py-4"> <!-- Menor padding vertical -->
-          <div class="container">
-            <div class="row">
-              <!-- Columna de contacto -->
-              <div class="col-xl-3 col-md-5">
-                <div class="widget widget-address-info">
-                  <h5 class="widget-title">Contáctanos</h5>
-                  <ul class="address-info-list">
-                    <li>
-                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
-                      <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Maipú, Región Metropolitana, Chile</span>
-                    </li>
-                    <li>
-                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
-                      <span class="info">+56 9 3966 1894<br>Lunes a viernes 8:30am – 6:30pm</span>
-                    </li>
-                    <li>
-                      <i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i>
-                      <span class="info">contacto@ir360.cl</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-      
-              <!-- Columna de newsletter -->
-              <div class="col-xl-5 col-md-7">
-                <div class="widget">
-                  <h5 class="widget-title">Escríbenos</h5>
-                  <div class="widget-newsletter mb-3 pb-1">
-                    <form class="newsletter-form">
-                      <input type="text" class="form-control" placeholder="Ingresa tu correo">
-                      <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Columna de Call Center y Redes -->
-              <div class="col-xl-3 col-md-12 ms-auto">
-                <div class="widget widget-info">
-                  <h5 class="widget-title">Call Center</h5>
-                  <a class="number" href="tel:+56939661894">+56 9 3966 1894</a>
-                  <h6 class="title">Consulta gratis con nuestros expertos en seguridad</h6>
-                </div>
-                <div class="widget-socail mt-3">
-                  <h6 class="widget-title">Nuestra red social</h6>
-                  <ul class="socail-icon list-unstyled d-flex align-items-center">
-                    <li>
-                      <a href="https://www.linkedin.com/company/ir360" target="_blank" style="font-size: 1.4rem;">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span class="ms-2" style="font-size: 1rem;">LinkedIn</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Certificado -->
-            <div class="trust-logo-wrapper text-center mt-4">
-              <script language="JavaScript" type="text/javascript">
-                TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_lg.png", "CL1", "none");
-              </script>
-              <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile"></a>
+
+  <footer class="site-footer footer-startup">
+  <div class="footer-main py-4">
+    <div class="container-fluid px-4">
+      <div class="container">
+        <div class="row">
+          <!-- Columna de contacto -->
+          <div class="col-xl-3 col-md-5 col-12 mb-4">
+            <div class="widget widget-address-info">
+              <h5 class="widget-title">Contáctanos</h5>
+              <ul class="address-info-list">
+                <li>
+                  <i class="icon"><img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" /></i>
+                  <span class="info">Avenida Rafael Riesco Bernales Nro 501<br>Región Metropolitana, Chile</span>
+                </li>
+                <li>
+                  <i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg" alt="" /></i>
+                  <span class="info">(56-2)   25 03 32 19   <br>Lunes a viernes 8:30am – 6:30pm</span>
+                </li>
+                <li>
+                  <i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg" alt="" /></i>
+                  <span class="info">contacto@equanime.cl</span>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      
-        <!-- Pie de página inferior -->
-        <div class="footer-copyright py-2">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <p class="mb-0">
-                  <a class="footer-logo" href="index.html">
-                    <img class="img-fluid logo-ir360" src="images/IR360 Blanco.png" alt="logo" style="max-height: 40px;" />
+
+          <!-- Columna de newsletter -->
+          <div class="col-xl-5 col-md-7 col-12 mb-4">
+            <div class="widget">
+              <h5 class="widget-title">Escríbenos</h5>
+              <div class="widget-newsletter mb-3 pb-1">
+                <form class="newsletter-form">
+                  <input type="text" class="form-control" placeholder="Ingresa tu correo">
+                  <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna de Call Center y Redes -->
+          <div class="col-xl-3 col-md-12 col-12 ms-auto mb-4">
+            <div class="widget widget-info">
+              <h5 class="widget-title">Call Center</h5>
+              <a class="number" href="tel:(56-2)   25 03 32 19   ">(56-2)   25 03 32 19   </a>
+              <h6 class="title">Consulta con nuestros equipo juridico especializado</h6>
+            </div>
+            <div class="widget-socail mt-3">
+              <h6 class="widget-title">Nuestra red social</h6>
+              <ul class="socail-icon list-unstyled d-flex align-items-center">
+                <li>
+                  <a href="https://www.linkedin.com/company/ir360spa/" target="_blank" style="font-size: 1.4rem;">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="ms-2" style="font-size: 1rem;">LinkedIn</span>
                   </a>
-                </p>
-              </div>
-              <div class="col-lg-6 text-lg-end">
-                <p class="mb-0 small">Desarrollado por <a href="#">Potenza Global Solutions</a> © 2025 IR360</p>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
-      
+
+        <!-- Certificado -->
+        <!--<div class="trust-logo-wrapper text-center mt-4">
+          <script language="JavaScript" type="text/javascript">
+            TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_lg.png", "CL1", "none");
+          </script>
+          <a href="https://donweb.com/es-cl/certificados-ssl" id="comodoTL" title="Certificados SSL Chile"></a>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- Pie de página inferior -->
+    <!-- Pie de página inferior -->
+    <div class="footer-copyright py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="mb-0">
+              <a class="footer-logo" href="index.html">
+                <img class="img-fluid logo-ir360" src="images/logo3.png" alt="logo" style="max-height: 40px;" />
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <p class="mb-0 small">Desarrollado por <a href="#">IR360 Soluciones</a> © 2025 Equanime</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Back To Top -->
+<div class="back-to-top">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+  </svg>
+</div>
 
 <!--=================================
-      Back To Top -->
-      <div class="back-to-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-        </svg>
-      </div>
-
-    </div>
-    <!--=================================
     Javascript -->
     <!-- JS Global Compulsory (Do not remove)-->
     <script src="js/jquery-3.7.1.min.js"></script>

@@ -3,7 +3,7 @@
 
   <!-- Home -->
   <url>
-    <loc>https://ir360.cl/</loc>
+    <loc>https://equanime.cl/</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,28 +11,28 @@
 
   <!-- Secciones principales -->
   <url>
-    <loc>https://ir360.cl/about-us.html</loc>
+    <loc>https://equanime.cl/about-us.html</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://ir360.cl/service.html</loc>
+    <loc>https://equanime.cl/service.html</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://ir360.cl/contact-us.html</loc>
+    <loc>https://equanime.cl/contact-us.html</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://ir360.cl/team.html</loc>
+    <loc>https://equanime.cl/team.html</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -40,14 +40,14 @@
 
   <!-- FAQ o Casos de Éxito -->
   <url>
-    <loc>https://ir360.cl/faq.html</loc>
+    <loc>https://equanime.cl/faq.html</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://ir360.cl/casos-de-exito.html</loc>
+    <loc>https://equanime.cl/casos-de-exito.html</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -70,7 +70,7 @@
 
   <!-- Blog (si agregas secciones) -->
   <url>
-    <loc>https://ir360.cl/blog.html</loc>
+    <loc>https://equanime.cl/blog.html</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -78,7 +78,7 @@
 
   <!-- Mapa del sitio para buscadores -->
   <url>
-    <loc>https://ir360.cl/sitemap.xml</loc>
+    <loc>https://equanime.cl/sitemap.xml</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

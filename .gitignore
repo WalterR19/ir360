@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+.env.local
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Backups
+BACKUP_*/
+*.backup
+*.bak
+
+# Logs
+web/logs/
+*.error
+
+# Cache
+.cache/
+dist/

@@ -1,0 +1,38 @@
+/* ========================================
+   CONTACTO - DISEÑO LIMPIO
+   Estilos básicos sin interferencia
+   ======================================== */
+
+/* GRID SYSTEM BÁSICO */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.col-12,
+.col-md-6,
+.col-lg-5,
+.col-lg-7 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box;
+}
+
+/* VIEWPORT */
+@media (max-width: 575px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+

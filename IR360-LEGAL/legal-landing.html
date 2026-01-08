@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- CRITICAL: Preloader CSS - Inline to prevent FOUC -->
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #032841 0%, #1a3a52 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    .preloader.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .preloader-logo {
+      width: 120px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Meta SEO optimizados -->
+  <meta name="keywords" content="abogado Santiago Chile, derecho penal, derecho laboral, derecho civil, tutelas laborales, mediación, asesoría legal, IR360 Legal, estudio jurídico">
+  <meta name="description" content="IR360 Legal - Estudio Jurídico en Santiago. Expertos en Derecho Penal, Civil, Laboral y Administrativo. Primera consulta gratis. Tutelas laborales y mediación.">
+  <meta name="author" content="IR360 Legal">
+  <meta name="robots" content="index, follow">
+
+  <!-- Title SEO -->
+  <title>Abogado Penal, Civil y Laboral en Santiago | IR360 Legal - Estudio Jurídico</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ir360.cl/legal">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IR360 Legal | Asesoría Jurídica Experta en Santiago">
+  <meta property="og:description" content="Resuelve tu caso legal con expertos. Derecho Penal, Civil, Laboral y Administrativo. Primera consulta gratuita.">
+  <meta property="og:url" content="https://ir360.cl/legal">
+  <meta property="og:image" content="https://ir360.cl/images/ir360-legal-cover.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IR360 Legal | Estudio Jurídico en Santiago">
+  <meta name="twitter:description" content="Soluciones legales profesionales en Derecho Penal, Civil, Laboral y Administrativo.">
+  <meta name="twitter:image" content="https://ir360.cl/images/ir360-legal-cover.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="180x180" href="../template/images/IR360-Negro.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../template/images/IR360-Negro.png">
+  <link rel="shortcut icon" href="../template/images/IR360-Negro.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Russo+One&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../template/css/font-awesome/all.min.css">
+  <link rel="stylesheet" href="../template/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/header-navbar.css">
+  <link rel="stylesheet" href="css/legal-styles.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1132638565607970');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1132638565607970&ev=PageView&noscript=1"
+  /></noscript>
+
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+  <img src="../template/images/IR360 Blanco.png" alt="IR360 Legal" class="preloader-logo">
+</div>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="legal-landing.html">
+      <img src="../template/images/IR360 Blanco.png" alt="Logo IR360 Legal">
+    </a>
+
+    <!-- Menú centrado (desktop) -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="legal-landing.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proceso">Cómo Trabajamos</a></li>
+        <li class="nav-item"><a class="nav-link contact-highlight" href="#formulario">Consulta Gratis</a></li>
+      </ul>
+    </div>
+
+    <!-- Botón hamburguesa responsive -->
+    <button class="navbar-toggler" type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuResponsive"
+          aria-controls="menuResponsive">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Botón hamburguesa desktop -->
+    <button class="desktop-toggler d-none d-lg-block ms-3"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Offcanvas Side Panel (desktop) -->
+<div class="offcanvas offcanvas-end sidepanel-offcanvas" tabindex="-1" id="offcanvasRight">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="about-info">
+      <h4 class="title mb-3">Tu defensa legal comienza aquí</h4>
+      <p>Protegemos tus derechos con estrategia, profesionalismo y resultados comprobados.</p>
+    </div>
+    
+    <div class="socail-info">
+      <h5>Síguenos</h5>
+      <ul class="list-unstyled">
+        <li><a href="https://www.linkedin.com/company/ir360spa/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/ir_360_ciberseguridad/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+      </ul>
+    </div>
+    
+    <div class="contact-info">
+      <h5>Contacto</h5>
+      <span class="d-block">+56 9 3966 1894</span>
+      <a href="mailto:contacto@ir360.cl">
+        <i class="fa-regular fa-envelope"></i> contacto@ir360.cl
+      </a>
+      <span class="text">¿Necesitas asesoría legal urgente? Estamos listos para ayudarte.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas Menu (responsive) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menuResponsive">
+  <div class="offcanvas-header">
+    <a class="navbar-brand" href="legal-landing.html">
+      <img src="../template/images/IR360 Blanco.png" alt="Logo IR360 Legal">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" href="legal-landing.html">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+      <li class="nav-item"><a class="nav-link" href="#proceso">Cómo Trabajamos</a></li>
+      <li class="nav-item"><a class="nav-link contact-highlight" href="#formulario">Consulta Gratis</a></li>
+    </ul>
+    
+    <div class="menu-info">
+      <h6>Contacto Rápido</h6>
+      <a href="tel:+56939661894"><i class="fa-solid fa-phone"></i> +56 9 3966 1894</a>
+      <a href="mailto:contacto@ir360.cl"><i class="fa-regular fa-envelope"></i> contacto@ir360.cl</a>
+      
+      <h6 class="mt-3">Síguenos</h6>
+      <a href="https://www.linkedin.com/company/ir360spa/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/ir_360_ciberseguridad/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-legal" id="inicio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <!-- Rating destacado arriba -->
+        <div class="hero-rating animate-fade-in" style="animation-delay: 0.2s;">
+          <!--<span class="rating-text">Más de 500 clientes satisfechos</span>-->
+        </div>
+        <h1 class="animate-fade-in" style="animation-delay: 0.4s;">Protege tus Derechos con Asesoría Legal Experta</h1>
+        <p class="subtitle animate-fade-in" style="animation-delay: 0.6s;">Estudio Jurídico Especializado en Derecho Penal, Civil, Laboral y Administrativo</p>
+        <p class="description animate-fade-in" style="animation-delay: 0.8s;">Resolvemos tu caso con profesionalismo, experiencia comprobada y dedicación absoluta a tus resultados</p>
+        
+        <div class="hero-cta animate-fade-in" style="animation-delay: 1s;">
+          <a href="#formulario" class="btn-primary-legal pulse-btn">
+            <span class="btn-icon"><i class="fas fa-calendar-check"></i></span>
+            <span class="btn-text">Agendar Consulta Gratuita</span>
+          </a>
+          <a href="https://wa.me/56939661894?text=Hola%2C%20necesito%20asesor%C3%ADa%20legal%20urgente" target="_blank" class="btn-secondary-legal">
+            <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+            <span class="btn-text">WhatsApp Directo</span>
+          </a>
+        </div>
+        
+        <!-- Garantía visual -->
+        <div class="hero-guarantee animate-fade-in" style="animation-delay: 1.4s;">
+          <i class="fas fa-lock"></i>
+          <span>100% Confidencial | Primera consulta gratuita sin compromiso</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator animate-bounce">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="trust-item hover-lift">
+          <div class="icon icon-rotate">
+            <img src="images/icono-de-trofeo.png" alt="Trofeo" style="width: 50px; height: 50px; object-fit: contain;">
+          </div>
+          <span class="number counter" data-target="500">0</span><span class="number">+</span>
+          <span class="label">Casos Exitosos</span>
+          <div class="trust-badge">Verificado</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="trust-item hover-lift">
+          <div class="icon icon-rotate">
+            <img src="images/ley.png" alt="Ley" style="width: 50px; height: 50px; object-fit: contain;">
+          </div>
+          <span class="number counter" data-target="15">0</span><span class="number"> Años</span>
+          <span class="label">de Experiencia</span>
+          <div class="trust-badge">Certificado</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="trust-item hover-lift">
+          <div class="icon icon-rotate">
+            <img src="images/calendario.png" alt="Calendario" style="width: 50px; height: 50px; object-fit: contain;">
+          </div>
+          <span class="number counter" data-target="24">0</span><span class="number"> Horas</span>
+          <span class="label">Respuesta Garantizada</span>
+          <div class="trust-badge">Garantizado</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="trust-item hover-lift">
+          <div class="icon icon-rotate"><i class="fas fa-percentage"></i></div>
+          <span class="number counter" data-target="98">0</span><span class="number">%</span>
+          <span class="label">Clientes Satisfechos</span>
+          <div class="trust-badge">Comprobado</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios Sociales -->
+<section class="testimonios-social" id="testimonios">
+  <div class="container">
+    
+    <div class="testimonios-header">
+      <span class="testimonios-badge">
+        <i class="fas fa-shield-check"></i>
+        Testimonios Verificados
+      </span>
+      <h2>Lo que Dicen Nuestros Clientes</h2>
+      <p class="testimonios-subtitle">Más de 500 casos resueltos con éxito</p>
+    </div>
+
+    <div class="testimonios-grid">
+      
+      <!-- Testimonio 1 -->
+      <article class="testimonio-card">
+        
+        <div class="testimonio-header">
+          <div class="client-avatar">
+            <img src="images/testimonios/cliente-1.jpg" alt="María González">
+          </div>
+          <div class="client-info">
+            <strong>María González</strong>
+            <span class="case-type">Derecho Laboral</span>
+          </div>
+        </div>
+
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span class="rating-number">5.0</span>
+        </div>
+
+        <p class="testimonio-text">"Excelente atención y profesionalismo. Resolvieron mi caso laboral en tiempo récord. El equipo siempre estuvo disponible para resolver mis dudas."</p>
+
+        <div class="testimonio-footer">
+          <span class="verified">
+            <i class="fas fa-check-circle"></i>
+            Cliente Verificado
+          </span>
+          <span class="date">Hace 2 semanas</span>
+        </div>
+      </article>
+
+      <!-- Testimonio Destacado -->
+      <article class="testimonio-card testimonio-destacado">
+        <div class="destacado-badge">
+          <i class="fas fa-crown"></i>
+          Caso Destacado
+        </div>
+        
+        <div class="testimonio-header">
+          <div class="client-avatar">
+            <img src="images/testimonios/cliente-2.jpg" alt="Carlos Ramírez">
+          </div>
+          <div class="client-info">
+            <strong>Carlos Ramírez</strong>
+            <span class="case-type">Derecho Penal</span>
+          </div>
+        </div>
+
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span class="rating-number">5.0</span>
+        </div>
+
+        <p class="testimonio-text">"Me defendieron en un caso penal complejo con resultados extraordinarios. Siempre me mantuvieron informado del proceso. Altamente recomendados."</p>
+
+        <div class="testimonio-footer">
+          <span class="verified">
+            <i class="fas fa-check-circle"></i>
+            Cliente Verificado
+          </span>
+          <span class="date">Hace 1 mes</span>
+        </div>
+      </article>
+
+      <!-- Testimonio 3 -->
+      <article class="testimonio-card">
+        
+        <div class="testimonio-header">
+          <div class="client-avatar">
+            <img src="images/testimonios/cliente-3.jpg" alt="Patricia Soto">
+          </div>
+          <div class="client-info">
+            <strong>Patricia Soto</strong>
+            <span class="case-type">Derecho Civil</span>
+          </div>
+        </div>
+
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span class="rating-number">5.0</span>
+        </div>
+
+        <p class="testimonio-text">"Recuperé mi herencia gracias a su asesoría experta en derecho civil. Proceso transparente y resultados excelentes. Muy agradecida."</p>
+
+        <div class="testimonio-footer">
+          <span class="verified">
+            <i class="fas fa-check-circle"></i>
+            Cliente Verificado
+          </span>
+          <span class="date">Hace 3 semanas</span>
+        </div>
+      </article>
+
+    </div>
+ 
+    <!-- CTA -->
+    <div class="testimonios-cta">
+      <p>¿Listo para resolver tu caso legal?</p>
+      <a href="#formulario" class="btn-testimonios btn-cta-impact">
+        <span class="cta-icon"><i class="fas fa-phone-volume"></i></span>
+        <span class="cta-text">¡Habla con un abogado ahora!</span>
+        <span class="cta-sub">Primera consulta gratuita</span>
+        <span class="cta-arrow"><i class="fas fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="servicios-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="sub-title">Nuestros Servicios Legales</span>
+      <h2>Soluciones Jurídicas Integrales</h2>
+      <p>Protegemos tus derechos e intereses con estrategias probadas y atención personalizada</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Derecho Penal -->
+      <div class="col-lg-4 col-md-6">
+        <div class="servicio-card">
+          <div class="icon"><i class="fas fa-balance-scale"></i></div>
+          <h3>Derecho Penal</h3>
+          <p>Defensa experta en casos criminales con estrategias probadas</p>
+          <ul>
+            <li>Defensa en delitos graves y leves</li>
+            <li>Querellas criminales</li>
+            <li>Recursos de apelación</li>
+            <li>Asesoría preventiva</li>
+          </ul>
+          <a href="#formulario" class="btn-consultar">Consultar ahora →</a>
+        </div>
+      </div>
+
+      <!-- Derecho Civil -->
+      <div class="col-lg-4 col-md-6">
+        <div class="servicio-card">
+          <div class="icon"><i class="fas fa-file-contract"></i></div>
+          <h3>Derecho Civil</h3>
+          <p>Protección de tus intereses patrimoniales y familiares</p>
+          <ul>
+            <li>Contratos y obligaciones</li>
+            <li>Sucesiones y herencias</li>
+            <li>Arrendamientos</li>
+            <li>Responsabilidad civil</li>
+          </ul>
+          <a href="#formulario" class="btn-consultar">Consultar ahora →</a>
+        </div>
+      </div>
+
+      <!-- Derecho Laboral -->
+      <div class="col-lg-4 col-md-6">
+        <div class="servicio-card">
+          <div class="icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Derecho Laboral</h3>
+          <p>Defensa de tus derechos como trabajador o empleador</p>
+          <ul>
+            <li>Despidos injustificados</li>
+            <li>Cálculo de indemnizaciones</li>
+            <li>Acoso laboral</li>
+            <li>Negociación colectiva</li>
+          </ul>
+          <a href="#formulario" class="btn-consultar">Consultar ahora →</a>
+        </div>
+      </div>
+
+      <!-- Derecho Administrativo -->
+      <div class="col-lg-4 col-md-6">
+        <div class="servicio-card">
+          <div class="icon"><i class="fas fa-landmark"></i></div>
+          <h3>Derecho Administrativo</h3>
+          <p>Recursos contra actos de la administración pública</p>
+          <ul>
+            <li>Recursos administrativos</li>
+            <li>Reclamos ante servicios públicos</li>
+            <li>Responsabilidad del Estado</li>
+            <li>Contratos públicos</li>
+          </ul>
+          <a href="#formulario" class="btn-consultar">Consultar ahora →</a>
+        </div>
+      </div>
+
+      <!-- Tutelas Laborales -->
+      <div class="col-lg-4 col-md-6">
+        <div class="servicio-card">
+          <div class="icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Tutelas Laborales</h3>
+          <p>Protección de derechos fundamentales en el trabajo</p>
+          <ul>
+            <li>Acoso laboral y sexual</li>
+            <li>Discriminación</li>
+            <li>Vulneración de derechos</li>
+            <li>Procedimiento urgente</li>
+          </ul>
+          <a href="#formulario" class="btn-consultar">Consultar ahora →</a>
+        </div>
+      </div>
+
+      <!-- Mediación -->
+      <div class="col-lg-4 col-md-6">
+        <div class="servicio-card">
+          <div class="icon"><i class="fas fa-handshake"></i></div>
+          <h3>Mediación</h3>
+          <p>Resolución extrajudicial rápida y eficiente</p>
+          <ul>
+            <li>Mediación familiar</li>
+            <li>Conflictos comerciales</li>
+            <li>Mediación laboral</li>
+            <li>Acuerdos extrajudiciales</li>
+          </ul>
+          <a href="#formulario" class="btn-consultar">Consultar ahora →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Proceso -->
+<section id="proceso" class="proceso-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="sub-title">¿Cómo Trabajamos?</span>
+      <h2>Proceso Simple y Transparente</h2>
+      <p>Tres pasos para resolver tu problema legal de manera eficiente</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="proceso-step">
+          <div class="step-number">1</div>
+          <h3>Cuéntanos tu Caso</h3>
+          <p>Completa el formulario o contáctanos por WhatsApp. Evaluación inicial completamente gratuita.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="proceso-step">
+          <div class="step-number">2</div>
+          <h3>Análisis Profesional</h3>
+          <p>Nuestros abogados estudian tu situación y desarrollan una estrategia legal personalizada.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="proceso-step">
+          <div class="step-number">3</div>
+          <h3>Resolvemos tu Problema</h3>
+          <p>Actuamos con profesionalismo y determinación hasta obtener el mejor resultado para ti.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Por qué IR360 Legal -->
+<section class="porque-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="sub-title">¿Por qué Elegirnos?</span>
+      <h2>Compromiso con la Excelencia</h2>
+      <p>Tu tranquilidad y resultados son nuestra prioridad</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="porque-item">
+          <div class="icon"><i class="fas fa-award"></i></div>
+          <div>
+            <h4>Experiencia Comprobada</h4>
+            <p>Más de 15 años resolviendo casos complejos en todas las áreas del derecho con resultados exitosos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="porque-item">
+          <div class="icon"><i class="fas fa-user-tie"></i></div>
+          <div>
+            <h4>Atención Personalizada</h4>
+            <p>Cada caso es único. Te acompañamos en todo el proceso con dedicación exclusiva.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="porque-item">
+          <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+          <div>
+            <h4>Honorarios Claros</h4>
+            <p>Sin sorpresas. Presupuesto transparente y opciones de pago flexibles según tu situación.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="porque-item">
+          <div class="icon"><i class="fas fa-bolt"></i></div>
+          <div>
+            <h4>Respuesta Rápida</h4>
+            <p>Entendemos la urgencia de tu caso. Respuesta garantizada en menos de 24 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Formulario de Contacto -->
+<section id="formulario" class="formulario-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="sub-title" style="color: #ccff00;">Agenda tu Consulta</span>
+      <h2 style="color: white;">Primera Consulta Gratuita</h2>
+      <p style="color: white; opacity: 0.95;">Un abogado experto te contactará en menos de 24 horas</p>
+    </div>
+
+    <div class="form-container">
+      <form id="legalForm" method="POST" action="../template/formmail-legal.php">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">Nombre Completo *</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="phone">Teléfono *</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">Tipo de Caso *</label>
+          <select class="form-control" id="servicio" name="servicio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Derecho Penal">Derecho Penal</option>
+            <option value="Derecho Civil">Derecho Civil</option>
+            <option value="Derecho Laboral">Derecho Laboral</option>
+            <option value="Derecho Administrativo">Derecho Administrativo</option>
+            <option value="Tutelas Laborales">Tutelas Laborales</option>
+            <option value="Mediación">Mediación</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Describe tu Situación *</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Cuéntanos brevemente tu caso para poder ayudarte mejor..."></textarea>
+        </div>
+
+        <!-- Cloudflare Turnstile -->
+        <div class="form-group">
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAACCRiYTWIPmWykUI"></div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+            <label class="form-check-label" for="privacy">
+              Acepto la política de privacidad y el tratamiento de mis datos personales
+            </label>
+          </div>
+        </div>
+
+        <input type="hidden" name="to" value="contacto@ir360.cl">
+        <input type="hidden" name="subject" value="Nueva Consulta Legal - IR360 Legal">
+        <input type="hidden" name="empresa" value="Consulta Legal IR360">
+
+        <button type="submit" class="btn-submit">
+          <i class="fas fa-paper-plane"></i> Enviar Consulta Gratuita
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Flotante Sticky -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <div class="sticky-cta-text">
+          <strong>¿Necesitas ayuda legal urgente?</strong>
+          <span>Primera consulta 100% gratuita y sin compromiso</span>
+        </div>
+      </div>
+      <div class="col-md-4 text-end">
+        <a href="#formulario" class="btn-sticky-cta">
+          <i class="fas fa-paper-plane"></i> Consultar Ahora
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer_wrapper">
+  <div class="container">
+    <!-- Secciones principales -->
+    <div class="row">
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h4>IR360 Legal</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Santiago, Chile</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+56939661894">+56 9 3966 1894</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:contacto@ir360.cl">contacto@ir360.cl</a></li>
+          <li><i class="fas fa-clock"></i> Lunes a viernes 8:30am – 6:30pm</li>
+        </ul>
+      </div>
+
+      <!-- Servicios Legales -->
+      <div class="footer-col">
+        <h4>Servicios Legales</h4>
+        <ul>
+          <li><a href="#servicios">Derecho Penal</a></li>
+          <li><a href="#servicios">Derecho Civil</a></li>
+          <li><a href="#servicios">Derecho Laboral</a></li>
+          <li><a href="#servicios">Tutelas Laborales</a></li>
+          <li><a href="#servicios">Mediación</a></li>
+        </ul>
+      </div>
+
+      <!-- Navegación -->
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Cómo Trabajamos</a></li>
+          <li><a href="#formulario">Consulta Gratis</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/ir360spa/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/ir_360_ciberseguridad/" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.9;">Parte del ecosistema <strong>IR360</strong></p>
+      </div>
+    </div>
+
+    <!-- Separador -->
+    <hr>
+
+    <!-- Logo + Copyright -->
+    <div class="footer-bottom">
+      <img src="../template/images/IR360 Blanco.png" alt="IR360 Legal">
+      <p>&copy; 2025 IR360 Legal - Estudio Jurídico. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/56939661894?text=Hola%2C%20necesito%20asesor%C3%ADa%20legal%20urgente" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scripts -->
+<script src="../template/js/jquery-3.7.1.min.js"></script>
+<script src="../template/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Preloader - Hide immediately when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      const preloader = document.querySelector('.preloader');
+      if (preloader) {
+        preloader.classList.add('hide');
+      }
+    }, 300);
+  });
+
+  // ========================================
+  // CONTADOR ANIMADO (Trust Bar)
+  // ========================================
+  function animateCounter() {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.getAttribute('data-target'));
+          const increment = target / speed;
+          let current = 0;
+          
+          const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+              counter.textContent = Math.ceil(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          };
+          
+          updateCounter();
+          observer.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    counters.forEach(counter => observer.observe(counter));
+  }
+  
+  // Ejecutar contador
+  animateCounter();
+
+  // ========================================
+  // SCROLL HANDLER UNIFICADO
+  // ========================================
+  const stickyCta = document.getElementById('stickyCta');
+  const navbar = document.querySelector('.navbar');
+  let lastScrollTop = 0;
+  
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollPercent = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    
+    // Sticky CTA - Mostrar después del 30% de scroll y al bajar
+    if (scrollPercent > 30 && scrollTop > lastScrollTop) {
+      stickyCta.classList.add('show');
+    } else if (scrollTop < lastScrollTop && scrollPercent < 80) {
+      stickyCta.classList.remove('show');
+    }
+    
+    // Navbar scroll transparency
+    if (scrollTop > 100) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+    
+    lastScrollTop = scrollTop;
+  }, false);
+
+  // ========================================
+  // SMOOTH SCROLL MEJORADO
+  // ========================================
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const offsetTop = target.offsetTop - 80; // Offset para navbar
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+        
+        // Cerrar offcanvas si está abierto
+        const offcanvasElements = document.querySelectorAll('.offcanvas.show');
+        offcanvasElements.forEach(el => {
+          const bsOffcanvas = bootstrap.Offcanvas.getInstance(el);
+          if (bsOffcanvas) bsOffcanvas.hide();
+        });
+      }
+    });
+  });
+
+  // Scroll indicator en hero
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', function() {
+      const trustBar = document.querySelector('.trust-bar');
+      trustBar.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+
+  // ========================================
+  // INTERSECTION OBSERVER (Animaciones on scroll)
+  // ========================================
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const fadeInObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        fadeInObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  // Aplicar animaciones a servicios
+  document.querySelectorAll('.servicio-card').forEach((card, index) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+    fadeInObserver.observe(card);
+  });
+  
+  // Aplicar animaciones a proceso
+  document.querySelectorAll('.proceso-step').forEach((step, index) => {
+    step.style.opacity = '0';
+    step.style.transform = 'translateY(30px)';
+    step.style.transition = `all 0.6s ease ${index * 0.15}s`;
+    fadeInObserver.observe(step);
+  });
+
+  // ========================================
+  // FORM SUBMISSION CON META PIXEL
+  // ========================================
+  document.getElementById('legalForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const submitBtn = this.querySelector('.btn-submit');
+    const originalText = submitBtn.innerHTML;
+    
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    submitBtn.disabled = true;
+    
+    fetch('../template/formmail.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        // Track Lead conversion con Meta Pixel
+        fbq('track', 'Lead', {
+          content_name: formData.get('servicio'),
+          content_category: 'Legal',
+          value: 100.00,
+          currency: 'CLP'
+        });
+        
+        alert('✅ ' + data.mensaje + '\n\nUn abogado experto se contactará contigo en menos de 24 horas.');
+        this.reset();
+        
+        // Scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        alert('❌ ' + data.mensaje);
+      }
+      
+      submitBtn.innerHTML = originalText;
+      submitBtn.disabled = false;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Error al enviar el formulario. Por favor, intenta de nuevo o contáctanos por WhatsApp.');
+      submitBtn.innerHTML = originalText;
+      submitBtn.disabled = false;
+    });
+  });
+
+  // Track scroll depth
+  let scrollTracked = {25: false, 50: false, 75: false, 100: false};
+  
+  window.addEventListener('scroll', function() {
+    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    
+    Object.keys(scrollTracked).forEach(percent => {
+      if (scrollPercent >= percent && !scrollTracked[percent]) {
+        fbq('trackCustom', 'ScrollDepth', {depth: percent + '%'});
+        scrollTracked[percent] = true;
+      }
+    });
+  });
+
+  // Track time on page
+  let timeOnPage = 0;
+  setInterval(() => {
+    timeOnPage += 30;
+    if (timeOnPage === 30) {
+      fbq('trackCustom', 'TimeOnPage', {seconds: 30});
+    } else if (timeOnPage === 60) {
+      fbq('trackCustom', 'TimeOnPage', {seconds: 60});
+    } else if (timeOnPage === 120) {
+      fbq('trackCustom', 'TimeOnPage', {seconds: 120});
+    }
+  }, 30000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- 🔵 Cambié "zxx" por "es" para SEO correcto en español -->
+<head>
+  <!-- CRITICAL: Preloader CSS - Inline to prevent FOUC -->
+  <script>
+    (function() {
+      const css = `
+        html, body { margin: 0; padding: 0; }
+        body { overflow: hidden; }
+        body.loaded { overflow: auto; }
+        .preloader {
+          position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+          width: 100vw; height: 100vh;
+          background: linear-gradient(135deg, #032841 0%, #1a3a52 100%);
+          display: flex; justify-content: center; align-items: center;
+          z-index: 999999; opacity: 1; visibility: visible;
+          will-change: opacity; transition: opacity 0.3s ease-out;
+          backface-visibility: hidden; contain: layout style paint;
+        }
+        .preloader.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+      `;
+      const style = document.createElement('style');
+      style.textContent = css;
+      document.head.insertBefore(style, document.head.firstChild);
+    })();
+  </script>
+ <!--=============================================ETAPA GOOGLE ADS ==================================================--> 
+<!-- Google tag (gtag.js) - Async para no bloquear renderizado -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17346732771"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17346732771', { 'anonymize_ip': true });
+  </script>
+
+<!--=============================================ETAPA GOOGLE ADS ==================================================-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://secure.trust-provider.com https://www.trustlogo.com https://cdn.jsdelivr.net https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: http: https://www.facebook.com; connect-src 'self' https://www.google-analytics.com https://www.facebook.com https://graph.facebook.com; frame-src 'self' https://www.youtube.com https://www.google.com; object-src 'none'; base-uri 'self';">
+
+  <!-- Meta SEO optimizados -->
+  <meta name="keywords" content="ciberseguridad Chile, oficina de ciberseguridad, análisis de datos, análisis científico, delitos informáticos, ISO 27001, Ley 21.663, Ley 21.713, consultoría digital, protección de activos, seguridad informática, IR360, expertos en ciberseguridad">
+ <meta name="description" content="IR360, expertos en ciberseguridad en Chile. Protege tus activos digitales con soluciones en ISO 27001, análisis de datos y cumplimiento legal (Ley 21.663).">
+
+
+  <meta name="author" content="IR360">
+  <meta name="robots" content="index, follow">
+
+  <!-- Title Único SEO -->
+  <title>Ciberseguridad y Análisis de Datos en Chile </title>
+
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ir360.cl/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IR360 | Soluciones de Ciberseguridad y Protección Digital">
+  <meta property="og:description" content="Protege tu empresa con IR360: expertos en detección de amenazas y soluciones digitales a medida.">
+  <meta property="og:url" content="https://ir360.cl/">
+  <meta property="og:image" content="https://ir360.cl/images/ir360-cover.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IR360 | Soluciones de Ciberseguridad y Protección Digital">
+  <meta name="twitter:description" content="Protege tu negocio con soluciones digitales avanzadas.">
+  <meta name="twitter:image" content="https://ir360.cl/images/ir360-cover.jpg">
+
+<!-- Favicons -->
+<!-- Favicon principal -->
+<link rel="icon" type="image/png" sizes="180x180" href="images/IR360-Negro.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/IR360-Negro.png">
+
+<!-- Favicon legacy / navegadores antiguos -->
+<link rel="shortcut icon" href="images/IR360-Negro.png">
+
+
+  <!-- Google Fonts - Optimizado con display=swap para mejor rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Russo+One&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- DNS Prefetch para recursos externos -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/font-awesome/all.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/swiper/swiper.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Custom CSS Sections - Optimizado para lazy loading -->
+  <link rel="stylesheet" href="css/header-navbar.css">
+  <link rel="stylesheet" href="css/about-section.css">
+  <link rel="stylesheet" href="css/services-section.css">
+  <link rel="stylesheet" href="css/audit-section.css">
+  <link rel="stylesheet" href="css/cases-section.css">
+  <link rel="stylesheet" href="css/portfolio-section.css">
+  <link rel="stylesheet" href="css/compliance-section.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/global-fixes.css">
+  <link rel="stylesheet" href="css/performance-optimization.css">
+
+  <!-- Preload recursos críticos -->
+  <link rel="preload" as="image" href="images/IR360 Blanco.png">
+  <link rel="preload" as="image" href="images/video-poster.jpg">
+
+  <!-- Meta Pixel - Conversión de Leads -->
+  <script src="js/meta-pixel.js" defer></script>
+
+</head>
+<body>
+
+<!--=================================================header===========================================================-->
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/IR360 Blanco.png" alt="Logo IR360">
+    </a>
+
+    <!-- Menú centrado (desktop) -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
+        <!--<li class="nav-item"><a class="nav-link" href="team.html">Nuestro equipo</a></li>-->
+        <li class="nav-item"><a class="nav-link contact-highlight" href="contact-us.html">Contáctanos</a></li>
+      </ul>
+    </div>
+
+
+    <!--REPONSIVO-->
+    <button class="navbar-toggler" type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuResponsive"
+          aria-controls="menuResponsive">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+
+    <!-- Botón hamburguesa desktop sin círculo -->
+<button class="desktop-toggler d-none d-lg-block ms-3"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+  </div>
+</nav>
+
+<!-- Offcanvas Side Panel (desktop) -->
+<div class="offcanvas offcanvas-end sidepanel-offcanvas" tabindex="-1" id="offcanvasRight">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="about-info">
+      <h4 class="title mb-3">Protege tu negocio con acción y estrategia</h4>
+      <p>La ejecución es el escudo más fuerte. Implementa, mejora, escala.</p>
+    </div>
+    
+    <div class="socail-info">
+      <h5>Síguenos</h5>
+      <ul class="list-unstyled">
+        <li><a href="https://www.linkedin.com/company/ir360spa/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      </ul>
+    </div>
+    
+    <div class="contact-info">
+      <h5>Contacto</h5>
+      <span class="d-block">+56 9 3966 1894</span>
+      <a href="mailto:contacto@ir360.cl">
+        <i class="fa-regular fa-envelope"></i> contacto@ir360.cl
+      </a>
+      <span class="text">¿Buscas colaboración para proteger tu próxima gran idea?</span>
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas Menu (responsive) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menuResponsive">
+  <div class="offcanvas-header">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/IR360 Blanco.png" alt="Logo IR360">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="about-us.html">Nosotros</a></li>
+      <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
+      <!--<li class="nav-item"><a class="nav-link" href="team.html">Nuestro equipo</a></li>-->
+      <li class="nav-item"><a class="nav-link contact-highlight" href="contact-us.html">Contáctanos</a></li>
+    </ul>
+    
+    <div class="menu-info">
+      <h6>Contacto Rápido</h6>
+      <a href="tel:+56939661894"><i class="fa-solid fa-phone"></i> +56 9 3966 1894</a>
+      <a href="mailto:contacto@ir360.cl"><i class="fa-regular fa-envelope"></i> contacto@ir360.cl</a>
+      
+      <h6 class="mt-3">Síguenos</h6>
+      <a href="https://www.linkedin.com/company/ir360spa/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Banner principal con video -->
+<div class="main-banner">
+  <video autoplay muted loop playsinline poster="images/video-poster.jpg" aria-label="Video de fondo mostrando tecnología de ciberseguridad">
+    <source src="images/video3.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+  <div class="overlay"></div>
+  <div class="banner-text">
+    <h2>Soluciones creativas para resultados reales en ciberseguridad</h2>
+  </div>
+</div>
+
+<!-- Nosotros Section -->
+<div class="about-header">
+  <img src="images/IR360 Blanco.png" alt="Logo IR360" class="logo-contorno">
+  <h1>Nosotros</h1>
+</div>
+
+<section class="space-pt py-4 about-section" style="margin-bottom: 20px; padding-bottom: 20px;">
+  <!-- Overlay oscuro sutil -->
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <!-- Columna de texto -->
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <div class="section-title pb-0 pb-lg-3">
+          <span class="sub-title d-inline-flex align-items-center mb-2">
+          </span>
+          <h2 class="highlight-title">Somos especialistas en seguridad de la información</h2>
+        </div>
+
+        <p class="fs-5 highlight-paragraph">
+          Somos IR360 <strong>una empresa chilena de rápido crecimiento</strong>, comprometida con la ciberseguridad integral para organizaciones de todos los tamaños. Nuestro equipo está conformado por <strong>ex funcionarios de las Fuerzas Armadas y de orden y seguridad,</strong> con una sólida trayectoria en inteligencia policial, militar y ciberseguridad, adquirida durante años de servicio en instituciones del Estado.
+
+          En IR360 auditamos, escaneamos y analizamos infraestructuras digitales con un enfoque estratégico y preventivo, protegiendo lo que más importa: la continuidad, la información y la reputación de tu organización.
+        </p>
+
+        <!-- Botón interactivo -->
+        <div class="mt-2">
+          <a href="contact-us.html" class="btn-contacto">Contáctanos</a>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="video-wrapper">
+          <video autoplay loop muted playsinline poster="images/video-about-poster.jpg" aria-label="Video demostrativo de servicios IR360">
+            <source src="images/video.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--======================================================================================================================
+          About Info -->
+
+<!--=======================================================================================================================
+      
+
+<!--=======================================================================================================-
+          Our Services -->
+
+<section id="servicios" class="space-pt z-index-2 ellipse-top" style="margin-top: 100px; margin-bottom: 20px; padding-top: 100px; padding-bottom: 20px;">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-5 mb-4">
+        <div class="section-title reveal">
+          <span class="sub-title">
+            Nuestros Servicios
+          </span>
+          <h2>Protegemos tu información, potenciamos tu confianza</h2>
+          <p>"La mayor vulnerabilidad es no decidir. En ciberseguridad, la inacción también es una elección. Protege lo que más importa con soluciones adaptadas a tu negocio."</p>
+          <a href="contact-us.html" class="btn-consulta mt-3">Consulta a nuestros expertos</a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper reveal">
+              <div class="service-icon"><img src="images/iso.webp" alt="ISO 27001"></div>
+              <h5 class="service-title">Auditoría ISO 27001</h5>
+              <p>Evaluamos tu infraestructura para cumplir con las normas internacionales de seguridad, reduciendo riesgos y asegurando la continuidad del negocio.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper reveal">
+              <div class="service-icon"><img src="images/concientizacion.webp" alt="Icono de concientización en seguridad"></div>
+              <h5 class="service-title">Concientización en Seguridad</h5>
+              <p>Capacitamos a tu personal con programas claros y prácticos, creando una cultura de seguridad y reduciendo los riesgos de error humano.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper reveal">
+              <div class="service-icon"><img src="images/icon pentesting.webp" alt="Pentesting"></div>
+              <h5 class="service-title">Escaneo de Vulnerabilidades</h5>
+              <p>Detectamos brechas y debilidades en tus sistemas mediante análisis detallados, ayudando a prevenir ciberataques antes de que ocurran.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <div class="service-wrapper reveal">
+              <div class="service-icon"><img src="images/analisis de datos.webp" alt="Icono de análisis de datos"></div>
+              <h5 class="service-title">Análisis Predictivo</h5>
+              <p>Transformamos tus datos en conocimiento estratégico, ayudándote a tomar decisiones inteligentes y fortalecer tu infraestructura digital mediante análisis avanzado, minería de datos y soluciones personalizadas en gestión de información.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Sin animación reveal - elementos visibles directamente
+// Removido para mejor rendimiento y UX más limpia
+</script>
+
+
+<!--====================================================================================================-->
+
+<section id="auditoria-fisica" class="auditoria-section" style="margin-top: 20px; margin-bottom: 20px; padding-top: 20px; padding-bottom: 20px;">
+  <div class="container">
+    <div class="auditoria-content">
+      <div class="auditoria-text">
+        <span class="sub-title">
+          Auditoría de Seguridad Física
+        </span>
+        <h2>Fortalece tu seguridad física y cibernética</h2>
+        <p>Realizamos auditorías integrales que no solo evalúan tus sistemas digitales, sino también los controles físicos que protegen tu infraestructura crítica. Detectamos vulnerabilidades y diseñamos propuestas de mejora que previenen intrusiones y reducen el riesgo de ciberataques.</p>
+        <p><strong>Nuestros auditores poseen amplia experiencia en seguridad estratégica, adquirida en organismos de defensa y cuerpos policiales, lo que nos permite ofrecer soluciones sólidas y efectivas para proteger tu organización.</strong></p>
+
+        <a href="contact-us.html" class="btn-consulta">Solicita una auditoría</a>
+      </div>
+
+      <div class="auditoria-services">
+        <div class="auditoria-card">
+          <h5>Control de Accesos</h5>
+          <p>Auditamos todos los puntos de entrada y salida, revisamos políticas de credenciales, sistemas de control biométrico y registros de visitas. Evaluamos procedimientos de acceso fuera de horario y contingencias ante emergencias. Nuestra revisión incluye accesos a áreas críticas como data centers, oficinas ejecutivas y bodegas de activos, entre otros puntos de manejo de informacion</p>
+        </div>
+        <div class="auditoria-card">
+          <h5>Evaluación de Infraestructura</h5>
+          <p>Inspeccionamos cámaras de videovigilancia (CCTV), alarmas, sensores de movimiento, cerraduras electrónicas, UPS, extintores y elementos de continuidad operativa. Verificamos que la infraestructura esté ubicada y configurada de acuerdo con los controles físicos del Anexo A de la ISO 27001:2022.</p>
+        </div>
+        <div class="auditoria-card">
+          <h5>Informe de Conformidad</h5>
+          <p>Elaboramos un informe técnico basado en evidencias y hallazgos reales. Incluye recomendaciones, observaciones, nivel de madurez de los controles físicos, y un mapa de riesgos. Este informe permite demostrar cumplimiento ante entidades certificadoras externas, y sirve como guía de mejora continua.</p>
+        </div>
+        <div class="auditoria-card">
+          <h5>Equipo Especializado</h5>
+          <p>Nuestros auditores están certificados por AENOR e IQNET en normas ISO 27001, y poseen experiencia directa en operaciones de inteligencia, seguridad militar y policial. Este perfil nos permite identificar vulnerabilidades que escapan a la revisión técnica tradicional, aplicando un enfoque integral de seguridad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--======================================================================================-->
+
+<section class="space-pt py-5 casos-exito-section" style="margin-top: 20px; margin-bottom: 20px; padding-top: 20px; padding-bottom: 20px;">
+  <div class="casos-overlay"></div>
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <div class="section-title">
+          <span class="sub-title d-inline-flex align-items-center mb-2">
+            Casos de Éxito
+          </span>
+          <h2 class="title fw-bold">Resultados Reales con Impacto</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider de Casos -->
+    <div id="casosSlider" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!--======================================= Caso 1 POH ESTUDIOS ==================================-->
+        <!-- Caso 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center align-items-center caso-item p-4">
+            <div class="col-md-4 text-center">
+              <img src="images/PohEstudios blanco.png" alt="Poh Estudios" class="caso-img">
+            </div>
+            <div class="col-md-8 text-center text-md-start caso-content">
+              <div class="caso-box">
+                <h4 class="fw-bold caso-titulo">Poh Estudios: Respuesta rápida ante ataque de ingeniería social</h4>
+
+                <p class="caso-texto fst-italic">
+                  Nuestra agencia fue víctima de un <strong>ataque de ingeniería social</strong> que comprometió sistemas clave. Gracias a la rápida intervención de <strong>IR360</strong>, contuvimos el incidente, recuperamos activos digitales y aseguramos la continuidad operativa de <a href="https://pohestudios.com/" target="_blank" rel="noopener noreferrer" class="fst-italic">Poh Estudios</a>.
+                </p>
+
+                <p class="caso-texto fst-italic">
+                  IR360 fortaleció nuestra infraestructura aplicando la <strong>norma ISO/IEC 27001:2022</strong>, lo que hoy nos permite operar con mayor seguridad y confianza. Recomendamos plenamente su alto nivel técnico y auténtico compromiso con la protección de sus clientes.
+                </p>
+
+                <p class="caso-texto fw-bold mt-3">— Mauricio González, CEO Poh Estudios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--============================== Caso 2 Equanime========================================= -->
+        <div class="carousel-item">
+          <div class="row justify-content-center align-items-center caso-item p-4">
+            <div class="col-md-4 text-center">
+              <img src="images/logo equanime.jpg" alt="Equanime" class="caso-img">
+            </div>
+            <div class="col-md-8 text-center text-md-start caso-content">
+              <div class="caso-box">
+                <h4 class="fw-bold caso-titulo">Equanime: Mitigación exitosa de ciberataque avanzado</h4>
+                <p class="caso-texto fst-italic">
+                  <a href="https://equanime.cl/" target="_blank" rel="noopener noreferrer">Equanime</a> fue blanco de un <strong>ataque de inyección de links maliciosos e intento de sustracción de información</strong>. Gracias a <strong>IR360</strong>, mitigamos el ataque, recuperamos activos críticos y elevamos nuestra resiliencia manteniendo confidencialidad, disponibilidad e integridad.
+                </p>
+                <p class="caso-texto fst-italic">
+                  Aplicando controles de la norma <strong>ISO/IEC 27001:2022</strong>, aumentamos los estándares de seguridad. Recomendamos plenamente a <strong>IR360</strong> por su profesionalismo, atención cercana y real compromiso con nosotros como clientes.
+                </p>
+                <p class="caso-texto fw-bold mt-3">— Esteban Infante, Representante legal de Equanime</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Puedes duplicar más casos aquí -->
+        <!-- Ejemplo Caso 3 -->
+        <!--<div class="carousel-item">
+          <div class="row justify-content-center align-items-center caso-item p-4">
+            <div class="col-md-4 text-center">
+              <img src="images/caso3.png" alt="Cliente 3" class="caso-img">
+            </div>
+            <div class="col-md-8 text-center text-md-start caso-content">
+              <div class="caso-box">
+                <h4 class="fw-bold caso-titulo">🛡️ Cliente X: Mitigación de ciberamenaza con éxito</h4>
+                <p class="caso-texto fst-italic">Nuestra empresa enfrentó una amenaza crítica... <strong>IR360</strong> nos brindó apoyo estratégico.</p>
+                <p class="caso-texto fw-bold mt-3">— Nombre Cliente X</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Indicadores -->
+      <div class="carousel-indicators" style="bottom: -30px;">
+        <button type="button" data-bs-target="#casosSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Caso 1"></button>
+        <button type="button" data-bs-target="#casosSlider" data-bs-slide-to="1" aria-label="Caso 2"></button>
+        <!--<button type="button" data-bs-target="#casosSlider" data-bs-slide-to="2" aria-label="Caso 3"></button>-->
+      </div>
+
+      <!-- Controles de navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#casosSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#casosSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Inicializamos el carrusel de Bootstrap
+  var casosCarousel = document.getElementById('casosSlider');
+  var carousel = new bootstrap.Carousel(casosCarousel, {
+    interval: 180000, // 180000ms = 3 minutos
+    ride: false,      // No inicia automáticamente al cargar
+    pause: false,     // No se pausa al hacer hover
+    wrap: true        // Ciclo continuo
+  });
+
+  // Cambiar manualmente con transición suave
+  function nextSlideSmooth() {
+    // Activa la transición
+    casosCarousel.classList.add('transition-smooth');
+    carousel.next();
+  }
+
+  // Cada cierto tiempo, cambia al siguiente caso
+  setInterval(nextSlideSmooth, 180000); // Cada 3 minutos
+});
+</script>
+
+<!--===================================PORTAFOLIO WEB======================================================-->
+
+<section class="portfolio-section space-pt py-5" style="margin-top: 20px; margin-bottom: 20px; padding-top: 20px; padding-bottom: 20px;">
+  <div class="portfolio-particles"></div>
+  <div class="portfolio-grid-bg"></div>
+  
+  <div class="container position-relative">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-9 text-center">
+        <div class="section-title reveal">
+          <span class="sub-title d-inline-flex align-items-center mb-3">
+            <span class="tech-line"></span>
+            <i class="fas fa-code me-2 tech-icon"></i>
+            <span class="gradient-text">DESARROLLO WEB</span>
+            <span class="tech-line"></span>
+          </span>
+          <h2 class="title fw-bold mb-4">Proyectos que Transforman<br><span class="gradient-text">Negocios Digitales</span></h2>
+          <p class="portfolio-subtitle">Soluciones tecnológicas Front-End y Back-End diseñadas para maximizar tu presencia online con código limpio, arquitectura escalable, seguridad avanzada y experiencias excepcionales</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Proyecto 1: Dare to Experiences -->
+      <div class="col-lg-6 col-md-6 reveal">
+        <div class="portfolio-card">
+          <div class="card-tech-border"></div>
+          <div class="card-glow"></div>
+          
+          <div class="portfolio-image">
+            <div class="image-frame">
+              <img src="images/inicio de DTE.png" alt="Dare to Experiences" class="img-fluid">
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <div class="tech-badge mb-3">
+                  <i class="fas fa-laptop-code me-2"></i>DESARROLLO WEB
+                </div>
+                <h4 class="fw-bold mb-3">Dare to Experiences</h4>
+                <p class="mb-4">Plataforma de experiencias turísticas con reservas online, pasarelas de pago integradas y gestión de contenido dinámico. Sistema completo Front-End y Back-End</p>
+                
+                <div class="tech-stack mb-4">
+                  <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                  <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                  <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                  <span class="tech-tag"><i class="fas fa-shield-alt"></i> SSL</span>
+                </div>
+                
+                <a href="https://daretoexperiences.com/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
+                  <span class="btn-text">Explorar Proyecto</span>
+                  <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-info">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h5 class="fw-bold mb-2">Dare to Experiences</h5>
+                <span class="portfolio-category">
+                  <i class="fas fa-mountain me-1"></i>Turismo & Aventura
+                </span>
+              </div>
+              <div class="portfolio-status">
+                <span class="status-live">
+                  <span class="pulse-dot"></span>
+                  EN VIVO
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2: Equanime -->
+      <div class="col-lg-6 col-md-6 reveal">
+        <div class="portfolio-card">
+          <div class="card-tech-border"></div>
+          <div class="card-glow"></div>
+          
+          <div class="portfolio-image">
+            <div class="image-frame">
+              <img src="images/imagen equanime.png" alt="Equanime" class="img-fluid">
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <div class="tech-badge mb-3">
+                  <i class="fas fa-laptop-code me-2"></i>DESARROLLO WEB
+                </div>
+                <h4 class="fw-bold mb-3">Equanime</h4>
+                <p class="mb-4">Plataforma corporativa con arquitectura escalable, optimización SEO y sistema de gestión de contenidos profesional. Desarrollo integral Front-End y Back-End</p>
+                
+                <div class="tech-stack mb-4">
+                  <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                  <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                  <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                  <span class="tech-tag"><i class="fas fa-shield-alt"></i> SSL</span>
+                </div>
+                
+                <a href="https://equanime.cl/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
+                  <span class="btn-text">Explorar Proyecto</span>
+                  <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-info">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h5 class="fw-bold mb-2">Equanime</h5>
+                <span class="portfolio-category">
+                  <i class="fas fa-briefcase me-1"></i>Consultoría Empresarial
+                </span>
+              </div>
+              <div class="portfolio-status">
+                <span class="status-live">
+                  <span class="pulse-dot"></span>
+                  EN VIVO
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Final -->
+    <div class="row mt-5 reveal">
+      <div class="col-12 text-center">
+        <div class="portfolio-cta">
+          <p class="cta-text mb-3">¿Listo para llevar tu negocio al siguiente nivel digital?</p>
+          <a href="contact-us.html" class="btn-portfolio-cta">
+            <i class="fas fa-rocket me-2"></i>
+            <span>Iniciar Tu Proyecto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!---===================================CUMPLIMIENTO MARCO NORAMTIVO======================================================-->
+
+<section id="ley-datos" class="ley-datos-section" style="margin-top: 20px; margin-bottom: 20px; padding-top: 20px; padding-bottom: 20px;">
+  <div class="overlay"></div>
+  <div class="container">
+    
+    <!-- Título superior con logo centrado -->
+    <div class="ley-datos-header">
+      <img class="logo-ir360" src="images/IR360 Blanco.png" alt="Logo IR360">
+      <h1>¿Cumples con la Ley 21.719?</h1>
+    </div>
+
+    <!-- Contenido en dos recuadros -->
+    <div class="ley-datos-content">
+      
+      <!-- Recuadro resumen -->
+      <div class="ley-datos-box">
+        <h2>Protege tu Empresa</h2>
+        <p class="subtitulo">Ley de Protección de Datos Personales (Ley N° 21.719)</p>
+        <p>Entra en vigencia el <strong>1 de diciembre de 2026</strong> y moderniza la legislación sobre privacidad en Chile.</p>
+        <p>Obliga a empresas y entidades públicas a reforzar seguridad y cumplimiento. ¿Tu empresa está preparada?</p>
+        <a href="contact-us.html" class="btn-cumple">Cumple con el marco normativo</a>
+      </div>
+
+      <!-- Recuadro obligaciones -->
+      <div class="ley-datos-box">
+        <h3>Obligaciones Clave</h3>
+        <ul>
+          <li>✅ <strong>Identificar riesgos</strong> y asegurar información.</li>
+          <li>✅ <strong>Reportar incidentes</strong> a la Agencia.</li>
+          <li>✅ <strong>Facilitar derechos</strong> de acceso, eliminación y portabilidad.</li>
+          <li>✅ <strong>Políticas desde el inicio</strong> y seguridad por diseño.</li>
+          <li>✅ <strong>Nombrar Responsable</strong> de Protección de Datos.</li>
+        </ul>
+        <p class="multas">Multas de hasta 20.000 UTM por incumplimiento.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer_wrapper">
+  <div class="container">
+    <!-- Secciones principales -->
+    <div class="row">
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Avenida Rafael Riesco Bernales N° 501<br>Región Metropolitana, Chile</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+56939661894">+56 9 3966 1894</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:contacto@ir360.cl">contacto@ir360.cl</a></li>
+          <li><i class="fas fa-clock"></i> Lunes a viernes 8:30am – 6:30pm</li>
+        </ul>
+      </div>
+
+      <!-- Navegación rápida -->
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="service.html">Servicios</a></li>
+          <li><a href="contact-us.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/ir360spa/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/ir_360_ciberseguridad/" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Alianzas -->
+      <div class="footer-col">
+        <h4>Alianzas</h4>
+        <p>En colaboración con:</p>
+        <!--<a href="https://www.daretoexperiences.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/DTE BLANCO2.png" alt="DareTo Experiences">
+        </a>-->
+        <a href="https://pohestudios.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/PohEstudios blanco.png" alt="POH Estudios">
+        </a>
+      </div>
+    </div>
+
+    <!-- Separador -->
+    <hr>
+
+    <!-- Logo + Copyright -->
+    <div class="footer-bottom">
+      <img src="images/IR360 Blanco.png" alt="IR360">
+      <p>&copy; 2025 IR360 Soluciones. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS - Defer para no bloquear renderizado inicial -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Modern Effects JS - Async para ejecutar preloader inmediatamente -->
+<script async src="js/modern-effects.js"></script>
+
+<!-- Header Scroll Transparency JS - Defer para interactividad secundaria -->
+<script defer src="js/header-scroll.js"></script>
+
+<!-- Performance optimization: Agregar Web Vitals tracking opcional -->
+<script>
+  // Optimizar carga del navegador
+  if ('loading' in HTMLImageElement.prototype) {
+    // Navegador soporta lazy loading nativo
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+      img.loading = 'lazy';
+    });
+  }
+</script>
+
+</body>
+</html>

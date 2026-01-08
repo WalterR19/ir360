@@ -1,0 +1,244 @@
+/* ====================================================
+   PERFORMANCE OPTIMIZATION CSS
+   Optimizaciones para mejorar Core Web Vitals
+   ==================================================== */
+
+/* 1. REDUCIR REPAINTS Y REFLOWS */
+
+/* Usar transform en lugar de cambios de posición */
+.service-wrapper:hover {
+  /* Ya usa transform en services-section.css */
+  will-change: transform;
+}
+
+/* 2. OPTIMIZAR ANIMACIONES */
+
+/* Usar will-change solo cuando sea necesario */
+.reveal {
+  will-change: opacity, transform;
+}
+
+.reveal.visible {
+  will-change: auto;
+}
+
+/* 3. REDUCIR MOTION PARA DISPOSITIVOS SENSIBLES */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Desactivar animaciones innecesarias */
+  .spinner,
+  .preloader,
+  .dots,
+  .progress-bar {
+    animation: none !important;
+  }
+}
+
+/* 4. LAZY LOAD IMPROVEMENTS */
+
+/* Imágenes con lazy loading */
+img[loading="lazy"] {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+img[loading="lazy"].loaded {
+  animation: none;
+  background: none;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 5. OPTIMIZAR TIPOGRAFÍA */
+
+/* Usar font-display para Google Fonts */
+@font-face {
+  font-display: swap;
+}
+
+/* 6. REDUCIR LAYOUT SHIFTS */
+
+/* Asignar dimensiones a elementos de contenido */
+img {
+  aspect-ratio: auto;
+}
+
+video {
+  aspect-ratio: 16 / 9;
+}
+
+/* 7. CONTENEDOR DE VIDEOS */
+
+.main-banner video,
+.video-wrapper video {
+  will-change: transform;
+}
+
+/* 8. OPTIMIZAR CONTENEDORES GRANDES */
+
+.portfolio-particles,
+.portfolio-grid-bg,
+.casos-overlay {
+  will-change: opacity;
+}
+
+/* 9. USAR CONTAIN PARA LIMITAR SCOPE */
+
+.service-wrapper,
+.portfolio-card,
+.auditoria-card {
+  contain: layout style paint;
+}
+
+/* 10. OPTIMIZAR BACKDROP FILTERS */
+
+/* Usar backdrop-filter de forma moderada */
+.service-wrapper,
+.portfolio-overlay {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-wrapper,
+  .portfolio-overlay {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+/* 11. EVITAR OVERFLOW OCULTO QUE CAUSA REPAINTS */
+
+/* Optimizar secciones con overflow */
+section {
+  overflow: visible;
+}
+
+/* 12. CACHE-BUSTING Y VERSIONADO */
+
+/* Los navegadores modernos cachean estos recursos */
+link[rel="stylesheet"],
+script[src] {
+  /* Asegurar que se cacheen correctamente */
+}
+
+/* 13. FONT DISPLAY SWAP PARA MEJOR LCP */
+
+@font-face {
+  font-family: 'Jost';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Russo One';
+  font-display: swap;
+}
+
+/* 14. REDUCIR COLOR REPAINTS EN HOVER */
+
+button:hover,
+a:hover {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* 15. EVITAR JAVASCRIPT SÍNCRONO */
+
+/* Todos los scripts ya están en defer/async en HTML */
+
+/* ====================================================
+   MEDIA QUERIES PARA PERFORMANCE
+   ==================================================== */
+
+/* En conexiones lentas, simplificar animaciones */
+@media (prefers-reduced-data: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+  
+  /* Desactivar videos de fondo */
+  .main-banner video {
+    display: none;
+  }
+  
+  .main-banner {
+    background-color: #0a1628;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%230a1628" width="1200" height="600"/></svg>');
+  }
+  
+  /* Reducir efectos visuales */
+  .portfolio-particles,
+  .portfolio-grid-bg,
+  .card-glow {
+    display: none;
+  }
+}
+
+/* ====================================================
+   OPTIMIZACIÓN PARA MÓVILES
+   ==================================================== */
+
+@media (max-width: 768px) {
+  /* Reducir animaciones en móviles */
+  .reveal {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  
+  /* Desactivar efectos de partículas en móviles */
+  .portfolio-particles {
+    display: none !important;
+  }
+  
+  /* Reducir blur en móviles (consume batería) */
+  .service-wrapper,
+  .portfolio-overlay {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+}
+
+/* ====================================================
+   PRINT OPTIMIZATION
+   ==================================================== */
+
+@media print {
+  /* Optimizar para impresión */
+  body {
+    background: white;
+    color: black;
+  }
+  
+  /* Ocultar elementos innecesarios */
+  nav,
+  footer,
+  button,
+  .preloader,
+  video {
+    display: none;
+  }
+  
+  /* Imágenes en alta calidad para impresión */
+  img {
+    max-width: 100%;
+  }
+}

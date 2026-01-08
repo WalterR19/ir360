@@ -1,0 +1,350 @@
+/* ====================================
+   CORRECCIONES GLOBALES
+   ==================================== */
+
+/* Espaciado superior para todas las secciones */
+section {
+  padding-top: 100px !important;
+  margin-top: 0 !important;
+}
+
+/* Excepción para el banner principal */
+.main-banner,
+.banner-wrapper,
+[class*="banner"] {
+  padding-top: 0 !important;
+}
+
+/* Subtítulos visibles en todas las secciones - Solo texto limpio */
+.sub-title,
+.section-title .sub-title,
+span.sub-title,
+.auditoria-text .sub-title,
+.about-section .sub-title,
+.casos-exito-section .sub-title,
+.ley-datos-section .sub-title,
+.hero-badge {
+  color: #ccff00 !important;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  padding: 0 !important;
+  margin: 0 0 20px 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  display: inline-block !important;
+  font-family: 'Inter', sans-serif !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  /* Eliminar cualquier efecto de gradiente o transparencia */
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ccff00 !important;
+  text-fill-color: #ccff00 !important;
+  /* Eliminar cualquier contenedor visual */
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+/* Asegurar que las imágenes dentro de subtítulos sean visibles */
+.sub-title img {
+  opacity: 1 !important;
+  filter: brightness(1) !important;
+  max-height: 20px !important;
+  margin-right: 8px !important;
+}
+
+/* Títulos principales visibles */
+.section-title h1,
+.section-title h2,
+.section-title h3 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Strong dentro de títulos */
+.section-title h1 strong,
+.section-title h2 strong,
+.section-title h3 strong {
+  color: #ccff00 !important;
+}
+
+/* Párrafos de sección visibles */
+.section-title p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* About Section específico */
+.about-section {
+  padding-top: 120px !important;
+}
+
+.about-section .sub-title {
+  color: #ccff00 !important;
+  -webkit-text-fill-color: #ccff00 !important;
+  background: none !important;
+  opacity: 1 !important;
+}
+
+.about-section .highlight-title,
+.about-section h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.about-section .highlight-paragraph,
+.about-section p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Services Section */
+#servicios {
+  padding-top: 100px !important;
+  background: linear-gradient(180deg, #0a1628 0%, #051020 100%) !important;
+  position: relative !important;
+}
+
+#servicios::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 50%, rgba(204, 255, 0, 0.03) 0%, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#servicios > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Auditoria Section */
+#auditoria-fisica,
+.auditoria-section {
+  padding-top: 100px !important;
+}
+
+.auditoria-section .sub-title,
+.auditoria-text .sub-title {
+  color: #ccff00 !important;
+  -webkit-text-fill-color: #ccff00 !important;
+  background: none !important;
+  opacity: 1 !important;
+}
+
+.auditoria-text h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.auditoria-text p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.auditoria-card h5 {
+  color: #ccff00 !important;
+  -webkit-text-fill-color: #ccff00 !important;
+  opacity: 1 !important;
+}
+
+.auditoria-card p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Casos de Éxito */
+.casos-exito-section {
+  padding-top: 100px !important;
+}
+
+.casos-exito-section .sub-title {
+  color: #ccff00 !important;
+  -webkit-text-fill-color: #ccff00 !important;
+  background: none !important;
+  opacity: 1 !important;
+}
+
+.casos-exito-section h2,
+.caso-titulo {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.caso-texto {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.caso-texto a {
+  color: #ccff00 !important;
+  text-decoration: underline !important;
+}
+
+/* Ley de Datos */
+#ley-datos,
+.ley-datos-section {
+  padding-top: 100px !important;
+}
+
+.ley-datos-header h1 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.ley-datos-box h2,
+.ley-datos-box h3 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.ley-datos-box p,
+.ley-datos-box li {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.subtitulo {
+  color: #ccff00 !important;
+  -webkit-text-fill-color: #ccff00 !important;
+  opacity: 1 !important;
+}
+
+.multas {
+  color: #ff6b6b !important;
+  -webkit-text-fill-color: #ff6b6b !important;
+  opacity: 1 !important;
+  font-weight: bold !important;
+}
+
+/* About Header con logo */
+.about-header {
+  padding-top: 120px !important;
+  margin-top: 0 !important;
+}
+
+/* Corregir títulos h5 en servicios */
+.service-title,
+h5.service-title {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Corregir todos los h2 */
+h2, .section-title h2, .highlight-title {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Corregir párrafos */
+p, .section-title p, .highlight-paragraph {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Botones visibles */
+.btn-consulta,
+.btn-contacto,
+.btn-cumple {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Service wrapper visible */
+.service-wrapper {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.service-wrapper p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Casos de éxito visible */
+.caso-titulo,
+.caso-texto {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Auditoría section */
+.auditoria-text h2,
+.auditoria-text p,
+.auditoria-card h5,
+.auditoria-card p {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ley datos section */
+.ley-datos-header h1,
+.ley-datos-box h2,
+.ley-datos-box h3,
+.ley-datos-box p {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  section {
+    padding-top: 80px !important;
+  }
+  
+  .about-section {
+    padding-top: 100px !important;
+  }
+  
+  .about-header {
+    padding-top: 100px !important;
+  }
+  
+  .sub-title,
+  .section-title .sub-title {
+    font-size: 0.75rem !important;
+    padding: 6px 16px !important;
+    -webkit-text-fill-color: #ccff00 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding-top: 70px !important;
+  }
+  
+  .about-section {
+    padding-top: 90px !important;
+  }
+  
+  .about-header {
+    padding-top: 90px !important;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Turnstile</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+</head>
+<body>
+    <h1>Test de Turnstile</h1>
+    <form id="testForm">
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAACCRiYTWIPmWykUI" data-callback="onSuccess"></div>
+        <button type="submit">Test Verificación</button>
+    </form>
+    <pre id="result"></pre>
+
+    <script>
+        let turnstileToken = '';
+        
+        function onSuccess(token) {
+            turnstileToken = token;
+            console.log('Token recibido:', token);
+        }
+
+        document.getElementById('testForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            if (!turnstileToken) {
+                alert('Completa el captcha primero');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('token', turnstileToken);
+
+            const res = await fetch('/web/test-turnstile.php', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await res.json();
+            document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>

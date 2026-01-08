@@ -1,0 +1,155 @@
+/* ====================================================
+   FORM HANDLER STYLES
+   Estilos para el indicador de carga y mensajes
+   ==================================================== */
+
+/* Indicador de carga */
+.form-loading {
+    padding: 12px 20px;
+    background-color: #e7f3ff;
+    color: #0066cc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    animation: slideDown 0.3s ease-out;
+}
+
+.form-loading .spinner-border {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+/* Animación del spinner */
+@keyframes spin {
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+}
+
+.spinner-border-sm {
+    width: 1rem !important;
+    height: 1rem !important;
+    border-width: 0.2em;
+}
+
+/* Animación de deslizamiento */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Alertas mejoradas */
+.alert {
+    animation: slideDown 0.3s ease-out;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.alert-success strong {
+    color: #0d3420;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+.alert-danger strong {
+    color: #5a1419;
+}
+
+.alert-danger ul {
+    padding-left: 20px;
+}
+
+.alert-danger li {
+    margin-bottom: 5px;
+}
+
+/* Botón de cerrar (X) en alertas */
+.btn-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    padding: 0;
+    margin-left: auto;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+/* Estados del botón de envío */
+.contact-form button[type="submit"] {
+    transition: all 0.3s ease;
+}
+
+.contact-form button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .form-loading {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+        gap: 8px;
+    }
+    
+    .alert {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+    }
+}
+
+/* Modo oscuro (prefers-color-scheme) */
+@media (prefers-color-scheme: dark) {
+    .form-loading {
+        background-color: #1e3a5f;
+        color: #90caf9;
+    }
+    
+    .alert-success {
+        background-color: #1b5e20;
+        color: #c8e6c9;
+    }
+    
+    .alert-danger {
+        background-color: #b71c1c;
+        color: #ffcdd2;
+    }
+}

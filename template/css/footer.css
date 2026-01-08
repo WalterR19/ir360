@@ -1,0 +1,268 @@
+/**
+ * ========================================
+ * FOOTER STYLES
+ * Estilos para el footer
+ * ========================================
+ */
+
+#footer_wrapper {
+  background: linear-gradient(180deg, #0b1a28, #1f2f3d);
+  color: #ffffff;
+  padding: 80px 30px 40px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 0;
+}
+
+#footer_wrapper .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#footer_wrapper .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li i {
+  margin-right: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #FFD700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+  transform: translateY(-3px);
+}
+
+.footer-col img {
+  max-width: 120px;
+  filter: brightness(1.2);
+  transition: transform 0.3s ease;
+}
+
+.footer-col img:hover {
+  transform: scale(1.05);
+}
+
+#footer_wrapper hr {
+  margin: 40px auto;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  width: 70%;
+}
+
+#footer_wrapper .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#footer_wrapper .footer-bottom img {
+  max-height: 50px;
+}
+
+#footer_wrapper .footer-bottom p {
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  #footer_wrapper {
+    padding: 70px 30px 35px;
+  }
+
+  #footer_wrapper .row {
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1 1 45%;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer_wrapper {
+    padding: 60px 24px 30px;
+  }
+
+  #footer_wrapper .row {
+    gap: 25px;
+  }
+
+  .footer-col {
+    text-align: center !important;
+    flex: 1 1 100%;
+  }
+  
+  .footer-col ul {
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center !important;
+  }
+
+  .footer-col h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-col ul li {
+    font-size: 0.95rem;
+  }
+
+  .footer-col img {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  #footer_wrapper hr {
+    margin: 30px auto;
+    width: 80%;
+  }
+
+  #footer_wrapper .footer-bottom {
+    gap: 8px;
+  }
+
+  #footer_wrapper .footer-bottom img {
+    max-height: 40px;
+  }
+
+  #footer_wrapper .footer-bottom p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #footer_wrapper {
+    padding: 50px 20px 25px;
+  }
+
+  #footer_wrapper .container {
+    padding: 0;
+  }
+
+  #footer_wrapper .row {
+    gap: 20px;
+  }
+
+  .footer-col h4 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .footer-col ul {
+    line-height: 1.6;
+  }
+
+  .footer-col ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-col img {
+    max-width: 90px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icons a {
+    font-size: 1.3rem;
+  }
+
+  #footer_wrapper hr {
+    margin: 25px auto;
+    width: 90%;
+  }
+
+  #footer_wrapper .footer-bottom img {
+    max-height: 35px;
+  }
+
+  #footer_wrapper .footer-bottom p {
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #footer_wrapper {
+    padding: 25px 0 12px;
+  }
+
+  .footer-col h4 {
+    font-size: 0.95rem;
+  }
+
+  .footer-col ul li {
+    font-size: 0.85rem;
+  }
+
+  .footer-col img {
+    max-width: 80px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  #footer_wrapper .footer-bottom img {
+    max-height: 30px;
+  }
+
+  #footer_wrapper .footer-bottom p {
+    font-size: 0.75rem;
+  }
+}

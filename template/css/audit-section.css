@@ -1,0 +1,293 @@
+/**
+ * ========================================
+ * AUDIT SECTION STYLES
+ * Estilos para la sección de Auditoría
+ * ========================================
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.auditoria-section {
+  padding: 6rem 2rem;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+}
+
+.auditoria-section::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-image: url('../images/auditoria.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -2;
+}
+
+.auditoria-section::after {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(3, 40, 65, 0.75);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.auditoria-section .container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.auditoria-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.auditoria-text {
+  max-width: 100%;
+  width: 100%;
+}
+
+.auditoria-text .sub-title {
+  display: inline-flex;
+  align-items: center;
+  color: #ccff00;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.auditoria-text .sub-title img {
+  width: 24px;
+  margin-right: 0.5rem;
+}
+
+.auditoria-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.auditoria-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #f5f5f5;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.auditoria-text p strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.auditoria-text .btn-consulta {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.auditoria-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.auditoria-card {
+  background: rgba(3, 40, 65, 0.7);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(204, 255, 0, 0.3);
+}
+
+.auditoria-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  border-color: #ccff00;
+  background: rgba(3, 40, 65, 0.85);
+}
+
+.auditoria-card h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.auditoria-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e8e8e8;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .auditoria-services {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .auditoria-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .auditoria-section::before {
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .auditoria-content {
+    padding: 1.5rem 0;
+  }
+  
+  .auditoria-text h2 {
+    font-size: 2rem;
+  }
+  
+  .auditoria-services {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .auditoria-section {
+    padding: 3rem 1rem;
+  }
+  
+  .auditoria-section::before {
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .auditoria-section::after {
+    background: rgba(3, 40, 65, 0.80);
+  }
+  
+  .auditoria-content {
+    gap: 2.5rem;
+    padding: 1rem 0;
+  }
+  
+  .auditoria-text h2 {
+    font-size: 1.8rem;
+  }
+  
+  .auditoria-text p {
+    font-size: 1rem;
+  }
+  
+  .auditoria-services {
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+  }
+  
+  .auditoria-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .auditoria-section {
+    padding: 2.5rem 0.8rem;
+  }
+  
+  .auditoria-section::before {
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .auditoria-section::after {
+    background: rgba(3, 40, 65, 0.82);
+  }
+  
+  .auditoria-content {
+    gap: 2rem;
+    padding: 0.5rem 0;
+  }
+  
+  .auditoria-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .auditoria-text p {
+    font-size: 0.95rem;
+  }
+  
+  .auditoria-services {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .auditoria-card h5 {
+    font-size: 1.1rem;
+  }
+  
+  .auditoria-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .auditoria-section {
+    padding: 2rem 0.5rem;
+  }
+  
+  .auditoria-section::before {
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .auditoria-text h2 {
+    font-size: 1.3rem;
+  }
+  
+  .auditoria-text p {
+    font-size: 0.9rem;
+  }
+  
+  .auditoria-card {
+    padding: 1.2rem;
+  }
+  
+  .auditoria-card h5 {
+    font-size: 1rem;
+  }
+  
+  .auditoria-card p {
+    font-size: 0.85rem;
+  }
+}

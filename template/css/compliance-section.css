@@ -1,0 +1,330 @@
+/**
+ * ========================================
+ * COMPLIANCE SECTION STYLES
+ * Estilos para la sección de Cumplimiento Legal
+ * ========================================
+ */
+
+/* Fondo de la sección con imagen webp */
+.ley-datos-section {
+  position: relative;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+  background: url('../images/fondo sancion.webp') no-repeat center center/cover;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Overlay para mejorar legibilidad */
+.ley-datos-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 57, 82, 0.75);
+  z-index: 1;
+}
+
+/* Contenido sobre el overlay */
+.ley-datos-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.ley-datos-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ley-datos-header img.logo-ir360 {
+  height: 40px;
+  width: auto;
+}
+
+.ley-datos-header h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin: 0;
+}
+
+/* Contenedor de recuadros */
+.ley-datos-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Recuadros */
+.ley-datos-box {
+  flex: 1 1 45%;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 2.2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  min-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ley-datos-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+.ley-datos-box h2, 
+.ley-datos-box h3 {
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ley-datos-box .subtitulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.ley-datos-box p {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.ley-datos-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.ley-datos-box ul li {
+  margin-bottom: 0.8rem;
+}
+
+.btn-cumple {
+  display: inline-block;
+  background: transparent;
+  color: #ccff00;
+  font-weight: 800;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  border: 3px solid #ccff00;
+  text-decoration: none;
+  transition: all 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(204, 255, 0, 0.4), 0 0 20px rgba(204, 255, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-cumple:hover {
+  background: #ccff00;
+  color: #000000;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(204, 255, 0, 0.6), 0 0 40px rgba(204, 255, 0, 0.5);
+  border-color: #ccff00;
+}
+
+/* Animación de gradiente */
+@keyframes gradientAnimation {
+  0% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+  100% { 
+    background-position: 0% 50%; 
+  }
+}
+
+/* Texto multas */
+.multas {
+  font-size: 2rem;
+  color: #ff3b3b;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .ley-datos-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .ley-datos-content {
+    flex-direction: column;
+  }
+
+  .ley-datos-box {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .ley-datos-header h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .ley-datos-section {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .ley-datos-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .ley-datos-header img.logo-ir360 {
+    height: 35px;
+  }
+
+  .ley-datos-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .ley-datos-box {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .ley-datos-box h2,
+  .ley-datos-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .ley-datos-box .subtitulo {
+    font-size: 1.1rem;
+  }
+
+  .ley-datos-box p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .ley-datos-box ul {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .multas {
+    font-size: 1.6rem;
+  }
+
+  .btn-cumple {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ley-datos-section {
+    padding: 2rem 1rem;
+  }
+
+  .ley-datos-header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .ley-datos-header img.logo-ir360 {
+    height: 30px;
+  }
+
+  .ley-datos-header h1 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .ley-datos-box {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .ley-datos-box h2,
+  .ley-datos-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .ley-datos-box .subtitulo {
+    font-size: 1rem;
+  }
+
+  .ley-datos-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .ley-datos-box ul {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .ley-datos-box ul li {
+    margin-bottom: 0.6rem;
+  }
+
+  .multas {
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+  }
+
+  .btn-cumple {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.3rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ley-datos-section {
+    padding: 1.8rem 0.8rem;
+  }
+
+  .ley-datos-header h1 {
+    font-size: 1.1rem;
+  }
+
+  .ley-datos-box {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .ley-datos-box h2,
+  .ley-datos-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .ley-datos-box p {
+    font-size: 0.85rem;
+  }
+
+  .ley-datos-box ul {
+    font-size: 0.85rem;
+  }
+
+  .multas {
+    font-size: 1.2rem;
+  }
+}

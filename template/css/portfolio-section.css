@@ -1,0 +1,688 @@
+/*=================================
+  PORTAFOLIO WEB SECTION
+===================================*/
+
+.portfolio-section {
+  background: #0a1628;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* Fondo de partículas animadas */
+.portfolio-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(191, 0, 255, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(255, 0, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(218, 0, 255, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+  animation: particlesFloat 20s ease-in-out infinite;
+}
+
+@keyframes particlesFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-30px) scale(1.05); }
+}
+
+/* Grid tecnológico de fondo */
+.portfolio-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(191, 0, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(191, 0, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Textos con gradiente */
+.gradient-text {
+  background: linear-gradient(135deg, #bf00ff 0%, #ff00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* Líneas tecnológicas */
+.tech-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #bf00ff, transparent);
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.tech-line::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #bf00ff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #bf00ff;
+}
+
+.tech-icon {
+  color: #ffffff;
+  font-size: 1.3rem;
+  animation: techPulse 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(191, 0, 255, 0.8));
+}
+
+@keyframes techPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+/* Subtítulo del portafolio */
+.portfolio-subtitle {
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Cards de portafolio con diseño tecnológico */
+.portfolio-card {
+  background: linear-gradient(135deg, rgba(13, 27, 46, 0.9) 0%, rgba(10, 22, 40, 0.95) 100%);
+  border: 1px solid rgba(191, 0, 255, 0.2);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  height: 100%;
+  position: relative;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Borde tecnológico animado */
+.card-tech-border {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 24px;
+  background: linear-gradient(45deg, 
+    #bf00ff 0%, 
+    #ff00ff 25%, 
+    #da00ff 50%, 
+    #bf00ff 75%, 
+    #ff00ff 100%
+  );
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  z-index: -1;
+  animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.portfolio-card:hover .card-tech-border {
+  opacity: 0.6;
+}
+
+/* Glow effect */
+.card-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(191, 0, 255, 0.25) 0%, transparent 70%);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 
+    0 25px 60px rgba(191, 0, 255, 0.3),
+    0 15px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(191, 0, 255, 0.2);
+}
+
+.portfolio-card:hover .card-glow {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Imagen del proyecto con frame tecnológico */
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+  height: 380px;
+  background: linear-gradient(135deg, #0a1628 0%, #0d1b2e 100%);
+  padding: 8px;
+}
+
+.image-frame {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  border: 1px solid rgba(191, 0, 255, 0.15);
+}
+
+.image-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(191, 0, 255, 0.15) 0%, 
+    transparent 50%, 
+    rgba(255, 0, 255, 0.15) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.portfolio-card:hover .image-frame::before {
+  opacity: 1;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: grayscale(20%) brightness(0.9);
+}
+
+.portfolio-card:hover .portfolio-image img {
+  transform: scale(1.1) rotate(1deg);
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Overlay tecnológico al hacer hover */
+.portfolio-overlay {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background: linear-gradient(135deg, 
+    rgba(10, 22, 40, 0.98) 0%, 
+    rgba(13, 27, 46, 0.96) 50%,
+    rgba(10, 22, 40, 0.98) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 40px;
+  border-radius: 16px;
+  border: 2px solid rgba(191, 0, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+/* Badge tecnológico */
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(191, 0, 255, 0.3), rgba(255, 0, 255, 0.25));
+  border: 1px solid rgba(191, 0, 255, 0.6);
+  padding: 10px 18px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Contenido del overlay */
+.portfolio-content {
+  text-align: center;
+  color: #ffffff;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+  width: 100%;
+}
+
+.portfolio-card:hover .portfolio-content {
+  transform: translateY(0) scale(1);
+}
+
+.portfolio-content h4 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 3px 15px rgba(191, 0, 255, 0.5);
+  line-height: 1.3;
+}
+
+.portfolio-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+/* Stack tecnológico */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(191, 0, 255, 0.2);
+  border: 1px solid rgba(191, 0, 255, 0.4);
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(191, 0, 255, 0.35);
+  border-color: rgba(191, 0, 255, 0.7);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(191, 0, 255, 0.3);
+}
+
+.tech-tag i {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+/* Botón del portafolio con efecto tecnológico */
+.btn-portfolio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #bf00ff 0%, #ff00ff 100%);
+  color: #ffffff;
+  padding: 16px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: none;
+  font-size: 1.05rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(191, 0, 255, 0.5);
+  letter-spacing: 0.5px;
+}
+
+.btn-portfolio::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-portfolio:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-portfolio:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 15px 40px rgba(191, 0, 255, 0.7);
+  background: linear-gradient(135deg, #d000ff 0%, #ff3399 100%);
+}
+
+.btn-portfolio .btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-portfolio i {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.btn-portfolio:hover i {
+  transform: translateX(6px);
+}
+
+/* Información del proyecto */
+.portfolio-info {
+  padding: 28px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(13, 27, 46, 0.3) 100%);
+  border-top: 1px solid rgba(191, 0, 255, 0.15);
+}
+
+.portfolio-info h5 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.portfolio-category {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(191, 0, 255, 0.25), rgba(255, 0, 255, 0.2));
+  border-radius: 20px;
+  border: 1px solid rgba(191, 0, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.portfolio-category:hover {
+  background: linear-gradient(135deg, rgba(191, 0, 255, 0.4), rgba(255, 0, 255, 0.35));
+  border-color: rgba(191, 0, 255, 0.8);
+  transform: scale(1.05);
+}
+
+/* Estado en vivo */
+.portfolio-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-live {
+  display: inline-flex;
+  align-items: center;
+  color: #00ff88;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 20px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ff88;
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+  }
+}
+
+/* CTA Final */
+.portfolio-cta {
+  background: linear-gradient(135deg, rgba(13, 27, 46, 0.8) 0%, rgba(10, 22, 40, 0.9) 100%);
+  border: 2px solid rgba(191, 0, 255, 0.3);
+  border-radius: 24px;
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.portfolio-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(191, 0, 255, 0.15), transparent);
+  animation: ctaSweep 3s ease-in-out infinite;
+}
+
+@keyframes ctaSweep {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.cta-text {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+.btn-portfolio-cta {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #bf00ff 0%, #ff00ff 100%);
+  color: #ffffff;
+  padding: 18px 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 12px 35px rgba(191, 0, 255, 0.6);
+  letter-spacing: 0.5px;
+}
+
+.btn-portfolio-cta:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 18px 50px rgba(191, 0, 255, 0.8);
+  background: linear-gradient(135deg, #d000ff 0%, #ff3399 100%);
+}
+
+.btn-portfolio-cta i {
+  transition: transform 0.4s ease;
+}
+
+.btn-portfolio-cta:hover i {
+  transform: translateX(5px) rotate(20deg);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .portfolio-section {
+    padding: 80px 0;
+  }
+
+  .portfolio-subtitle {
+    font-size: 1rem;
+  }
+
+  .portfolio-content h4 {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 60px 0;
+  }
+
+  .tech-line {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  .portfolio-subtitle {
+    font-size: 1rem;
+  }
+
+  .portfolio-image {
+    height: 300px;
+  }
+
+  .portfolio-overlay {
+    padding: 25px;
+  }
+
+  .portfolio-content h4 {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-content p {
+    font-size: 0.95rem;
+    margin-bottom: 22px;
+  }
+
+  .tech-stack {
+    gap: 8px;
+  }
+
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .btn-portfolio {
+    padding: 14px 30px;
+    font-size: 0.95rem;
+  }
+
+  .portfolio-info {
+    padding: 24px;
+  }
+
+  .portfolio-info h5 {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-category {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+
+  .status-live {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .pulse-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .portfolio-cta {
+    padding: 40px 30px;
+  }
+
+  .cta-text {
+    font-size: 1.2rem;
+  }
+
+  .btn-portfolio-cta {
+    font-size: 1.05rem;
+    padding: 16px 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-section {
+    padding: 50px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-image {
+    height: 260px;
+  }
+
+  .portfolio-overlay {
+    padding: 20px;
+  }
+
+  .tech-badge {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+
+  .portfolio-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-content p {
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+
+  .btn-portfolio {
+    padding: 11px 24px;
+    font-size: 0.85rem;
+  }
+
+  .portfolio-cta {
+    padding: 35px 25px;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+
+  .btn-portfolio-cta {
+    font-size: 0.95rem;
+    padding: 13px 30px;
+  }
+}

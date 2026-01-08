@@ -1,0 +1,285 @@
+/**
+ * ========================================
+ * CASES SECTION STYLES
+ * Estilos para la sección de Casos de Éxito
+ * ========================================
+ */
+
+.casos-exito-section {
+  position: relative;
+  background: linear-gradient(160deg, #0d1f3f 0%, #001a33 100%);
+  background-image: url('../images/background-puntos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Imagen decorativa (persona) en el fondo */
+.casos-exito-section::after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 2%;
+  width: 350px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background-image: url('../images/exito.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+  opacity: 0.85;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Capa oscura encima del fondo */
+.casos-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 30, 0.75);
+  z-index: 1;
+}
+
+.container.position-relative {
+  position: relative;
+  z-index: 3;
+}
+
+/* Título */
+.casos-exito-section .section-title {
+  padding-left: 25%;
+}
+
+.section-title .sub-title {
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.casos-exito-section .title {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+/* Imagen cliente / logo */
+.caso-img {
+  width: auto;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
+  background: none;
+  border-radius: 0;
+}
+
+.caso-item:hover .caso-img {
+  transform: scale(1.08) translateY(-5px);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+  z-index: 3;
+}
+
+/* Contenedor del texto */
+.caso-box {
+  background: none;
+  padding: 15px 10px;
+  border-radius: 0;
+  text-align: justify;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.caso-item:hover .caso-box {
+  transform: translateY(-5px);
+}
+
+/* Títulos y textos */
+.caso-titulo {
+  color: #fff;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.caso-texto {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  margin-bottom: 0.5rem;
+}
+
+.caso-texto a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+/* Transición suave de las slides */
+#casosSlider .carousel-inner {
+  transition: transform 2s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .casos-exito-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .casos-exito-section .section-title {
+    padding-left: 15%;
+  }
+
+  .casos-exito-section .title {
+    font-size: 1.8rem;
+  }
+
+  .caso-img {
+    max-width: 150px;
+  }
+
+  .caso-titulo {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .caso-texto {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .casos-exito-section {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .casos-exito-section .section-title {
+    padding-left: 0;
+  }
+
+  .section-title .sub-title {
+    text-align: center;
+  }
+
+  .casos-exito-section .title {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .caso-item {
+    padding: 1.5rem;
+  }
+
+  .caso-img {
+    max-width: 120px;
+  }
+
+  .caso-titulo {
+    font-size: 1.2rem;
+  }
+
+  .caso-texto {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .casos-exito-section {
+    padding: 2rem 1rem;
+  }
+
+  .casos-exito-section .title {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .section-title .sub-title {
+    font-size: 0.85rem;
+  }
+
+  .caso-item {
+    flex-direction: column;
+    text-align: justify;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .caso-img {
+    max-width: 100px;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .caso-titulo {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  .caso-texto {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  .caso-box {
+    padding: 0.5rem;
+  }
+
+  .casos-exito-section::after {
+    display: none;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+  }
+
+  .carousel-indicators {
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .casos-exito-section {
+    padding: 1.8rem 0.8rem;
+  }
+
+  .casos-exito-section .title {
+    font-size: 1.2rem;
+  }
+
+  .caso-img {
+    max-width: 70px;
+  }
+
+  .caso-titulo {
+    font-size: 1rem;
+  }
+
+  .caso-texto {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,480 @@
+/* ====================================
+   SERVICES SECTION STYLES
+   Diseño Limpio y Responsivo
+   ==================================== */
+
+/* Sección de servicios */
+#servicios {
+  background: #0a1628 !important;
+  color: #ffffff !important;
+  padding: 80px 15px 60px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#servicios::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 50%, rgba(204, 255, 0, 0.05) 0%, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#servicios > .container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Header de sección */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title .sub-title {
+  display: inline-block;
+  background: rgba(204, 255, 0, 0.15);
+  color: #ccff00;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title h2 {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.section-title h2 strong {
+  color: #ccff00 !important;
+}
+
+.section-title p {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Cards de servicio */
+.service-wrapper {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 20px;
+  padding: 35px 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-out;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.service-wrapper:hover {
+  transform: scale(1.02);
+}
+
+/* Íconos de servicio */
+.service-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.service-wrapper:hover .service-icon img {
+  transform: scale(1.08);
+}
+
+.service-icon i {
+  font-size: 2.2rem;
+  color: #ccff00;
+}
+
+/* Título del servicio */
+.service-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #ffffff !important;
+  margin: 20px 0 15px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Descripción del servicio */
+.service-wrapper p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #ffffff !important;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* Badges dentro de las cards */
+.service-wrapper .badge {
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin: 4px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* CTA Button */
+.btn-consulta {
+  background: #ccff00;
+  color: #032841 !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 8px 24px rgba(204, 255, 0, 0.3);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 40px;
+}
+
+.btn-consulta:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(204, 255, 0, 0.5);
+  background: #e0ff1a;
+  color: #032841 !important;
+}
+
+/* Grid de servicios responsive */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Asegurar que las columnas de Bootstrap funcionen bien */
+.services-grid > .col-md-6 {
+  width: 100%;
+  padding: 0;
+}
+
+/* Stats o métricas */
+.service-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #ccff00;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* Animación reveal */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Desktop Large */
+@media (min-width: 1200px) {
+  #servicios {
+    padding: 80px 50px 60px;
+  }
+  
+  .section-title h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  #servicios {
+    padding: 70px 30px 50px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 2.3rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .service-wrapper {
+    padding: 30px 25px;
+  }
+
+  .service-title {
+    font-size: 1.3rem;
+  }
+
+  .btn-consulta {
+    font-size: 0.95rem;
+    padding: 14px 35px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Landscape (577px - 768px) */
+@media (max-width: 768px) {
+  #servicios {
+    padding: 60px 24px 50px;
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .section-title p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .section-title .sub-title {
+    font-size: 0.8rem;
+    padding: 8px 18px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-wrapper {
+    padding: 30px 24px;
+  }
+
+  .service-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .service-icon img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .service-icon i {
+    font-size: 2rem;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+    margin: 18px 0 12px;
+  }
+
+  .service-wrapper p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .btn-consulta {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 30px;
+    margin-top: 35px;
+  }
+
+  .service-stats {
+    margin-top: 50px;
+    padding: 35px 20px;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Portrait (320px - 576px) */
+@media (max-width: 576px) {
+  #servicios {
+    padding: 50px 20px 40px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .section-title p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .section-title .sub-title {
+    font-size: 0.75rem;
+    padding: 7px 16px;
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+
+  .service-wrapper {
+    padding: 25px 20px;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+
+  .service-icon i {
+    font-size: 1.8rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+  }
+
+  .service-wrapper p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .service-wrapper .badge {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    margin: 3px;
+  }
+
+  .btn-consulta {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 13px 25px;
+    margin-top: 30px;
+  }
+
+  .service-stats {
+    margin-top: 40px;
+    padding: 30px 15px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+/* Animación suave al cargar */
+.reveal {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Asegurar que los badges se vean bien */
+.service-wrapper .badge {
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin: 4px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+}
